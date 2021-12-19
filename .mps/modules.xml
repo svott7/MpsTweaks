@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/de.mps.tweaks.doc/de.mps.tweaks.doc.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.doc/mps.tweaks.doc.mpl" folder="" />
     </projectModules>
   </component>
 </project>
