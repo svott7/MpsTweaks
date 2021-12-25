@@ -14,6 +14,7 @@
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc" version="0" />
+    <use id="e29c93af-a404-4967-85a1-f8e3ecae70ef" name="mps.tweaks.lang.text.ext" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -54,6 +55,11 @@
       </concept>
       <concept id="1137418540378" name="jetbrains.mps.lang.pattern.structure.LinkPatternVariableDeclaration" flags="ng" index="3jrphi">
         <property id="1137418571428" name="varName" index="3jrwYG" />
+      </concept>
+    </language>
+    <language id="e29c93af-a404-4967-85a1-f8e3ecae70ef" name="mps.tweaks.lang.text.ext">
+      <concept id="7715324866886640751" name="mps.tweaks.lang.text.ext.structure.ConceptRef" flags="ng" index="2E_BdT">
+        <child id="7715324866886898224" name="conceptRef" index="2EA$kA" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -106,9 +112,6 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="3133179214568824809" name="jetbrains.mps.lang.text.structure.NodeWrapperElement" flags="nn" index="tu5oc">
-        <child id="3133179214568824810" name="node" index="tu5of" />
-      </concept>
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
@@ -131,13 +134,16 @@
             <node concept="3oM_SD" id="3ZFBIUS_elp" role="1PaTwD">
               <property role="3oM_SC" value="copied" />
             </node>
-            <node concept="3oM_SD" id="6GilLr1tRxj" role="1PaTwD">
+            <node concept="3oM_SD" id="6GilLr1yoNV" role="1PaTwD">
               <property role="3oM_SC" value="from" />
             </node>
-            <node concept="tu5oc" id="6GilLr1tQZ2" role="1PaTwD">
-              <node concept="3gn64h" id="6GilLr1tRwQ" role="tu5of">
+            <node concept="2E_BdT" id="6GilLr1yozR" role="1PaTwD">
+              <node concept="3gn64h" id="6GilLr1yozT" role="2EA$kA">
                 <ref role="3gnhBz" to="tp25:35Jy4LMD1lX" resolve="SLinkImplicitSelect" />
               </node>
+            </node>
+            <node concept="3oM_SD" id="6GilLr1yoMX" role="1PaTwD">
+              <property role="3oM_SC" value="" />
             </node>
           </node>
         </node>

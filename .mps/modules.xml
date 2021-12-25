@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.bl.collections/mps.tweaks.bl.collections.mpl" folder="base-lang" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.doc/mps.tweaks.doc.mpl" folder="doc" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.text.ext/mps.tweaks.lang.text.ext.mpl" folder="doc" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.collections.test/mps.tweaks.bl.collections.test.msd" folder="base-lang" />
     </projectModules>
   </component>
