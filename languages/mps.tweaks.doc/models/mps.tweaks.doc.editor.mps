@@ -28,8 +28,10 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -95,14 +97,21 @@
     <ref role="1XX52x" to="636o:6TyyN3Psddl" resolve="BaseConceptDoc" />
     <node concept="3EZMnI" id="6TyyN3Psdel" role="2wV5jI">
       <node concept="3F0ifn" id="6TyyN3Pst5n" role="3EZMnx">
-        <property role="3F0ifm" value="Doc:" />
+        <property role="3F0ifm" value="Doc" />
         <ref role="1ERwB7" node="6TyyN3PsFMt" resolve="Doc_ActionMap" />
         <node concept="VechU" id="6TyyN3Pst5E" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
+        <node concept="11LMrY" id="6GilLr1_ASP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
         <node concept="2SqB2G" id="6TyyN3PsILl" role="2SqHTX">
           <property role="TrG5h" value="KeywordCell" />
         </node>
+      </node>
+      <node concept="3F0ifn" id="6GilLr1_A_$" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
+        <node concept="VPM3Z" id="6GilLr1_BbT" role="3F10Kt" />
       </node>
       <node concept="3F1sOY" id="6TyyN3PsH_j" role="3EZMnx">
         <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
