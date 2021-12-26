@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/mps.tweaks.dockit/mps.tweaks.dockit.devkit" folder="lang-doc" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.bl.collections/mps.tweaks.bl.collections.mpl" folder="lang-baselang" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.doc/mps.tweaks.doc.mpl" folder="lang-doc" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.test/mps.tweaks.lang.test.mpl" folder="lang-smodel" />

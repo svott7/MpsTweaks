@@ -11,9 +11,7 @@ The plugin collections contains a couple of very small but really helpful featur
 - No dependencies to other large MPS project such as mps-extensions or mbeddr platform
 - Most stuff is tested
 
-## Support languages
-
-## MPS plugins for BaseLanguage
+## MPS plugins for BaseLanguage (folder plugins-bl)
 
 ### `mps.tweaks.bl.intention`
 
@@ -25,12 +23,13 @@ This plugin-solution provides some handy intentions to ease editing BaseLanguage
 - Actions to format BL code
   - `Remove all empty lines` or `Duplicated empty lines` in current `StatementList`
 
-Tests and examples: TBC
+##### Tests
 
+All features are tested in `mps.tweaks.bl.intention.test` using `action-test`. You may also take a look there to get some examples.
 
-## base-lang
+## MPS base language extensions
 
-### MPS base language extensions
+virtual folder `lang-baselang`
 
 ### mps.tweaks.bl.collections
 
