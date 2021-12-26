@@ -34,7 +34,6 @@
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="9" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
-    <language slang="l:09179ab6-0d51-459a-bd50-002af25c461a:mps.tweaks.bl.collections" version="0" />
     <language slang="l:ac12167b-cd9f-41ab-a7b5-a48087a2f0cf:mps.tweaks.doc" version="0" />
   </languageVersions>
   <dependencyVersions>
