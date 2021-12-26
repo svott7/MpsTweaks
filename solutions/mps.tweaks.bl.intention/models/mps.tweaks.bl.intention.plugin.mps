@@ -7,14 +7,11 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="09179ab6-0d51-459a-bd50-002af25c461a" name="de.mps.tweaks.bl.collections" version="0" />
+    <use id="09179ab6-0d51-459a-bd50-002af25c461a" name="mps.tweaks.bl.collections" version="0" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
-    <use id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="de.mps.tweaks.doc" version="0" />
+    <use id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
-    <use id="ae2b4ef3-c59c-4bc4-8852-8d23b3ff8943" name="de.mps.tweaks.bl.editor.dotexpr" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -25,7 +22,6 @@
     <import index="b8lf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.selection(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z76a" ref="r:dfc27cab-2d08-4c79-ac99-e95209e18392(jetbrains.mps.baseLanguage.pluginSolution.plugin)" />
-    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -211,8 +207,8 @@
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
-    <language id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="de.mps.tweaks.doc">
-      <concept id="7954072934282220373" name="de.mps.tweaks.doc.structure.ConceptDoc" flags="ng" index="2r4_x_">
+    <language id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc">
+      <concept id="7954072934282220373" name="mps.tweaks.doc.structure.BaseConceptDoc" flags="ng" index="2r4_x_">
         <child id="7954072934282285396" name="text" index="2r4PD$" />
       </concept>
     </language>
@@ -246,8 +242,8 @@
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
-    <language id="09179ab6-0d51-459a-bd50-002af25c461a" name="de.mps.tweaks.bl.collections">
-      <concept id="4605949792052025510" name="de.mps.tweaks.bl.collections.structure.DetachAll" flags="ng" index="27o0p8" />
+    <language id="09179ab6-0d51-459a-bd50-002af25c461a" name="mps.tweaks.bl.collections">
+      <concept id="4605949792052025510" name="mps.tweaks.bl.collections.structure.DetachAll" flags="ng" index="27o0p8" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">

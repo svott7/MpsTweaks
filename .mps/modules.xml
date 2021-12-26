@@ -2,11 +2,13 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.bl.collections/mps.tweaks.bl.collections.mpl" folder="base-lang" />
-      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.doc/mps.tweaks.doc.mpl" folder="doc" />
-      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.text.ext/mps.tweaks.lang.text.ext.mpl" folder="doc" />
-      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.collections.test/mps.tweaks.bl.collections.test.msd" folder="base-lang" />
-      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.intention/mps.tweaks.bl.intention.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.bl.collections/mps.tweaks.bl.collections.mpl" folder="lang-baselang" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.doc/mps.tweaks.doc.mpl" folder="lang-doc" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.test/mps.tweaks.lang.test.mpl" folder="lang-smodel" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.text.ext/mps.tweaks.lang.text.ext.mpl" folder="lang-doc" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.collections.test/mps.tweaks.bl.collections.test.msd" folder="lang-baselang" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.intention.test/mps.tweaks.bl.intention.test.msd" folder="plugins-bl" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.intention/mps.tweaks.bl.intention.msd" folder="plugins-bl" />
     </projectModules>
   </component>
 </project>
