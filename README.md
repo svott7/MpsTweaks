@@ -13,7 +13,22 @@ The plugin collections contains a couple of very small but really helpful featur
 
 ## Support languages
 
+## MPS plugins for BaseLanguage
 
+### `mps.tweaks.bl.intention`
+
+This plugin-solution provides some handy intentions to ease editing BaseLanguage code.
+
+- Common BL refactoring actions such as `Extract Method` and `Inline Local Variable` are provided as intentions.
+- `Format String` action to transform any string `s` to `String.format(s)`
+- `Append String` action to add `+ "` in case a string shall be returned but the current expression has different (primitive) type
+- Actions to format BL code
+  - `Remove all empty lines` or `Duplicated empty lines` in current `StatementList`
+
+Tests and examples: TBC
+
+
+## base-lang
 
 ### MPS base language extensions
 
