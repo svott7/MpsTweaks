@@ -19,6 +19,7 @@ This plugin-solution provides some handy intentions to ease editing BaseLanguage
 
 - Common BL refactoring actions such as `Extract Method` and `Inline Local Variable` are provided as intentions.
 - `toField`/`toProperty` to change a class field to a property and vice versa (TODO: handle visibility, getter and setter)
+- `Generate All Args Constructor` creates a constructor with all class fields and properties as parameters (available on empty class lines; todo does not respect super class yet)
 - `Format String` action to transform any string `s` to `String.format(s)`
 - `Append String` action to add `+ "` in case a string shall be returned but the current expression has different (primitive) type
 - Actions to format BL code
