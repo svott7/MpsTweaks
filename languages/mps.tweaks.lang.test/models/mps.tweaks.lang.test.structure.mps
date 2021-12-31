@@ -7,6 +7,9 @@
   </languages>
   <imports>
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
+    <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="e29c93af-a404-4967-85a1-f8e3ecae70ef" name="mps.tweaks.lang.text.ext">
@@ -24,9 +27,13 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -159,6 +166,61 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="ED6CmTpETX">
+    <property role="EcuMT" value="768174373086867069" />
+    <property role="TrG5h" value="MultiActionTestCase" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="ED6CmTpGw1" role="1TKVEi">
+      <property role="IQ2ns" value="768174373086873601" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="action" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tp5g:3FlSiDCuCBp" resolve="MPSActionReference" />
+    </node>
+    <node concept="1TJgyj" id="ED6CmTpGwV" role="1TKVEi">
+      <property role="IQ2ns" value="768174373086873659" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tests" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="ED6CmTpGw0" resolve="ActionTest" />
+    </node>
+    <node concept="PrWs8" id="hSLl9xe" role="PzmwI">
+      <ref role="PrY4T" to="tpe3:hGB2rPm" resolve="ITestCase" />
+    </node>
+    <node concept="PrWs8" id="2deFRo6cC4H" role="PzmwI">
+      <ref role="PrY4T" to="tpck:19gBtYEv0ln" resolve="ImplementationPart" />
+    </node>
+    <node concept="PrWs8" id="1Zcerrmzg6Y" role="PzmwI">
+      <ref role="PrY4T" to="tp5g:1Zcerrmzb_y" resolve="TestProjectAware" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="ED6CmTpGw0">
+    <property role="EcuMT" value="768174373086873600" />
+    <property role="TrG5h" value="ActionTest" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="2IvnPUIp3ly" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="testNodeBefore" />
+      <property role="IQ2ns" value="3143335925185262946" />
+      <ref role="20lvS9" to="tp5g:hHqefK1" resolve="TestNode" />
+    </node>
+    <node concept="1TJgyj" id="2IvnPUIp3m5" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="testNodeResult" />
+      <property role="IQ2ns" value="3143335925185262981" />
+      <ref role="20lvS9" to="tp5g:hHqefK1" resolve="TestNode" />
+    </node>
+    <node concept="PrWs8" id="ED6CmTqboj" role="PzmwI">
+      <ref role="PrY4T" to="tpe3:hGBgSCX" resolve="ITestMethod" />
+    </node>
+    <node concept="PrWs8" id="ED6CmTqk_C" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="ED6CmTqk_y" role="PzmwI">
+      <ref role="PrY4T" to="tpee:i2fhoOR" resolve="IMethodLike" />
     </node>
   </node>
 </model>
