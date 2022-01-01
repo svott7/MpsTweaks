@@ -22,6 +22,10 @@ This plugin-solution provides some handy intentions to ease editing BaseLanguage
 - `Generate All Args Constructor` creates a constructor with all class fields and properties as parameters (available on empty class lines; todo does not respect super class yet)
 - `Format String` action to transform any string `s` to `String.format(s)`
 - `Append String` action to add `+ "` in case a string shall be returned but the current expression has different (primitive) type
+- BL debugging via message statments
+  - `Log Expression` Creates a message statement which logs the selected BL expression.
+  - `Log Variable` Creates a message statement which logs the currently declared variable.
+
 - Actions to format BL code
   - `Remove all empty lines` or `Duplicated empty lines` in current `StatementList`
 
