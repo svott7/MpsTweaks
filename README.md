@@ -20,8 +20,15 @@ This plugin-solution provides some handy intentions to ease editing BaseLanguage
 - Common BL refactoring actions such as `Extract Method` and `Inline Local Variable` are provided as intentions.
 - `toField`/`toProperty` to change a class field to a property and vice versa (TODO: handle visibility, getter and setter)
 - `Generate All Args Constructor` creates a constructor with all class fields and properties as parameters (available on empty class lines; todo does not respect super class yet)
-- `Format String` action to transform any string `s` to `String.format(s)`
-- `Append String` action to add `+ "` in case a string shall be returned but the current expression has different (primitive) type
+- Refactoring
+  - `To Var-Typed Declaration` Replaces the type of the declared variable with  var  and updates all variable references.
+    This serves two purposes:
+    1. You can call the action everywhere inside a variable declaration without navigating to the type
+    2. References are correctly updates. The default BL substitution menu leads to broken references (which can mostly be repaired automatically pressing F5)
+
+- String manipulation
+  - `Format String` action to transform any string `s` to `String.format(s)`
+  - `Append String` action to add `+ "` in case a string shall be returned but the current expression has different (primitive) type
 - BL debugging via message statments
   - `Log Expression` Creates a message statement which logs the selected BL expression.
   - `Log Variable` Creates a message statement which logs the currently declared variable.
