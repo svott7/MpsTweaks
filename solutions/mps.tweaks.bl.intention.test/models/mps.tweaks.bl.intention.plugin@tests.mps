@@ -10,7 +10,6 @@
   </languages>
   <imports>
     <import index="2c1f" ref="r:22128320-2537-4149-9e36-3faa7bd5f8b0(mps.tweaks.bl.intention.plugin)" />
-    <import index="eel" ref="r:47859e65-d6dc-4d57-a5a9-49eddb38fc32(de.mps.tweaks.editor.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
