@@ -571,7 +571,7 @@
   </node>
   <node concept="1UG$t2" id="zddwKdMqYA">
     <node concept="1iFQzN" id="zddwKdMqYB" role="1UHrxR">
-      <ref role="1iFR8X" to="2c1f:zddwKdK$zh" resolve="ChangeToProperty" />
+      <ref role="1iFR8X" to="2c1f:zddwKdK$zh" resolve="ChangePropertyToField" />
     </node>
     <node concept="1qefOq" id="zddwKdMqYC" role="25YQCW">
       <node concept="312cEu" id="zddwKdMqYD" role="1qenE9">
@@ -598,7 +598,7 @@
           <property role="TrG5h" value="ref" />
           <node concept="10Oyi0" id="zddwKdMqYK" role="1tU5fm" />
           <node concept="338YkY" id="zddwKdNuZ3" role="33vP2m">
-            <ref role="338YkT" node="zddwKdNuYX" />
+            <ref role="338YkT" node="zddwKdNuYX" resolve="toField" />
           </node>
         </node>
         <node concept="2tJIrI" id="zddwKdMrE9" role="jymVt" />
@@ -626,7 +626,7 @@
                     <ref role="3cqZAo" node="zddwKdMQ86" resolve="c" />
                   </node>
                   <node concept="2S8uIT" id="zddwKdNuZ4" role="2OqNvi">
-                    <ref role="2S8YL0" node="zddwKdNuYX" />
+                    <ref role="2S8YL0" node="zddwKdNuYX" resolve="toField" />
                   </node>
                 </node>
               </node>
@@ -687,7 +687,7 @@
           <property role="TrG5h" value="ref" />
           <node concept="10Oyi0" id="zddwKdMqYZ" role="1tU5fm" />
           <node concept="37vLTw" id="zddwKdNJkQ" role="33vP2m">
-            <ref role="3cqZAo" node="zddwKdNJkO" />
+            <ref role="3cqZAo" node="zddwKdNJkO" resolve="toField" />
           </node>
         </node>
         <node concept="2tJIrI" id="zddwKdMPDV" role="jymVt" />
@@ -715,7 +715,7 @@
                     <ref role="3cqZAo" node="zddwKdMQ6K" resolve="c" />
                   </node>
                   <node concept="37vLTw" id="zddwKdNJkR" role="2OqNvi">
-                    <ref role="3cqZAo" node="zddwKdNJkO" />
+                    <ref role="3cqZAo" node="zddwKdNJkO" resolve="toField" />
                   </node>
                 </node>
               </node>
@@ -865,7 +865,7 @@
   </node>
   <node concept="1UG$t2" id="2shhEwKGOwf">
     <node concept="1iFQzN" id="2shhEwKGOwg" role="1UHrxR">
-      <ref role="1iFR8X" to="2c1f:4v0AOi9dRB1" resolve="LogBlDeclaredVariable" />
+      <ref role="1iFR8X" to="2c1f:4v0AOi9dRB1" resolve="LogBlVariable" />
     </node>
     <node concept="1qefOq" id="2shhEwKGOOD" role="25YQFr">
       <node concept="3clFbS" id="2shhEwKGOOE" role="1qenE9">
@@ -997,7 +997,7 @@
   </node>
   <node concept="1UG$t2" id="zddwKe02Dl">
     <node concept="1iFQzN" id="zddwKe02Dm" role="1UHrxR">
-      <ref role="1iFR8X" to="2c1f:1k_gwWhxSLA" resolve="ToVarVarDeclaration" />
+      <ref role="1iFR8X" to="2c1f:1k_gwWhxSLA" resolve="ToVarDeclaration" />
     </node>
     <node concept="1qefOq" id="zddwKe1ddJ" role="25YQCW">
       <node concept="3clFbS" id="zddwKe1ddI" role="1qenE9">

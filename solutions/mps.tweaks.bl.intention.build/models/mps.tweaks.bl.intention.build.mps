@@ -137,7 +137,7 @@
       <property role="TrG5h" value="mps_home" />
     </node>
     <node concept="2sgV4H" id="12Zz9ivFCf$" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="12Zz9ivFCf_" role="2JcizS">
         <ref role="398BVh" node="12Zz9ivFCfz" resolve="mps_home" />
       </node>
@@ -171,7 +171,7 @@
         <ref role="m$f5T" node="12Zz9ivFCfG" resolve="MpsTweaks" />
       </node>
       <node concept="m$_yC" id="12Zz9ivFCfN" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="3_J27D" id="12Zz9ivFCfO" role="m_cZH">
         <node concept="3Mxwew" id="12Zz9ivFCfP" role="3MwsjC">
