@@ -251,7 +251,7 @@
                           <ref role="3cqZAo" node="2shhEwKEK_j" resolve="it" />
                         </node>
                         <node concept="2qgKlT" id="7UhbSS4dL9H" role="2OqNvi">
-                          <ref role="37wK5l" to="yv9k:2shhEwKELud" resolve="createCode" />
+                          <ref role="37wK5l" to="yv9k:2shhEwKELud" resolve="createTestCode" />
                         </node>
                       </node>
                     </node>
@@ -387,7 +387,7 @@
           <node concept="2OqwBi" id="1043xPhqBuL" role="3clFbG">
             <node concept="2ShNRf" id="1043xPhqzD5" role="2Oq$k0">
               <node concept="1pGfFk" id="1043xPhqBaO" role="2ShVmc">
-                <ref role="37wK5l" node="1043xPhqmxo" />
+                <ref role="37wK5l" node="1043xPhqmxo" resolve="map_MultiActionTestCase.TestBody" />
                 <node concept="Xjq3P" id="1043xPhqBil" role="37wK5m" />
               </node>
             </node>
