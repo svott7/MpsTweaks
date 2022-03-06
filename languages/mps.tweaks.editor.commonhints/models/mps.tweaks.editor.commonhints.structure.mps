@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9f47ffba-8f24-4dff-9ac8-4c15fbeea480(mps.tweaks.lang.editor.structure)">
+<model ref="r:c5a32ed4-efd3-4540-a41b-4071223e7b21(mps.tweaks.editor.commonhints.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />

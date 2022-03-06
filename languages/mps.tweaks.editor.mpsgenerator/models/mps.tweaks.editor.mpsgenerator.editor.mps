@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5e6cebe5-205e-4a0e-8772-2c7f1767d9c5(mps.tweaks.mpsgenerator.editor)">
+<model ref="r:5e6cebe5-205e-4a0e-8772-2c7f1767d9c5(mps.tweaks.editor.mpsgenerator.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -22,7 +22,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpf3" ref="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="qi0f" ref="r:866df931-cb25-45ef-8f87-6b19c3afdd68(mps.tweaks.editor.commonhints.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -67,12 +67,6 @@
       </concept>
       <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
         <reference id="6718020819487620874" name="menu" index="A1WHt" />
-      </concept>
-      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
-        <child id="5944657839000877563" name="hints" index="2ABdcP" />
-      </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
@@ -433,7 +427,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:gZaamkM" resolve="Reduction_MappingRule" />
     <node concept="2aJ2om" id="1jh3YY5HWsR" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="14gd6cQNPJG" role="2wV5jI">
       <node concept="3EZMnI" id="h1lWcEj" role="3EZMnx">
@@ -472,7 +466,7 @@
               <ref role="1NtTu8" to="tpf8:gZ0HLAX" resolve="conditionFunction" />
               <node concept="2w$q5c" id="6RudgJvsDm6" role="3xwHhi">
                 <node concept="2aJ2om" id="6RudgJvsDm7" role="2w$qW5">
-                  <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+                  <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
                 </node>
               </node>
             </node>
@@ -629,7 +623,7 @@
         <node concept="2w$q5c" id="1jh3YY5NnP5" role="2whJh7" />
         <node concept="2w$q5c" id="6RudgJvsDm4" role="2whIAn">
           <node concept="2aJ2om" id="6RudgJvsDm5" role="2w$qW5">
-            <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+            <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
           </node>
         </node>
       </node>
@@ -643,26 +637,11 @@
       <node concept="2iRkQZ" id="i2IBXUY" role="2iSdaV" />
     </node>
   </node>
-  <node concept="2ABfQD" id="1jh3YY5HWsM">
-    <property role="TrG5h" value="NeatMpsGeneratorHints" />
-    <node concept="2BsEeg" id="1jh3YY5HWsN" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="NeatMpsGen" />
-    </node>
-    <node concept="2BsEeg" id="6RudgJuWY47" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="__ConciseMps" />
-    </node>
-    <node concept="2BsEeg" id="PmYGMuTnaO" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="__GreyOutMps" />
-    </node>
-  </node>
   <node concept="24kQdi" id="1jh3YY5LBAi">
     <property role="3GE5qa" value="mps" />
     <ref role="1XX52x" to="tpee:gyVMwX8" resolve="ConceptFunction" />
     <node concept="2aJ2om" id="6RudgJvtvrZ" role="CpUAK">
-      <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+      <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
     </node>
     <node concept="gc7cB" id="h$DgcGk" role="6VMZX">
       <node concept="3VJUX4" id="h$DgcGl" role="3YsKMw">
@@ -991,14 +970,14 @@
       <node concept="2iRkQZ" id="7I5RuObTqOx" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="1jh3YY5TI2q" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
   </node>
   <node concept="24kQdi" id="1jh3YY6u9LO">
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:fWrartG" resolve="TemplateFragment" />
     <node concept="2aJ2om" id="1jh3YY6u9LS" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="fWPeJik" role="2wV5jI">
       <node concept="3F0ifn" id="fWPeV30" role="3EZMnx">
@@ -1109,7 +1088,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:ghW57bu" resolve="IfMacro" />
     <node concept="2aJ2om" id="1jh3YY6uyWX" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="4c226Nmabs4" role="2wV5jI">
       <node concept="3EZMnI" id="4c226Nmabs6" role="3EZMnx">
@@ -1177,7 +1156,7 @@
           </node>
           <node concept="2w$q5c" id="6RudgJvsEAM" role="3xwHhi">
             <node concept="2aJ2om" id="6RudgJvsEAN" role="2w$qW5">
-              <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+              <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
             </node>
           </node>
         </node>
@@ -1266,7 +1245,7 @@
           </node>
           <node concept="2w$q5c" id="6RudgJvsEAJ" role="3xwHhi">
             <node concept="2aJ2om" id="6RudgJvsEAK" role="2w$qW5">
-              <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+              <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
             </node>
           </node>
         </node>
@@ -1386,7 +1365,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:UesZ_nZ2HY" resolve="VarMacro2" />
     <node concept="2aJ2om" id="1jh3YY6zQwi" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="UesZ_nZoDa" role="6VMZX">
       <node concept="3F0ifn" id="UesZ_nZoDb" role="3EZMnx">
@@ -1639,14 +1618,14 @@
           <ref role="1NtTu8" to="tpf8:UesZ_nZ2Ia" resolve="value" />
           <node concept="2w$q5c" id="6RudgJvsEt0" role="3xwHhi">
             <node concept="2aJ2om" id="6RudgJvsEt1" role="2w$qW5">
-              <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+              <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="2aJ2om" id="6G6BBtEH9d0" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
   </node>
   <node concept="24kQdi" id="14gd6cPWVPF">
@@ -1730,7 +1709,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="14gd6cPWVPM" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="gck0pCV" role="2wV5jI">
       <node concept="3EZMnI" id="gcRlnFN" role="3EZMnx">
@@ -1837,7 +1816,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:QzR6Tht7mj" resolve="TemplateSwitchMacro" />
     <node concept="2aJ2om" id="14gd6cQ8B7r" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="QzR6ThJinI" role="2wV5jI">
       <node concept="3F0ifn" id="QzR6ThJinJ" role="3EZMnx">
@@ -2022,7 +2001,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:ge9HgZJ" resolve="CopySrcNodeMacro" />
     <node concept="2aJ2om" id="14gd6cQazZ5" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="heSFwpk" role="6VMZX">
       <node concept="3F0ifn" id="heSFwpl" role="3EZMnx">
@@ -2102,7 +2081,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:ghWS0B3" resolve="LoopMacro" />
     <node concept="2aJ2om" id="4$XwwytNz0Z" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="gITmPAK" role="2wV5jI">
       <node concept="3EZMnI" id="6G6BBtEyp0f" role="3EZMnx">
@@ -2261,7 +2240,7 @@
           </node>
           <node concept="2w$q5c" id="6RudgJvsCwo" role="3xwHhi">
             <node concept="2aJ2om" id="6RudgJvsCwp" role="2w$qW5">
-              <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+              <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
             </node>
           </node>
         </node>
@@ -2356,7 +2335,7 @@
           <node concept="2w$q5c" id="4$XwwytNz1_" role="2whJh7" />
           <node concept="2w$q5c" id="6RudgJvsBK3" role="2whIAn">
             <node concept="2aJ2om" id="6RudgJvsBK4" role="2w$qW5">
-              <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+              <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
             </node>
           </node>
         </node>
@@ -2398,7 +2377,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:1jRYachIf5f" resolve="TemplateCallMacro" />
     <node concept="2aJ2om" id="4$XwwytOkhL" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="1jRYachI_an" role="2wV5jI">
       <node concept="3F0ifn" id="1jRYachI_ao" role="3EZMnx">
@@ -2586,7 +2565,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:fP7UvrK" resolve="PropertyMacro" />
     <node concept="2aJ2om" id="4$XwwytUiJi" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="gISW08w" role="2wV5jI">
       <ref role="1k5W1q" node="3CpqeQ1EqZr" resolve="Border" />
@@ -2784,7 +2763,7 @@
             <node concept="2iRfu4" id="6RudgJvDxB6" role="2iSdaV" />
             <node concept="2w$q5c" id="6RudgJvDybU" role="2whIAn">
               <node concept="2aJ2om" id="6RudgJvDyem" role="2w$qW5">
-                <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+                <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
               </node>
             </node>
           </node>
@@ -2806,7 +2785,7 @@
             <ref role="1k5W1q" node="2Y4eUb$5qJv" resolve="NodeMacroCode" />
             <node concept="2w$q5c" id="6RudgJvsCvw" role="3xwHhi">
               <node concept="2aJ2om" id="6RudgJvsCvy" role="2w$qW5">
-                <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+                <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
               </node>
             </node>
           </node>
@@ -2885,7 +2864,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:h8gft7C" resolve="InlineTemplate_RuleConsequence" />
     <node concept="2aJ2om" id="6G6BBtEhy0q" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="h8gg3n0" role="2wV5jI">
       <node concept="3F0ifn" id="h8gg4AC" role="3EZMnx">
@@ -3058,7 +3037,7 @@
                 <node concept="liA8E" id="PmYGMuTmGf" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~Collection.contains(java.lang.Object)" resolve="contains" />
                   <node concept="2pYGij" id="PmYGMuTmNN" role="37wK5m">
-                    <ref role="2pYH_C" node="PmYGMuTnaO" resolve="GreyOutMps" />
+                    <ref role="2pYH_C" to="qi0f:PmYGMuTnaO" resolve="__GreyOutMps" />
                   </node>
                 </node>
               </node>
@@ -3099,7 +3078,7 @@
                   <node concept="liA8E" id="PmYGMuTnI2" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~Collection.contains(java.lang.Object)" resolve="contains" />
                     <node concept="2pYGij" id="PmYGMuTnI3" role="37wK5m">
-                      <ref role="2pYH_C" node="PmYGMuTnaO" resolve="GreyOutMps" />
+                      <ref role="2pYH_C" to="qi0f:PmYGMuTnaO" resolve="__GreyOutMps" />
                     </node>
                   </node>
                 </node>
@@ -3130,7 +3109,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:4sWLrFSCuu$" resolve="LabelMacro" />
     <node concept="2aJ2om" id="6G6BBtI25hr" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="4sWLrFSCvNa" role="2wV5jI">
       <node concept="3EZMnI" id="hfvurhb" role="3EZMnx">
@@ -3338,7 +3317,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf3:UesZ_nZl96" resolve="GenerationContextOp_VarRef2" />
     <node concept="2aJ2om" id="2Y4eUbzah$Z" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="1iCGBv" id="UesZ_o1M7_" role="2wV5jI">
       <ref role="1NtTu8" to="tpf3:UesZ_nZl97" resolve="vardecl" />
@@ -3430,7 +3409,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:fPZhdom" resolve="ReferenceMacro" />
     <node concept="2aJ2om" id="2Y4eUbKbd7n" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="gISVCKA" role="2wV5jI">
       <node concept="3F0ifn" id="gISVDa2" role="3EZMnx">
@@ -3521,7 +3500,7 @@
     <property role="3GE5qa" value="mps" />
     <ref role="1XX52x" to="tpee:fzcpWvV" resolve="PlusExpression" />
     <node concept="2aJ2om" id="6RudgJvBhm7" role="CpUAK">
-      <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+      <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
     </node>
     <node concept="3EZMnI" id="gXYOYXG" role="2wV5jI">
       <node concept="3F1sOY" id="gXYOYXH" role="3EZMnx">
@@ -3576,7 +3555,7 @@
     <property role="3GE5qa" value="mps" />
     <ref role="1XX52x" to="tpee:fzclF8j" resolve="ExpressionStatement" />
     <node concept="2aJ2om" id="6RudgJvEceM" role="CpUAK">
-      <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+      <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
     </node>
     <node concept="3EZMnI" id="fDx_RDN" role="2wV5jI">
       <node concept="3F1sOY" id="fDx_RDO" role="3EZMnx">
@@ -3823,7 +3802,7 @@
     <property role="3GE5qa" value="mpsgen" />
     <ref role="1XX52x" to="tpf8:gZlhOrr" resolve="Root_MappingRule" />
     <node concept="2aJ2om" id="3CpqeQ205rS" role="CpUAK">
-      <ref role="2$4xQ3" node="1jh3YY5HWsN" resolve="PrettyMpsGen" />
+      <ref role="2$4xQ3" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
     </node>
     <node concept="3EZMnI" id="3CpqeQ23WS_" role="2wV5jI">
       <node concept="2iRkQZ" id="3CpqeQ23WSA" role="2iSdaV" />
@@ -3884,7 +3863,7 @@
                 <ref role="1NtTu8" to="tpf8:gZ0HLAX" resolve="conditionFunction" />
                 <node concept="2w$q5c" id="3CpqeQ2066a" role="3xwHhi">
                   <node concept="2aJ2om" id="3CpqeQ2066b" role="2w$qW5">
-                    <ref role="2$4xQ3" node="6RudgJuWY47" resolve="ConciseMps" />
+                    <ref role="2$4xQ3" to="qi0f:6RudgJuWY47" resolve="__ConciseMps" />
                   </node>
                 </node>
               </node>

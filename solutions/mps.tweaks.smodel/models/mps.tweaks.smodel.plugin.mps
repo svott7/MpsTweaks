@@ -12,8 +12,6 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="acfc188d-d5d6-4598-b370-6f4a983f05b2" name="jetbrains.mps.baseLanguage.methodReferences" version="0" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
@@ -33,12 +31,6 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
-    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="gzee" ref="r:f4d7b517-f9dd-41d4-ab2f-15ec7d3ee719(mps.tweaks.lang.test.editor)" />
-    <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings(MPS.Editor/)" />
-    <import index="i5bg" ref="r:90cdcdb2-e332-4303-a701-6e7c3095b7a1(mps.tweaks.console.editor)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -102,9 +94,6 @@
       </concept>
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
-        <reference id="4820515453818318891" name="hint" index="2pYH_C" />
-      </concept>
       <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
         <child id="1948540814633499358" name="editorContext" index="lBI5i" />
       </concept>
@@ -405,18 +394,9 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
-      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
-        <child id="1226511765987" name="elementType" index="2hN53Y" />
-      </concept>
-      <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
-      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
-        <child id="1237721435808" name="initValue" index="HW$Y0" />
-        <child id="1237721435807" name="elementType" index="HW$YZ" />
-      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
-      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
@@ -3301,148 +3281,6 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="2s6uFk0Vl90" role="1B3o_S" />
-  </node>
-  <node concept="sE7Ow" id="1B8loX25DHZ">
-    <property role="TrG5h" value="SetMpsTweaksEditorHint" />
-    <property role="2uzpH1" value="Set all MPS Tweaks Editor Hints" />
-    <node concept="1DS2jV" id="2OiVRCDoa2h" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="2OiVRCDoa2i" role="1oa70y" />
-    </node>
-    <node concept="tnohg" id="1B8loX25DI0" role="tncku">
-      <node concept="3clFbS" id="1B8loX25DI1" role="2VODD2">
-        <node concept="3cpWs8" id="1Jivxq$q6lG" role="3cqZAp">
-          <node concept="3cpWsn" id="1Jivxq$q6lJ" role="3cpWs9">
-            <property role="TrG5h" value="myHints" />
-            <node concept="2hMVRd" id="1Jivxq$q6lC" role="1tU5fm">
-              <node concept="17QB3L" id="1Jivxq$q6Xy" role="2hN53Y" />
-            </node>
-            <node concept="2ShNRf" id="1Jivxq$q6ZH" role="33vP2m">
-              <node concept="2i4dXS" id="1Jivxq$q6Zq" role="2ShVmc">
-                <node concept="17QB3L" id="1Jivxq$q6Zr" role="HW$YZ" />
-                <node concept="2pYGij" id="1Jivxq$qeD$" role="HW$Y0">
-                  <ref role="2pYH_C" to="gzee:6b302_5HZ8U" resolve="MpsTest" />
-                </node>
-                <node concept="2pYGij" id="hmWFe7Z3Ku" role="HW$Y0">
-                  <ref role="2pYH_C" to="i5bg:TtN5BdmRHS" resolve="MpsConsoleTweaks" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="hmWFe7Z5i8" role="3cqZAp" />
-        <node concept="3cpWs8" id="hmWFe7Z2Vr" role="3cqZAp">
-          <node concept="3KEzu6" id="hmWFe7Z3zt" role="3cpWs9">
-            <property role="TrG5h" value="hintSettings" />
-            <node concept="2YIFZM" id="hmWFe7Z3zu" role="33vP2m">
-              <ref role="1Pybhc" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
-              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
-              <node concept="2OqwBi" id="hmWFe7Z3zv" role="37wK5m">
-                <node concept="2WthIp" id="hmWFe7Z3zw" role="2Oq$k0" />
-                <node concept="1DTwFV" id="hmWFe7Z3zx" role="2OqNvi">
-                  <ref role="2WH_rO" node="2OiVRCDoa2h" resolve="project" />
-                </node>
-              </node>
-            </node>
-            <node concept="PeGgZ" id="hmWFe7Z3zy" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1Jivxq$q5kl" role="3cqZAp">
-          <node concept="3KEzu6" id="1Jivxq$q5rX" role="3cpWs9">
-            <property role="TrG5h" value="hintState" />
-            <node concept="2OqwBi" id="1Jivxq$q5rY" role="33vP2m">
-              <node concept="37vLTw" id="hmWFe7Z2Vx" role="2Oq$k0">
-                <ref role="3cqZAo" node="hmWFe7Z3zt" resolve="hintSettings" />
-              </node>
-              <node concept="liA8E" id="1Jivxq$q5s3" role="2OqNvi">
-                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getState()" resolve="getState" />
-              </node>
-            </node>
-            <node concept="PeGgZ" id="1Jivxq$q5s4" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="hmWFe7ZvCw" role="3cqZAp" />
-        <node concept="3SKdUt" id="hmWFe7Zwvk" role="3cqZAp">
-          <node concept="1PaTwC" id="hmWFe7Zwvl" role="1aUNEU">
-            <node concept="3oM_SD" id="hmWFe7ZxqC" role="1PaTwD">
-              <property role="3oM_SC" value="preserve" />
-            </node>
-            <node concept="3oM_SD" id="hmWFe7ZxqM" role="1PaTwD">
-              <property role="3oM_SC" value="existing" />
-            </node>
-            <node concept="3oM_SD" id="hmWFe7ZxqZ" role="1PaTwD">
-              <property role="3oM_SC" value="hints" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="hmWFe7Zhtw" role="3cqZAp">
-          <node concept="2OqwBi" id="hmWFe7Ziup" role="3clFbG">
-            <node concept="37vLTw" id="hmWFe7Zhtu" role="2Oq$k0">
-              <ref role="3cqZAo" node="1Jivxq$q6lJ" resolve="myHints" />
-            </node>
-            <node concept="X8dFx" id="hmWFe7ZjN8" role="2OqNvi">
-              <node concept="2OqwBi" id="hmWFe7ZlcX" role="25WWJ7">
-                <node concept="37vLTw" id="hmWFe7ZkmB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1Jivxq$q5rX" resolve="hintState" />
-                </node>
-                <node concept="liA8E" id="hmWFe7Zm9g" role="2OqNvi">
-                  <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.getEnabledHints()" resolve="getEnabledHints" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1Jivxq$q3Mj" role="3cqZAp">
-          <node concept="2OqwBi" id="1Jivxq$q4LR" role="3clFbG">
-            <node concept="37vLTw" id="1Jivxq$q5kt" role="2Oq$k0">
-              <ref role="3cqZAo" node="1Jivxq$q5rX" resolve="hintState" />
-            </node>
-            <node concept="liA8E" id="1Jivxq$q4Y9" role="2OqNvi">
-              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.setEnabledHints(java.util.Set)" resolve="setEnabledHints" />
-              <node concept="37vLTw" id="1Jivxq$qUdO" role="37wK5m">
-                <ref role="3cqZAo" node="1Jivxq$q6lJ" resolve="myHints" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="hmWFe7Zxr9" role="3cqZAp" />
-        <node concept="3SKdUt" id="hmWFe7ZyWN" role="3cqZAp">
-          <node concept="1PaTwC" id="hmWFe7ZyWO" role="1aUNEU">
-            <node concept="3oM_SD" id="hmWFe7Z$8i" role="1PaTwD">
-              <property role="3oM_SC" value="persist" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1Jivxq$qLcV" role="3cqZAp">
-          <node concept="2OqwBi" id="1Jivxq$qLL3" role="3clFbG">
-            <node concept="37vLTw" id="hmWFe7Z2Vy" role="2Oq$k0">
-              <ref role="3cqZAo" node="hmWFe7Z3zt" resolve="hintSettings" />
-            </node>
-            <node concept="liA8E" id="1Jivxq$qMrf" role="2OqNvi">
-              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.loadState(jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent$HintsState)" resolve="loadState" />
-              <node concept="37vLTw" id="1Jivxq$qMtm" role="37wK5m">
-                <ref role="3cqZAo" node="1Jivxq$q5rX" resolve="hintState" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="hmWFe7ZHah" role="3cqZAp" />
-        <node concept="3SKdUt" id="hmWFe7ZIvf" role="3cqZAp">
-          <node concept="1PaTwC" id="hmWFe7ZIvg" role="1aUNEU">
-            <node concept="3oM_SD" id="hmWFe7ZJCf" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
-            </node>
-            <node concept="3oM_SD" id="hmWFe7ZJCl" role="1PaTwD">
-              <property role="3oM_SC" value="update" />
-            </node>
-            <node concept="3oM_SD" id="hmWFe7ZJCv" role="1PaTwD">
-              <property role="3oM_SC" value="editors" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="sE7Ow" id="1Jivxq$682L">
     <property role="TrG5h" value="EditStyle_Folding" />

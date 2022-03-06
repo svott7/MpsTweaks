@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:90cdcdb2-e332-4303-a701-6e7c3095b7a1(mps.tweaks.console.editor)">
+<model ref="r:90cdcdb2-e332-4303-a701-6e7c3095b7a1(mps.tweaks.editor.console.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -10,6 +10,7 @@
     <import index="eynw" ref="r:359b1d2b-77c4-46df-9bf2-b25cbea32254(jetbrains.mps.console.base.structure)" />
     <import index="4l22" ref="r:f09c85c2-fb88-4283-852e-78d5fc87420e(jetbrains.mps.console.base.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="qi0f" ref="r:866df931-cb25-45ef-8f87-6b19c3afdd68(mps.tweaks.editor.commonhints.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -35,13 +36,6 @@
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
         <reference id="6718020819487620874" name="menu" index="A1WHt" />
-      </concept>
-      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
-        <child id="5944657839000877563" name="hints" index="2ABdcP" />
-      </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
-        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styles" index="V601i" />
@@ -255,21 +249,13 @@
       <node concept="2iRkQZ" id="7Q$BpsAMKBP" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="TtN5BdmRHY" role="CpUAK">
-      <ref role="2$4xQ3" node="TtN5BdmRHS" resolve="MpsConsoleTweaks" />
-    </node>
-  </node>
-  <node concept="2ABfQD" id="TtN5BdmRHR">
-    <property role="TrG5h" value="ConsoleHints" />
-    <node concept="2BsEeg" id="TtN5BdmRHS" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="LightweightMpsConsole" />
-      <property role="2BUmq6" value="MPS Editor Tweaks - Lightweight Console" />
+      <ref role="2$4xQ3" to="qi0f:TtN5BdmRHS" resolve="LightweightMpsConsole" />
     </node>
   </node>
   <node concept="24kQdi" id="1Jivxq$4C1g">
     <ref role="1XX52x" to="eynw:E3nMz1EwaY" resolve="History" />
     <node concept="2aJ2om" id="1Jivxq$4C1m" role="CpUAK">
-      <ref role="2$4xQ3" node="TtN5BdmRHS" resolve="MpsConsoleTweaks" />
+      <ref role="2$4xQ3" to="qi0f:TtN5BdmRHS" resolve="LightweightMpsConsole" />
     </node>
     <node concept="3F2HdR" id="3Rtzc5jtcei" role="2wV5jI">
       <property role="S$F3r" value="true" />
@@ -327,7 +313,7 @@
       <node concept="2iRfu4" id="jysm2GH4W0" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="1Jivxq$5dJt" role="CpUAK">
-      <ref role="2$4xQ3" node="TtN5BdmRHS" resolve="MpsConsoleTweaks" />
+      <ref role="2$4xQ3" to="qi0f:TtN5BdmRHS" resolve="LightweightMpsConsole" />
     </node>
   </node>
   <node concept="24kQdi" id="1Jivxq$5cwS">
@@ -355,7 +341,7 @@
       <node concept="2iRfu4" id="4SV0P5LGPhL" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="1Jivxq$5d$X" role="CpUAK">
-      <ref role="2$4xQ3" node="TtN5BdmRHS" resolve="MpsConsoleTweaks" />
+      <ref role="2$4xQ3" to="qi0f:TtN5BdmRHS" resolve="LightweightMpsConsole" />
     </node>
   </node>
   <node concept="312cEu" id="1Jivxq$5cwU">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8d7fa2b2-ead1-4001-a3b0-e641ab432162(mps.tweaks.lang.editor.editor)">
+<model ref="r:8d7fa2b2-ead1-4001-a3b0-e641ab432162(mps.tweaks.editor.lang.editor.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -13,6 +13,7 @@
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="qi0f" ref="r:866df931-cb25-45ef-8f87-6b19c3afdd68(mps.tweaks.editor.commonhints.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -36,12 +37,6 @@
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
-      </concept>
-      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
-        <child id="5944657839000877563" name="hints" index="2ABdcP" />
-      </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
@@ -191,7 +186,7 @@
   <node concept="24kQdi" id="hmWFe846u5">
     <ref role="1XX52x" to="tpc2:hPHlG0c" resolve="CellModel_ReadOnlyModelAccessor" />
     <node concept="2aJ2om" id="hmWFe846_J" role="CpUAK">
-      <ref role="2$4xQ3" node="hmWFe846_G" resolve="LightweightMpsEditor" />
+      <ref role="2$4xQ3" to="qi0f:hmWFe846_G" resolve="LightweightMpsEditor" />
     </node>
     <node concept="3EZMnI" id="hPHn_nQ" role="2wV5jI">
       <ref role="1k5W1q" to="tpc5:i0pPgF8" resolve="rootCellModelStyle" />
@@ -322,13 +317,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="2ABfQD" id="hmWFe846_F">
-    <property role="TrG5h" value="EditorHints" />
-    <node concept="2BsEeg" id="hmWFe846_G" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="LightweightMpsEditor" />
     </node>
   </node>
   <node concept="PKFIW" id="hF4ssnw">
@@ -660,7 +648,7 @@
   <node concept="24kQdi" id="hmWFe84MCY">
     <ref role="1XX52x" to="tpc2:fPQoSf$" resolve="CellModel_Alternation" />
     <node concept="2aJ2om" id="hmWFe84MD0" role="CpUAK">
-      <ref role="2$4xQ3" node="hmWFe846_G" resolve="LightweightMpsEditor" />
+      <ref role="2$4xQ3" to="qi0f:hmWFe846_G" resolve="LightweightMpsEditor" />
     </node>
     <node concept="3EZMnI" id="fPQpGDC" role="2wV5jI">
       <ref role="1k5W1q" to="tpc5:i0pPgF8" resolve="rootCellModelStyle" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:dd430e1a-b391-4267-9df1-529186d8128b(mps.tweaks.lang.smodel.editor)">
+<model ref="r:dd430e1a-b391-4267-9df1-529186d8128b(mps.tweaks.editor.lang.smodel.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -9,6 +9,7 @@
   </languages>
   <imports>
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="qi0f" ref="r:866df931-cb25-45ef-8f87-6b19c3afdd68(mps.tweaks.editor.commonhints.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -20,12 +21,6 @@
       </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
-      </concept>
-      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
-        <child id="5944657839000877563" name="hints" index="2ABdcP" />
-      </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
@@ -44,9 +39,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
-        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -68,7 +60,7 @@
       <ref role="1NtTu8" to="tp25:h$ri$Pk" resolve="conceptArgument" />
     </node>
     <node concept="2aJ2om" id="6RudgJvtxu2" role="CpUAK">
-      <ref role="2$4xQ3" node="6RudgJvtxu1" resolve="PrettyMps" />
+      <ref role="2$4xQ3" to="qi0f:6RudgJvtxu1" resolve="LightweightSModel" />
     </node>
     <node concept="2r4_x_" id="hmWFe8330$" role="lGtFl">
       <node concept="1Pa9Pv" id="hmWFe8330_" role="2r4PD$">
@@ -87,13 +79,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="2ABfQD" id="hmWFe832PR">
-    <property role="TrG5h" value="SModelHints" />
-    <node concept="2BsEeg" id="6RudgJvtxu1" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="LightweightSModel" />
     </node>
   </node>
 </model>
