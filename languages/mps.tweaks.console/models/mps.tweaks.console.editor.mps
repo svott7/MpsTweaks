@@ -262,7 +262,7 @@
     <property role="TrG5h" value="ConsoleHints" />
     <node concept="2BsEeg" id="TtN5BdmRHS" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="MpsConsoleTweaks" />
+      <property role="TrG5h" value="LightweightMpsConsole" />
       <property role="2BUmq6" value="MPS Editor Tweaks - Lightweight Console" />
     </node>
   </node>

@@ -6,8 +6,10 @@
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.bl.collections/mps.tweaks.bl.collections.mpl" folder="lang-baselang" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.console/mps.tweaks.console.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.doc/mps.tweaks.doc.mpl" folder="lang-doc" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.smodel/mps.tweaks.lang.smodel.mpl" folder="lang-smodel" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.test/mps.tweaks.lang.test.mpl" folder="lang-smodel" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.text.ext/mps.tweaks.lang.text.ext.mpl" folder="lang-doc" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.mpsgenerator/mps.tweaks.mpsgenerator.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.collections.test/mps.tweaks.bl.collections.test.msd" folder="lang-baselang" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.intention.build/mps.tweaks.bl.intention.build.msd" folder="plugin-editing-baselang" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.intention.test/mps.tweaks.bl.intention.test.msd" folder="plugin-editing-baselang" />
