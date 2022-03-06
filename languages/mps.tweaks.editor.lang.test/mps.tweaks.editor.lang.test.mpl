@@ -13,7 +13,6 @@
   <accessoryModels />
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">a8c824c4-b1c9-472d-82b8-ebeddaa94086(mps.tweaks.lang.test)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
@@ -68,7 +67,6 @@
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="118cc110-c028-453e-80ca-3cbea99fd892(mps.tweaks.editor.commonhints)" version="0" />
     <module reference="f8ef0570-cda1-4e22-9095-e908033034c0(mps.tweaks.editor.lang.test)" version="0" />
-    <module reference="a8c824c4-b1c9-472d-82b8-ebeddaa94086(mps.tweaks.lang.test)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</extendedLanguage>
