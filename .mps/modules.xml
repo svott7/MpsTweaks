@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.bl.collections/mps.tweaks.bl.collections.mpl" folder="lang-baselang" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.console/mps.tweaks.console.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.doc/mps.tweaks.doc.mpl" folder="lang-doc" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.editor/mps.tweaks.lang.editor.mpl" folder="lang-smodel" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.smodel/mps.tweaks.lang.smodel.mpl" folder="lang-smodel" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.test/mps.tweaks.lang.test.mpl" folder="lang-smodel" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.text.ext/mps.tweaks.lang.text.ext.mpl" folder="lang-doc" />
