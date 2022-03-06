@@ -2,7 +2,6 @@
 <model ref="r:14507e5b-fa8e-42ea-b6c7-e89d501dc26a(mps.tweaks.bl.collections.templates@generator)">
   <persistence version="9" />
   <languages>
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>

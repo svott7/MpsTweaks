@@ -10,8 +10,6 @@
   </languages>
   <imports>
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
-    <import index="i5bg" ref="r:90cdcdb2-e332-4303-a701-6e7c3095b7a1(mps.tweaks.editor.console.editor)" />
-    <import index="gzee" ref="r:f4d7b517-f9dd-41d4-ab2f-15ec7d3ee719(mps.tweaks.lang.test.editor)" />
     <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings(MPS.Editor/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />

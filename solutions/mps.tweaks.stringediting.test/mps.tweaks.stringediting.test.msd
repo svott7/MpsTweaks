@@ -13,7 +13,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2e2cd1f8-3954-4f13-89cd-44fe9de53d0b(mps.tweaks.stringediting)</dependency>
-    <dependency reexport="false">165c3799-10dd-4c79-aa4f-c23b83b61e82(mps.tweaks.bl.intention)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -25,7 +24,6 @@
     <language slang="l:a8c824c4-b1c9-472d-82b8-ebeddaa94086:mps.tweaks.lang.test" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="165c3799-10dd-4c79-aa4f-c23b83b61e82(mps.tweaks.bl.intention)" version="0" />
     <module reference="2e2cd1f8-3954-4f13-89cd-44fe9de53d0b(mps.tweaks.stringediting)" version="0" />
     <module reference="295dbf5d-7048-4b6c-873f-24308b82810b(mps.tweaks.stringediting.test)" version="0" />
   </dependencyVersions>
