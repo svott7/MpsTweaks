@@ -244,7 +244,7 @@
             <node concept="2YIFZM" id="hmWFe7Z3zu" role="33vP2m">
               <ref role="1Pybhc" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
               <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
-              <node concept="37vLTw" id="42BB1zC0dGA" role="37wK5m">
+              <node concept="37vLTw" id="52Y6DbuGWUP" role="37wK5m">
                 <ref role="3cqZAo" node="42BB1zBZTqm" resolve="project" />
               </node>
             </node>

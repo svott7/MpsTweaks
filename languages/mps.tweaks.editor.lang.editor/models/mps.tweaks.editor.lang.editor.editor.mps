@@ -39,7 +39,10 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
-      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
+        <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
+        <child id="7348800710862477686" name="contextHints" index="3XTboT" />
+      </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -95,6 +98,9 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
+        <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -286,8 +292,8 @@
       <node concept="PMmxH" id="hmWFe84wKy" role="3EZMnx">
         <ref role="PMmxG" node="3CpqeQ1Yte5" resolve="EMPTY_HALF" />
       </node>
-      <node concept="PMmxH" id="hPRAFCa" role="3EZMnx">
-        <ref role="PMmxG" node="hF4ssnw" resolve="NEAT_CellModel_Common" />
+      <node concept="PMmxH" id="52Y6DbuGzYi" role="3EZMnx">
+        <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
       </node>
       <node concept="VPM3Z" id="hPHnIrW" role="3F10Kt">
         <property role="VOm3f" value="false" />
@@ -315,25 +321,14 @@
           <node concept="3oM_SD" id="hmWFe84eO2" role="1PaTwD">
             <property role="3oM_SC" value="top" />
           </node>
+          <node concept="3oM_SD" id="52Y6DbuGzYt" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="52Y6DbuGzY_" role="1PaTwD">
+            <property role="3oM_SC" value="inspector" />
+          </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="PKFIW" id="hF4ssnw">
-    <property role="TrG5h" value="NEAT_CellModel_Common" />
-    <property role="3GE5qa" value="components" />
-    <ref role="1XX52x" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
-    <node concept="3EZMnI" id="hF4zm1w" role="2wV5jI">
-      <node concept="PMmxH" id="3h9t8Jngmp$" role="3EZMnx">
-        <ref role="PMmxG" node="hEUgR_Z" resolve="NEAT_Style_Component" />
-      </node>
-      <node concept="PMmxH" id="hmWFe84wKH" role="3EZMnx">
-        <ref role="PMmxG" node="3CpqeQ1Yte5" resolve="EMPTY_HALF" />
-      </node>
-      <node concept="PMmxH" id="3h9t8JngmpC" role="3EZMnx">
-        <ref role="PMmxG" node="3h9t8Jnexr_" resolve="NEAT_Common_Component" />
-      </node>
-      <node concept="2iRkQZ" id="i2IxuTb" role="2iSdaV" />
     </node>
   </node>
   <node concept="PKFIW" id="hEUgR_Z">
@@ -383,6 +378,12 @@
         <ref role="1k5W1q" to="tpen:hFD5_7H" resolve="RightBrace" />
       </node>
       <node concept="l2Vlx" id="hmWFe84pUA" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="52Y6DbuGcil" role="1PM95z">
+      <ref role="1PE7su" to="tpc5:hEUgR_Z" resolve="Style_Component" />
+    </node>
+    <node concept="2aJ2om" id="52Y6DbuGcin" role="3XTboT">
+      <ref role="2$4xQ3" to="qi0f:hmWFe846_G" resolve="LightweightMpsEditor" />
     </node>
   </node>
   <node concept="PKFIW" id="3h9t8Jnexr_">
@@ -608,10 +609,16 @@
         </node>
       </node>
     </node>
+    <node concept="1PE4EZ" id="52Y6DbuGjED" role="1PM95z">
+      <ref role="1PE7su" to="tpc5:3h9t8Jnexr_" resolve="Common_Component" />
+    </node>
+    <node concept="2aJ2om" id="52Y6DbuGjH_" role="3XTboT">
+      <ref role="2$4xQ3" to="qi0f:hmWFe846_G" resolve="LightweightMpsEditor" />
+    </node>
   </node>
   <node concept="PKFIW" id="3CpqeQ1Yte5">
     <property role="3GE5qa" value="components" />
-    <property role="TrG5h" value="EMPTY_HALF" />
+    <property role="TrG5h" value="SmallVerticalGap" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="3F0ifn" id="3CpqeQ1YtfI" role="2wV5jI">
       <node concept="VPM3Z" id="3CpqeQ1YtfJ" role="3F10Kt" />
@@ -827,13 +834,40 @@
       <node concept="PMmxH" id="hmWFe84Nx0" role="3EZMnx">
         <ref role="PMmxG" node="3CpqeQ1Yte5" resolve="EMPTY_HALF" />
       </node>
-      <node concept="PMmxH" id="hF4tWtV" role="3EZMnx">
-        <ref role="PMmxG" node="hF4ssnw" resolve="NEAT_CellModel_Common" />
+      <node concept="PMmxH" id="52Y6DbuGrwN" role="3EZMnx">
+        <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
       </node>
       <node concept="VPM3Z" id="hEU$Pwd" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
       <node concept="2iRkQZ" id="i2IxuP9" role="2iSdaV" />
+    </node>
+    <node concept="2r4_x_" id="52Y6DbuGrx1" role="lGtFl">
+      <node concept="1Pa9Pv" id="52Y6DbuGrx2" role="2r4PD$">
+        <node concept="1PaTwC" id="52Y6DbuGrx3" role="1PaQFQ">
+          <node concept="3oM_SD" id="52Y6DbuGrx4" role="1PaTwD">
+            <property role="3oM_SC" value="Move" />
+          </node>
+          <node concept="3oM_SD" id="52Y6DbuGrJp" role="1PaTwD">
+            <property role="3oM_SC" value="condition" />
+          </node>
+          <node concept="3oM_SD" id="52Y6DbuGrIx" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="52Y6DbuGrI_" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="52Y6DbuGrIE" role="1PaTwD">
+            <property role="3oM_SC" value="top" />
+          </node>
+          <node concept="3oM_SD" id="52Y6DbuGrIK" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="52Y6DbuGrIR" role="1PaTwD">
+            <property role="3oM_SC" value="inspector" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
