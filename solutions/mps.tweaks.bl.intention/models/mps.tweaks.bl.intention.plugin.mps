@@ -11,7 +11,6 @@
     <use id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="acfc188d-d5d6-4598-b370-6f4a983f05b2" name="jetbrains.mps.baseLanguage.methodReferences" version="0" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -279,16 +278,6 @@
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
-    <language id="acfc188d-d5d6-4598-b370-6f4a983f05b2" name="jetbrains.mps.baseLanguage.methodReferences">
-      <concept id="7915009415671748557" name="jetbrains.mps.baseLanguage.methodReferences.structure.MethodReferenceTypeTargetExpression" flags="ng" index="2FaPjH">
-        <child id="7915009415671751864" name="type" index="2FaQuo" />
-      </concept>
-      <concept id="237887375562511215" name="jetbrains.mps.baseLanguage.methodReferences.structure.MethodReference" flags="ng" index="37Ijox" />
-      <concept id="3507059745126391419" name="jetbrains.mps.baseLanguage.methodReferences.structure.IMethodReference" flags="ng" index="3UZKCU">
-        <reference id="237887375562511297" name="method" index="37Ijqf" />
-        <child id="962278442658307079" name="target" index="wWaWy" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -380,6 +369,9 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1196978630214" name="jetbrains.mps.lang.core.structure.IResolveInfo" flags="ng" index="2Lv6Xg">
+        <property id="1196978656277" name="resolveInfo" index="2Lvdk3" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -4713,11 +4705,22 @@
               </node>
               <node concept="liA8E" id="1Jivxq$pNQv" role="2OqNvi">
                 <ref role="37wK5l" to="1ctc:~Stream.filter(java.util.function.Predicate)" resolve="filter" />
-                <node concept="37Ijox" id="1Jivxq$pQu5" role="37wK5m">
-                  <ref role="37Ijqf" node="1Jivxq$pJkw" resolve="dontBelongsToItsOwnerAnymore" />
-                  <node concept="2FaPjH" id="1Jivxq$pQu7" role="wWaWy">
-                    <node concept="3uibUv" id="1Jivxq$pQu8" role="2FaQuo">
-                      <ref role="3uigEE" node="1Jivxq$nSlL" resolve="SModelProperties" />
+                <node concept="1bVj0M" id="52Y6DbuL9AC" role="37wK5m">
+                  <node concept="gl6BB" id="52Y6DbuL9AE" role="1bW2Oz">
+                    <property role="TrG5h" value="p" />
+                    <property role="3TUv4t" value="false" />
+                    <property role="2Lvdk3" value="p" />
+                    <node concept="2jxLKc" id="52Y6DbuL9AF" role="1tU5fm" />
+                  </node>
+                  <node concept="3clFbS" id="52Y6DbuL9AH" role="1bW5cS">
+                    <node concept="3clFbF" id="52Y6DbuL9AI" role="3cqZAp">
+                      <node concept="2YIFZM" id="52Y6DbuL9AD" role="3clFbG">
+                        <ref role="37wK5l" node="1Jivxq$pJkw" resolve="dontBelongsToItsOwnerAnymore" />
+                        <ref role="1Pybhc" node="1Jivxq$nSlL" resolve="SModelProperties" />
+                        <node concept="37vLTw" id="52Y6DbuL9AG" role="37wK5m">
+                          <ref role="3cqZAo" node="52Y6DbuL9AE" resolve="p" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -4769,11 +4772,22 @@
             </node>
             <node concept="liA8E" id="1Jivxq$oPxj" role="2OqNvi">
               <ref role="37wK5l" to="1ctc:~Stream.anyMatch(java.util.function.Predicate)" resolve="anyMatch" />
-              <node concept="37Ijox" id="1Jivxq$pSVj" role="37wK5m">
-                <ref role="37Ijqf" node="1Jivxq$pJkw" resolve="dontBelongsToItsOwnerAnymore" />
-                <node concept="2FaPjH" id="1Jivxq$pSVk" role="wWaWy">
-                  <node concept="3uibUv" id="1Jivxq$pSVl" role="2FaQuo">
-                    <ref role="3uigEE" node="1Jivxq$nSlL" resolve="SModelProperties" />
+              <node concept="1bVj0M" id="52Y6DbuL9WF" role="37wK5m">
+                <node concept="gl6BB" id="52Y6DbuL9WH" role="1bW2Oz">
+                  <property role="TrG5h" value="p" />
+                  <property role="3TUv4t" value="false" />
+                  <property role="2Lvdk3" value="p" />
+                  <node concept="2jxLKc" id="52Y6DbuL9WI" role="1tU5fm" />
+                </node>
+                <node concept="3clFbS" id="52Y6DbuL9WK" role="1bW5cS">
+                  <node concept="3clFbF" id="52Y6DbuL9WL" role="3cqZAp">
+                    <node concept="2YIFZM" id="52Y6DbuL9WG" role="3clFbG">
+                      <ref role="37wK5l" node="1Jivxq$pJkw" resolve="dontBelongsToItsOwnerAnymore" />
+                      <ref role="1Pybhc" node="1Jivxq$nSlL" resolve="SModelProperties" />
+                      <node concept="37vLTw" id="52Y6DbuL9WJ" role="37wK5m">
+                        <ref role="3cqZAo" node="52Y6DbuL9WH" resolve="p" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
