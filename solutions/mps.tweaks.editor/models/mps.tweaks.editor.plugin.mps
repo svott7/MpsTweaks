@@ -14,6 +14,8 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="qi0f" ref="r:866df931-cb25-45ef-8f87-6b19c3afdd68(mps.tweaks.editor.commonhints.editor)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -234,6 +236,31 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="52Y6DbuH2W8" role="jymVt" />
+    <node concept="2YIFZL" id="52Y6DbuH5XV" role="jymVt">
+      <property role="TrG5h" value="unsetDefault" />
+      <node concept="3clFbS" id="52Y6DbuH5XY" role="3clF47">
+        <node concept="3clFbF" id="52Y6DbuHxd9" role="3cqZAp">
+          <node concept="1rXfSq" id="52Y6DbuHxd8" role="3clFbG">
+            <ref role="37wK5l" node="52Y6DbuH6Pg" resolve="unset" />
+            <node concept="37vLTw" id="52Y6DbuHxX4" role="37wK5m">
+              <ref role="3cqZAo" node="52Y6DbuH6tn" resolve="project" />
+            </node>
+            <node concept="37vLTw" id="52Y6DbuHycn" role="37wK5m">
+              <ref role="3cqZAo" node="42BB1zC07rF" resolve="defaultMpsTweaksHints" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="52Y6DbuH3k5" role="1B3o_S" />
+      <node concept="3cqZAl" id="52Y6DbuH5Ws" role="3clF45" />
+      <node concept="37vLTG" id="52Y6DbuH6tn" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="52Y6DbuH6tm" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="42BB1zBZZPx" role="jymVt" />
     <node concept="2YIFZL" id="42BB1zBZUQ6" role="jymVt">
       <property role="TrG5h" value="set" />
@@ -360,6 +387,129 @@
       <node concept="3cqZAl" id="42BB1zBZM7M" role="3clF45" />
       <node concept="3Tm1VV" id="42BB1zBZJTe" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="52Y6DbuH7K5" role="jymVt" />
+    <node concept="2YIFZL" id="52Y6DbuH6Pg" role="jymVt">
+      <property role="TrG5h" value="unset" />
+      <node concept="3clFbS" id="52Y6DbuH6Ph" role="3clF47">
+        <node concept="3cpWs8" id="52Y6DbuH6Pi" role="3cqZAp">
+          <node concept="3KEzu6" id="52Y6DbuH6Pj" role="3cpWs9">
+            <property role="TrG5h" value="hintSettings" />
+            <node concept="2YIFZM" id="52Y6DbuH6Pk" role="33vP2m">
+              <ref role="1Pybhc" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
+              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
+              <node concept="37vLTw" id="52Y6DbuH6Pl" role="37wK5m">
+                <ref role="3cqZAo" node="52Y6DbuH6PY" resolve="project" />
+              </node>
+            </node>
+            <node concept="PeGgZ" id="52Y6DbuH6Pm" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="52Y6DbuH6Pn" role="3cqZAp">
+          <node concept="3KEzu6" id="52Y6DbuH6Po" role="3cpWs9">
+            <property role="TrG5h" value="hintState" />
+            <node concept="2OqwBi" id="52Y6DbuH6Pp" role="33vP2m">
+              <node concept="37vLTw" id="52Y6DbuH6Pq" role="2Oq$k0">
+                <ref role="3cqZAo" node="52Y6DbuH6Pj" resolve="hintSettings" />
+              </node>
+              <node concept="liA8E" id="52Y6DbuH6Pr" role="2OqNvi">
+                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getState()" resolve="getState" />
+              </node>
+            </node>
+            <node concept="PeGgZ" id="52Y6DbuH6Ps" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="52Y6DbuH6Pt" role="3cqZAp" />
+        <node concept="3cpWs8" id="52Y6DbuHj8y" role="3cqZAp">
+          <node concept="3KEzu6" id="52Y6DbuHouX" role="3cpWs9">
+            <property role="TrG5h" value="enabledHints" />
+            <node concept="2OqwBi" id="52Y6DbuHouY" role="33vP2m">
+              <node concept="37vLTw" id="52Y6DbuHouZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="52Y6DbuH6Po" resolve="hintState" />
+              </node>
+              <node concept="liA8E" id="52Y6DbuHov0" role="2OqNvi">
+                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.getEnabledHints()" resolve="getEnabledHints" />
+              </node>
+            </node>
+            <node concept="PeGgZ" id="52Y6DbuHov1" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="52Y6DbuHqnL" role="3cqZAp">
+          <node concept="2OqwBi" id="52Y6DbuHs03" role="3clFbG">
+            <node concept="37vLTw" id="52Y6DbuHqnJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="52Y6DbuHouX" resolve="enabledHints" />
+            </node>
+            <node concept="liA8E" id="52Y6DbuHty_" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Set.removeAll(java.util.Collection)" resolve="removeAll" />
+              <node concept="37vLTw" id="52Y6DbuHv6V" role="37wK5m">
+                <ref role="3cqZAo" node="42BB1zC07rF" resolve="defaultMpsTweaksHints" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="52Y6DbuH6PE" role="3cqZAp">
+          <node concept="2OqwBi" id="52Y6DbuH6PF" role="3clFbG">
+            <node concept="37vLTw" id="52Y6DbuH6PG" role="2Oq$k0">
+              <ref role="3cqZAo" node="52Y6DbuH6Po" resolve="hintState" />
+            </node>
+            <node concept="liA8E" id="52Y6DbuH6PH" role="2OqNvi">
+              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.setEnabledHints(java.util.Set)" resolve="setEnabledHints" />
+              <node concept="37vLTw" id="52Y6DbuH6PI" role="37wK5m">
+                <ref role="3cqZAo" node="52Y6DbuH6Q0" resolve="hints" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="52Y6DbuH6PJ" role="3cqZAp" />
+        <node concept="3SKdUt" id="52Y6DbuH6PK" role="3cqZAp">
+          <node concept="1PaTwC" id="52Y6DbuH6PL" role="1aUNEU">
+            <node concept="3oM_SD" id="52Y6DbuH6PM" role="1PaTwD">
+              <property role="3oM_SC" value="persist" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="52Y6DbuH6PN" role="3cqZAp">
+          <node concept="2OqwBi" id="52Y6DbuH6PO" role="3clFbG">
+            <node concept="37vLTw" id="52Y6DbuH6PP" role="2Oq$k0">
+              <ref role="3cqZAo" node="52Y6DbuH6Pj" resolve="hintSettings" />
+            </node>
+            <node concept="liA8E" id="52Y6DbuH6PQ" role="2OqNvi">
+              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.loadState(jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent$HintsState)" resolve="loadState" />
+              <node concept="37vLTw" id="52Y6DbuH6PR" role="37wK5m">
+                <ref role="3cqZAo" node="52Y6DbuH6Po" resolve="hintState" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="52Y6DbuH6PS" role="3cqZAp" />
+        <node concept="3SKdUt" id="52Y6DbuH6PT" role="3cqZAp">
+          <node concept="1PaTwC" id="52Y6DbuH6PU" role="1aUNEU">
+            <node concept="3oM_SD" id="52Y6DbuH6PV" role="1PaTwD">
+              <property role="3oM_SC" value="todo" />
+            </node>
+            <node concept="3oM_SD" id="52Y6DbuH6PW" role="1PaTwD">
+              <property role="3oM_SC" value="update" />
+            </node>
+            <node concept="3oM_SD" id="52Y6DbuH6PX" role="1PaTwD">
+              <property role="3oM_SC" value="editors" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="52Y6DbuH6PY" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="52Y6DbuH6PZ" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="52Y6DbuH6Q0" role="3clF46">
+        <property role="TrG5h" value="hintsToUnset" />
+        <node concept="2hMVRd" id="52Y6DbuH6Q1" role="1tU5fm">
+          <node concept="17QB3L" id="52Y6DbuH6Q2" role="2hN53Y" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="52Y6DbuH6Q3" role="3clF45" />
+      <node concept="3Tm1VV" id="52Y6DbuH6Q4" role="1B3o_S" />
+    </node>
     <node concept="3Tm1VV" id="42BB1zBZJ$W" role="1B3o_S" />
   </node>
   <node concept="2uRRBy" id="42BB1zBZPAX">
@@ -374,6 +524,31 @@
               <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="1KvdUw" id="42BB1zC0py9" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="52Y6DbuHyqh">
+    <property role="TrG5h" value="UnsetMpsTweaksEditorHint" />
+    <property role="2uzpH1" value="Set all MPS Tweaks Editor Hints" />
+    <node concept="1DS2jV" id="52Y6DbuHyqi" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="52Y6DbuHyqj" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="52Y6DbuHyqk" role="tncku">
+      <node concept="3clFbS" id="52Y6DbuHyql" role="2VODD2">
+        <node concept="3clFbF" id="52Y6DbuHyqm" role="3cqZAp">
+          <node concept="2YIFZM" id="52Y6DbuHzYY" role="3clFbG">
+            <ref role="37wK5l" node="52Y6DbuH5XV" resolve="unsetDefault" />
+            <ref role="1Pybhc" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
+            <node concept="2OqwBi" id="52Y6DbuHzYZ" role="37wK5m">
+              <node concept="2WthIp" id="52Y6DbuHzZ0" role="2Oq$k0" />
+              <node concept="1DTwFV" id="52Y6DbuHzZ1" role="2OqNvi">
+                <ref role="2WH_rO" node="52Y6DbuHyqi" resolve="project" />
+              </node>
             </node>
           </node>
         </node>

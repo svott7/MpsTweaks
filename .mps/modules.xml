@@ -14,9 +14,9 @@
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.test/mps.tweaks.lang.test.mpl" folder="lang-test" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.text.ext/mps.tweaks.lang.text.ext.mpl" folder="lang-doc" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.collections.test/mps.tweaks.bl.collections.test.msd" folder="lang-baselang" />
-      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.intention.build/mps.tweaks.bl.intention.build.msd" folder="plugin-editing-baselang" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.intention.test/mps.tweaks.bl.intention.test.msd" folder="plugin-editing-baselang" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.intention/mps.tweaks.bl.intention.msd" folder="plugin-editing-baselang" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.build/mps.tweaks.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.editor/mps.tweaks.editor.msd" folder="editor" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.smodel/mps.tweaks.smodel.msd" folder="plugin-editing-smodel" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.stringediting.test/mps.tweaks.stringediting.test.msd" folder="plugin-editing-string" />

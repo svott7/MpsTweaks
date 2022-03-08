@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mps.tweaks.bl.intention.build" uuid="0495dfb6-eca4-4ada-9e05-0f161505cfd0" moduleVersion="0" compileInMPS="true">
+<solution name="mps.tweaks.build" uuid="0495dfb6-eca4-4ada-9e05-0f161505cfd0" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -21,7 +21,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
-    <module reference="0495dfb6-eca4-4ada-9e05-0f161505cfd0(mps.tweaks.bl.intention.build)" version="0" />
+    <module reference="0495dfb6-eca4-4ada-9e05-0f161505cfd0(mps.tweaks.build)" version="0" />
   </dependencyVersions>
 </solution>
 

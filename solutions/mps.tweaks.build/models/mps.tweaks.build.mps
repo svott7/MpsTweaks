@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f08a91e6-94ae-481e-82ca-4912c424b149(mps.tweaks.bl.intention.build)">
+<model ref="r:f08a91e6-94ae-481e-82ca-4912c424b149(mps.tweaks.build)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -961,6 +961,11 @@
         <node concept="1SiIV0" id="42BB1zC9$5r" role="3bR37C">
           <node concept="3bR9La" id="42BB1zC9$5s" role="1SiIV1">
             <ref role="3bR37D" node="42BB1zC9z_9" resolve="mps.tweaks.editor.commonhints" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="52Y6DbuIqz0" role="3bR37C">
+          <node concept="3bR9La" id="52Y6DbuIqz1" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
       </node>
