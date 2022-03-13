@@ -11,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.lang.smodel/mps.tweaks.editor.lang.smodel.mpl" folder="editor" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.lang.test/mps.tweaks.editor.lang.test.mpl" folder="editor" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.mpsgenerator/mps.tweaks.editor.mpsgenerator.mpl" folder="editor" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.wrapdotexpr/mps.tweaks.editor.wrapdotexpr.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.test/mps.tweaks.lang.test.mpl" folder="lang-test" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.lang.text.ext/mps.tweaks.lang.text.ext.mpl" folder="lang-doc" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.bl.collections.test/mps.tweaks.bl.collections.test.msd" folder="lang-baselang" />
