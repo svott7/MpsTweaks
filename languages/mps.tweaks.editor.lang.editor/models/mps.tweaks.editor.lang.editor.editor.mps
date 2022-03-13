@@ -268,7 +268,7 @@
         <node concept="l2Vlx" id="hmWFe84dqG" role="2iSdaV" />
       </node>
       <node concept="PMmxH" id="hmWFe84wKy" role="3EZMnx">
-        <ref role="PMmxG" node="3CpqeQ1Yte5" resolve="EMPTY_HALF" />
+        <ref role="PMmxG" to="qi0f:3CpqeQ1Yte5" resolve="SmallVerticalGap20" />
       </node>
       <node concept="PMmxH" id="52Y6DbuGzYi" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
@@ -774,7 +774,7 @@
         <node concept="l2Vlx" id="hmWFe857hF" role="2iSdaV" />
       </node>
       <node concept="PMmxH" id="hmWFe84Nx0" role="3EZMnx">
-        <ref role="PMmxG" node="3CpqeQ1Yte5" resolve="EMPTY_HALF" />
+        <ref role="PMmxG" to="qi0f:3CpqeQ1Yte5" resolve="SmallVerticalGap20" />
       </node>
       <node concept="PMmxH" id="52Y6DbuGrwN" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
@@ -810,6 +810,29 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="Qs8f1kFccw">
+    <property role="3GE5qa" value="components" />
+    <property role="TrG5h" value="NEAT_CellModel_Common" />
+    <ref role="1XX52x" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1PE4EZ" id="Qs8f1kFccy" role="1PM95z">
+      <ref role="1PE7su" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
+    </node>
+    <node concept="2aJ2om" id="Qs8f1kFcc$" role="3XTboT">
+      <ref role="2$4xQ3" to="qi0f:hmWFe846_G" resolve="LightweightMpsEditor" />
+    </node>
+    <node concept="3EZMnI" id="hF4zm1w" role="2wV5jI">
+      <node concept="PMmxH" id="3h9t8Jngmp$" role="3EZMnx">
+        <ref role="PMmxG" to="tpc5:hEUgR_Z" resolve="Style_Component" />
+      </node>
+      <node concept="PMmxH" id="Qs8f1kFccF" role="3EZMnx">
+        <ref role="PMmxG" to="qi0f:3CpqeQ1Yte5" resolve="SmallVerticalGap20" />
+      </node>
+      <node concept="PMmxH" id="3h9t8JngmpC" role="3EZMnx">
+        <ref role="PMmxG" to="tpc5:3h9t8Jnexr_" resolve="Common_Component" />
+      </node>
+      <node concept="2iRkQZ" id="i2IxuTb" role="2iSdaV" />
     </node>
   </node>
 </model>
