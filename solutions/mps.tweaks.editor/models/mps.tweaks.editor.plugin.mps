@@ -308,7 +308,7 @@
                 </node>
                 <node concept="3cpWs3" id="6Qju3tFdz2a" role="3uHU7B">
                   <node concept="Xl_RD" id="6Qju3tFdza0" role="3uHU7B">
-                    <property role="Xl_RC" value="SET " />
+                    <property role="Xl_RC" value="Set " />
                   </node>
                   <node concept="2OqwBi" id="6Qju3tFdumx" role="3uHU7w">
                     <node concept="2WthIp" id="6Qju3tFdum$" role="2Oq$k0" />
@@ -518,20 +518,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="hmWFe7ZHah" role="3cqZAp" />
-        <node concept="3SKdUt" id="hmWFe7ZIvf" role="3cqZAp">
-          <node concept="1PaTwC" id="hmWFe7ZIvg" role="1aUNEU">
-            <node concept="3oM_SD" id="hmWFe7ZJCf" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
-            </node>
-            <node concept="3oM_SD" id="hmWFe7ZJCl" role="1PaTwD">
-              <property role="3oM_SC" value="update" />
-            </node>
-            <node concept="3oM_SD" id="hmWFe7ZJCv" role="1PaTwD">
-              <property role="3oM_SC" value="editors" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="37vLTG" id="42BB1zBZTqm" role="3clF46">
         <property role="TrG5h" value="project" />
@@ -602,7 +588,7 @@
             <node concept="liA8E" id="52Y6DbuHty_" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Set.removeAll(java.util.Collection)" resolve="removeAll" />
               <node concept="37vLTw" id="52Y6DbuHv6V" role="37wK5m">
-                <ref role="3cqZAo" node="42BB1zC07rF" resolve="defaultMpsTweaksHints" />
+                <ref role="3cqZAo" node="52Y6DbuH6Q0" resolve="hintsToUnset" />
               </node>
             </node>
           </node>
@@ -615,7 +601,7 @@
             <node concept="liA8E" id="52Y6DbuH6PH" role="2OqNvi">
               <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.setEnabledHints(java.util.Set)" resolve="setEnabledHints" />
               <node concept="37vLTw" id="52Y6DbuH6PI" role="37wK5m">
-                <ref role="3cqZAo" node="52Y6DbuH6Q0" resolve="hints" />
+                <ref role="3cqZAo" node="52Y6DbuHouX" resolve="enabledHints" />
               </node>
             </node>
           </node>
@@ -638,20 +624,6 @@
               <node concept="37vLTw" id="52Y6DbuH6PR" role="37wK5m">
                 <ref role="3cqZAo" node="52Y6DbuH6Po" resolve="hintState" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="52Y6DbuH6PS" role="3cqZAp" />
-        <node concept="3SKdUt" id="52Y6DbuH6PT" role="3cqZAp">
-          <node concept="1PaTwC" id="52Y6DbuH6PU" role="1aUNEU">
-            <node concept="3oM_SD" id="52Y6DbuH6PV" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
-            </node>
-            <node concept="3oM_SD" id="52Y6DbuH6PW" role="1PaTwD">
-              <property role="3oM_SC" value="update" />
-            </node>
-            <node concept="3oM_SD" id="52Y6DbuH6PX" role="1PaTwD">
-              <property role="3oM_SC" value="editors" />
             </node>
           </node>
         </node>
@@ -779,7 +751,7 @@
                 </node>
                 <node concept="3cpWs3" id="6Qju3tFd$Am" role="3uHU7B">
                   <node concept="Xl_RD" id="6Qju3tFd$An" role="3uHU7B">
-                    <property role="Xl_RC" value="UNSET " />
+                    <property role="Xl_RC" value="Unset " />
                   </node>
                   <node concept="2OqwBi" id="6Qju3tFd$Ao" role="3uHU7w">
                     <node concept="2WthIp" id="6Qju3tFd$Ap" role="2Oq$k0" />
