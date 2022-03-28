@@ -475,11 +475,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
-        <node concept="1SiIV0" id="42BB1zC9$4f" role="3bR37C">
-          <node concept="3bR9La" id="42BB1zC9$4g" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="42BB1zC9$4h" role="3bR37C">
           <node concept="3bR9La" id="42BB1zC9$4i" role="1SiIV1">
             <ref role="3bR37D" node="42BB1zC9z_9" resolve="mps.tweaks.editor.commonhints" />
@@ -606,6 +601,46 @@
         <node concept="1SiIV0" id="7AKLO0DfUfk" role="3bR37C">
           <node concept="1Busua" id="7AKLO0DfUfl" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L8K" resolve="jetbrains.mps.lang.plugin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pR7" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pR8" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pR9" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRb" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRd" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRe" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lfd" resolve="jetbrains.mps.findUsages.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRf" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRh" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRj" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRk" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRl" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRm" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
           </node>
         </node>
       </node>
@@ -936,6 +971,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRB" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRC" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRD" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRE" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="42BB1zC9zrj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -991,6 +1036,11 @@
         <node concept="1SiIV0" id="52Y6DbuIqz0" role="3bR37C">
           <node concept="3bR9La" id="52Y6DbuIqz1" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3q45UAZ5pRJ" role="3bR37C">
+          <node concept="3bR9La" id="3q45UAZ5pRK" role="1SiIV1">
+            <ref role="3bR37D" node="2NY6dYJtPdq" resolve="mps.tweaks.smodel" />
           </node>
         </node>
       </node>
