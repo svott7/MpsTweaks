@@ -403,7 +403,6 @@
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -683,7 +682,7 @@
         <property role="3F0ifm" value="not" />
         <ref role="1ERwB7" to="tpen:gAoZK6N" resolve="NotExpression_Parens_Actions" />
         <node concept="Vb9p2" id="Qs8f1k_cwA" role="3F10Kt">
-          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="3F1sOY" id="fJC3FST" role="3EZMnx">
@@ -2622,7 +2621,9 @@
                       <node concept="37vLTw" id="Qs8f1kEyAC" role="2Oq$k0">
                         <ref role="3cqZAo" node="Qs8f1kEyA$" resolve="type" />
                       </node>
-                      <node concept="2Iv5rx" id="Qs8f1kEiH5" role="2OqNvi" />
+                      <node concept="2qgKlT" id="1s9vchRAWm4" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      </node>
                     </node>
                   </node>
                 </node>
