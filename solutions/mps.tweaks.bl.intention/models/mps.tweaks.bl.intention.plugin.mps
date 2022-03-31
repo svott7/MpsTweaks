@@ -432,6 +432,10 @@
       <ref role="tU$_T" to="ekwn:5YEoTZrFokU" resolve="ActionsAsIntentions" />
     </node>
     <node concept="ftmFs" id="Ad1GYpm9SE" role="ftER_">
+      <node concept="tCFHf" id="1s9vchRD$rP" role="ftvYc">
+        <ref role="tCJdB" node="1Jivxq$nSiv" resolve="DeleteObsoleteProperties" />
+      </node>
+      <node concept="2a7GMi" id="1s9vchRD$r5" role="ftvYc" />
       <node concept="tCFHf" id="1Jivxq$kk0d" role="ftvYc">
         <ref role="tCJdB" node="1Jivxq$bxFA" resolve="FixNode_ToNodeExpression" />
       </node>
@@ -4703,6 +4707,39 @@
         </node>
       </node>
     </node>
+    <node concept="2r4_x_" id="1s9vchRE4qL" role="lGtFl">
+      <node concept="1Pa9Pv" id="1s9vchRE4qM" role="2r4PD$">
+        <node concept="1PaTwC" id="1s9vchRE4qN" role="1PaQFQ">
+          <node concept="3oM_SD" id="1s9vchRE4qO" role="1PaTwD">
+            <property role="3oM_SC" value="Removes" />
+          </node>
+          <node concept="3oM_SD" id="1s9vchRE4we" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="1s9vchRE4wh" role="1PaTwD">
+            <property role="3oM_SC" value="obsolete" />
+          </node>
+          <node concept="3oM_SD" id="1s9vchRE4wl" role="1PaTwD">
+            <property role="3oM_SC" value="property" />
+          </node>
+          <node concept="3oM_SD" id="1s9vchRE4wq" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="1s9vchRE4ww" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="1s9vchRE4wS" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="1s9vchRE4x0" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="1s9vchRE4x9" role="1PaTwD">
+            <property role="3oM_SC" value="any" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="1Jivxq$nSlL">
     <property role="3GE5qa" value="refactoring" />
@@ -4839,6 +4876,9 @@
             <ref role="37wK5l" to="1ctc:~StreamSupport.stream(java.util.Spliterator,boolean)" resolve="stream" />
             <ref role="1Pybhc" to="1ctc:~StreamSupport" resolve="StreamSupport" />
             <node concept="2OqwBi" id="1Jivxq$p4sA" role="37wK5m">
+              <node concept="liA8E" id="1Jivxq$p4sF" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Iterable.spliterator()" resolve="spliterator" />
+              </node>
               <node concept="2OqwBi" id="1Jivxq$p4sB" role="2Oq$k0">
                 <node concept="2JrnkZ" id="1Jivxq$p4sC" role="2Oq$k0">
                   <node concept="37vLTw" id="1Jivxq$p4sR" role="2JrQYb">
@@ -4848,9 +4888,6 @@
                 <node concept="liA8E" id="1Jivxq$p4sE" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.getProperties()" resolve="getProperties" />
                 </node>
-              </node>
-              <node concept="liA8E" id="1Jivxq$p4sF" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Iterable.spliterator()" resolve="spliterator" />
               </node>
             </node>
             <node concept="3clFbT" id="1Jivxq$p4sG" role="37wK5m">
