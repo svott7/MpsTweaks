@@ -35,6 +35,7 @@
     <import index="dvap" ref="r:931e38db-856b-4b95-8ae0-a7cd13da6d32(jetbrains.mps.baseLanguage.varVariable.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
@@ -296,6 +297,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -1641,6 +1643,105 @@
     <node concept="2YIFZL" id="6Qju3tF8sPz" role="jymVt">
       <property role="TrG5h" value="varUsages" />
       <node concept="3clFbS" id="6Qju3tF8sPA" role="3clF47">
+        <node concept="3SKdUt" id="7ERSpura9Hr" role="3cqZAp">
+          <node concept="1PaTwC" id="7ERSpura9Hs" role="1aUNEU">
+            <node concept="3oM_SD" id="7ERSpuraa5n" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraa5p" role="1PaTwD">
+              <property role="3oM_SC" value="don't" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraa5s" role="1PaTwD">
+              <property role="3oM_SC" value="want" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraa5w" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraa5_" role="1PaTwD">
+              <property role="3oM_SC" value="search" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraa5F" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraa5M" role="1PaTwD">
+              <property role="3oM_SC" value="external" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraa5U" role="1PaTwD">
+              <property role="3oM_SC" value="modules" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpurabGi" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpurabGs" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpurabGJ" role="1PaTwD">
+              <property role="3oM_SC" value="can" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpurabH3" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpurabIy" role="1PaTwD">
+              <property role="3oM_SC" value="really" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpurabIS" role="1PaTwD">
+              <property role="3oM_SC" value="slow" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7ERSpuraatw" role="3cqZAp">
+          <node concept="1PaTwC" id="7ERSpuraatx" role="1aUNEU">
+            <node concept="3oM_SD" id="7ERSpuraauh" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraaB4" role="1PaTwD">
+              <property role="3oM_SC" value="todo" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraaB7" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraaF0" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraaFd" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraaFz" role="1PaTwD">
+              <property role="3oM_SC" value="stub" />
+            </node>
+            <node concept="3oM_SD" id="7ERSpuraaFE" role="1PaTwD">
+              <property role="3oM_SC" value="model?" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7ERSpur95xg" role="3cqZAp">
+          <node concept="3clFbS" id="7ERSpur95xi" role="3clFbx">
+            <node concept="3cpWs6" id="7ERSpur960p" role="3cqZAp">
+              <node concept="3cmrfG" id="7ERSpur968a" role="3cqZAk">
+                <property role="3cmrfH" value="2" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7ERSpur94Su" role="3clFbw">
+            <node concept="2OqwBi" id="7ERSpur94ut" role="2Oq$k0">
+              <node concept="liA8E" id="7ERSpur94GA" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+              </node>
+              <node concept="2JrnkZ" id="7ERSpur94uA" role="2Oq$k0">
+                <node concept="2OqwBi" id="7ERSpur93fW" role="2JrQYb">
+                  <node concept="37vLTw" id="7ERSpur936i" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6Qju3tF8tlv" resolve="node" />
+                  </node>
+                  <node concept="I4A8Y" id="7ERSpur93Co" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="7ERSpur957y" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~SModule.isReadOnly()" resolve="isReadOnly" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7ERSpura9Uv" role="3cqZAp" />
         <node concept="3cpWs8" id="6Qju3tF8sXw" role="3cqZAp">
           <node concept="3cpWsn" id="6Qju3tF8sXx" role="3cpWs9">
             <property role="TrG5h" value="results" />
