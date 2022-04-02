@@ -35,6 +35,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -202,6 +203,7 @@
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
         <property id="1088613081987" name="vertical" index="1QpmdY" />
         <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
@@ -517,9 +519,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="52Y6DbuLsIA">
+    <property role="3GE5qa" value="experimental" />
     <ref role="1XX52x" to="dvap:hZKEzqp" resolve="VarVariableDeclaration" />
     <node concept="2aJ2om" id="52Y6DbuLsIC" role="CpUAK">
-      <ref role="2$4xQ3" to="qi0f:6RudgJvtxu1" resolve="LightweightSModel" />
+      <ref role="2$4xQ3" to="qi0f:7ERSpuqQNgD" resolve="LightweightSModel__Experimental" />
     </node>
     <node concept="3EZMnI" id="hiAXQQr" role="2wV5jI">
       <node concept="3EZMnI" id="hiBuNci" role="3EZMnx">
@@ -2430,10 +2433,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="6TyyN3Pt56k">
-    <property role="3GE5qa" value="show-type" />
+    <property role="3GE5qa" value="experimental" />
     <ref role="1XX52x" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
     <node concept="2aJ2om" id="6TyyN3Pt5vc" role="CpUAK">
-      <ref role="2$4xQ3" to="qi0f:6RudgJvtxu1" resolve="LightweightSModel" />
+      <ref role="2$4xQ3" to="qi0f:7ERSpuqQNgD" resolve="LightweightSModel__Experimental" />
     </node>
     <node concept="3EZMnI" id="Qs8f1kBeD0" role="2wV5jI">
       <node concept="2iRfu4" id="Qs8f1kBeD1" role="2iSdaV" />
@@ -2583,6 +2586,21 @@
         </node>
         <node concept="pkWqt" id="Qs8f1kDaNs" role="pqm2j">
           <node concept="3clFbS" id="Qs8f1kDaNt" role="2VODD2">
+            <node concept="3clFbJ" id="1s9vchRH3Mo" role="3cqZAp">
+              <node concept="3clFbS" id="1s9vchRH3Mq" role="3clFbx">
+                <node concept="3cpWs6" id="1s9vchRH4Fe" role="3cqZAp">
+                  <node concept="3clFbT" id="1s9vchRH4Zw" role="3cqZAk" />
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="1s9vchRH4op" role="3clFbw">
+                <node concept="2OqwBi" id="1s9vchRH4or" role="3fr31v">
+                  <node concept="1Q80Hx" id="1s9vchRH4os" role="2Oq$k0" />
+                  <node concept="liA8E" id="1s9vchRH4ot" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.isInspector()" resolve="isInspector" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="Qs8f1kEyAz" role="3cqZAp">
               <node concept="3cpWsn" id="Qs8f1kEyA$" role="3cpWs9">
                 <property role="TrG5h" value="type" />
