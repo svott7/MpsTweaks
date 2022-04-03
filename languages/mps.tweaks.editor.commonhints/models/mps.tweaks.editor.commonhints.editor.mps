@@ -85,7 +85,7 @@
     </language>
   </registry>
   <node concept="2ABfQD" id="TtN5BdmRHR">
-    <property role="TrG5h" value="CommonHints" />
+    <property role="TrG5h" value="MpsTweaksHints" />
     <node concept="2BsEeg" id="hmWFe846_G" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="LightweightMpsEditor" />

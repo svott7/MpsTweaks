@@ -1419,7 +1419,7 @@
     </node>
   </node>
   <node concept="V5hpn" id="6b302_5Oe7N">
-    <property role="TrG5h" value="StyleSheet" />
+    <property role="TrG5h" value="EditorTestStyles" />
     <node concept="14StLt" id="7UhbSS42Ro1" role="V601i">
       <property role="TrG5h" value="TopPadding" />
       <node concept="27yT$n" id="6b302_5Oe8V" role="3F10Kt">

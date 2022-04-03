@@ -1033,6 +1033,12 @@
               <property role="VOm3f" value="false" />
             </node>
           </node>
+          <node concept="3F0A7n" id="7AKLO0DcAew" role="3EZMnx">
+            <ref role="1NtTu8" to="tp4k:hyuzpDp" resolve="caption" />
+          </node>
+          <node concept="3F0ifn" id="7AKLO0DcLSt" role="3EZMnx">
+            <property role="3F0ifm" value="-&gt;" />
+          </node>
           <node concept="3F0A7n" id="66ZZ2RilY8z" role="3EZMnx">
             <property role="1$x2rV" value="&lt;no name&gt;" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1040,12 +1046,6 @@
             <node concept="VechU" id="hwSEwk2" role="3F10Kt">
               <property role="Vb096" value="g1_qVrt/DARK_MAGENTA" />
             </node>
-          </node>
-          <node concept="3F0ifn" id="7AKLO0DcLSt" role="3EZMnx">
-            <property role="3F0ifm" value="-&gt;" />
-          </node>
-          <node concept="3F0A7n" id="7AKLO0DcAew" role="3EZMnx">
-            <ref role="1NtTu8" to="tp4k:hyuzpDp" resolve="caption" />
           </node>
           <node concept="2iRfu4" id="66ZZ2RilY8$" role="2iSdaV" />
         </node>

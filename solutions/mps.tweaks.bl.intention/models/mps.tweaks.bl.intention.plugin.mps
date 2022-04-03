@@ -284,11 +284,6 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -5652,11 +5647,6 @@
     </node>
     <node concept="2ScWuX" id="7ERSpuqRg9k" role="tmbBb">
       <node concept="3clFbS" id="7ERSpuqRg9l" role="2VODD2">
-        <node concept="2xdQw9" id="7ERSpuqSxtF" role="3cqZAp">
-          <node concept="Xl_RD" id="7ERSpuqSxtH" role="9lYJi">
-            <property role="Xl_RC" value="t" />
-          </node>
-        </node>
         <node concept="3cpWs8" id="7ERSpuqRg9m" role="3cqZAp">
           <node concept="3KEzu6" id="7ERSpuqRg9n" role="3cpWs9">
             <property role="TrG5h" value="ancestor" />
