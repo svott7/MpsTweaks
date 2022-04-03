@@ -41,6 +41,10 @@
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" />
     <import index="7e8u" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.tree(MPS.Platform/)" />
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
+    <import index="j86o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vcs.impl(MPS.IDEA/)" />
+    <import index="hr4p" ref="f57286e3-4e19-4d8d-8045-3900761f6530/java:git4idea(jetbrains.mps.git4idea.stubs/)" />
+    <import index="v7ux" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.content(MPS.IDEA/)" />
+    <import index="5mlj" ref="f57286e3-4e19-4d8d-8045-3900761f6530/java:git4idea.repo(jetbrains.mps.git4idea.stubs/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -3586,6 +3590,209 @@
     <node concept="tT9cl" id="7rUmPf4FwdD" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
       <ref role="2f8Tey" to="ekwn:1xsN4xJX8VK" resolve="new" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="5Gtvoe0DJ2i">
+    <property role="2uzpH1" value="Open Git Repo in Browser" />
+    <property role="TrG5h" value="OpenGitRepoInBrowser" />
+    <property role="3GE5qa" value="examples" />
+    <node concept="tnohg" id="5Gtvoe0DJ2j" role="tncku">
+      <node concept="3clFbS" id="5Gtvoe0DJ2k" role="2VODD2">
+        <node concept="3cpWs8" id="5Gtvoe0Gksy" role="3cqZAp">
+          <node concept="3cpWsn" id="5Gtvoe0Gksz" role="3cpWs9">
+            <property role="TrG5h" value="gitRepositoryManager" />
+            <node concept="3uibUv" id="5Gtvoe0Gks$" role="1tU5fm">
+              <ref role="3uigEE" to="5mlj:~GitRepositoryManager" resolve="GitRepositoryManager" />
+            </node>
+            <node concept="2YIFZM" id="5Gtvoe0Gm6r" role="33vP2m">
+              <ref role="37wK5l" to="5mlj:~GitRepositoryManager.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
+              <ref role="1Pybhc" to="5mlj:~GitRepositoryManager" resolve="GitRepositoryManager" />
+              <node concept="2OqwBi" id="5Gtvoe0Gm7V" role="37wK5m">
+                <node concept="2WthIp" id="5Gtvoe0Gm7Y" role="2Oq$k0" />
+                <node concept="1DTwFV" id="5Gtvoe0Gm80" role="2OqNvi">
+                  <ref role="2WH_rO" node="5Gtvoe0Ej_z" resolve="project" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5Gtvoe0HgUg" role="3cqZAp">
+          <node concept="3KEzu6" id="5Gtvoe0Hhj9" role="3cpWs9">
+            <property role="TrG5h" value="gitRepositories" />
+            <node concept="2OqwBi" id="5Gtvoe0Hhja" role="33vP2m">
+              <node concept="37vLTw" id="5Gtvoe0Hhjb" role="2Oq$k0">
+                <ref role="3cqZAo" node="5Gtvoe0Gksz" resolve="gitRepositoryManager" />
+              </node>
+              <node concept="liA8E" id="5Gtvoe0Hhjc" role="2OqNvi">
+                <ref role="37wK5l" to="5mlj:~GitRepositoryManager.getRepositories()" resolve="getRepositories" />
+              </node>
+            </node>
+            <node concept="PeGgZ" id="5Gtvoe0Hhjd" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5Gtvoe0Hgxs" role="3cqZAp">
+          <node concept="3clFbS" id="5Gtvoe0Hgxu" role="3clFbx">
+            <node concept="3cpWs8" id="5Gtvoe0GG9V" role="3cqZAp">
+              <node concept="3cpWsn" id="5Gtvoe0GG9W" role="3cpWs9">
+                <property role="TrG5h" value="firstGitRepo" />
+                <node concept="3uibUv" id="5Gtvoe0GG2J" role="1tU5fm">
+                  <ref role="3uigEE" to="5mlj:~GitRepository" resolve="GitRepository" />
+                </node>
+                <node concept="2OqwBi" id="5Gtvoe0GG9X" role="33vP2m">
+                  <node concept="37vLTw" id="5Gtvoe0HgUl" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5Gtvoe0Hhj9" resolve="gitRepositories" />
+                  </node>
+                  <node concept="liA8E" id="5Gtvoe0GGa1" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                    <node concept="3cmrfG" id="5Gtvoe0GGa2" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5Gtvoe0GU0B" role="3cqZAp">
+              <node concept="3cpWsn" id="5Gtvoe0GU0C" role="3cpWs9">
+                <property role="TrG5h" value="firstRemote" />
+                <node concept="3uibUv" id="5Gtvoe0GTV9" role="1tU5fm">
+                  <ref role="3uigEE" to="5mlj:~GitRemote" resolve="GitRemote" />
+                </node>
+                <node concept="2OqwBi" id="5Gtvoe0GU0D" role="33vP2m">
+                  <node concept="2OqwBi" id="5Gtvoe0GU0E" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Gtvoe0GU0F" role="2Oq$k0">
+                      <node concept="37vLTw" id="5Gtvoe0GU0G" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Gtvoe0GG9W" resolve="gitrepo" />
+                      </node>
+                      <node concept="liA8E" id="5Gtvoe0GU0H" role="2OqNvi">
+                        <ref role="37wK5l" to="5mlj:~GitRepository.getRemotes()" resolve="getRemotes" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5Gtvoe0GU0I" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Collection.iterator()" resolve="iterator" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5Gtvoe0GU0J" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5Gtvoe0H_n4" role="3cqZAp">
+              <node concept="3cpWsn" id="5Gtvoe0H_n5" role="3cpWs9">
+                <property role="TrG5h" value="remoteUrl" />
+                <node concept="17QB3L" id="5Gtvoe0H_On" role="1tU5fm" />
+                <node concept="2OqwBi" id="5Gtvoe0H_n6" role="33vP2m">
+                  <node concept="37vLTw" id="5Gtvoe0H_n7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5Gtvoe0GU0C" resolve="firstRemote" />
+                  </node>
+                  <node concept="liA8E" id="5Gtvoe0H_n8" role="2OqNvi">
+                    <ref role="37wK5l" to="5mlj:~GitRemote.getFirstUrl()" resolve="getFirstUrl" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3J1_TO" id="5Gtvoe0GWBg" role="3cqZAp">
+              <node concept="3uVAMA" id="5Gtvoe0GWBh" role="1zxBo5">
+                <node concept="XOnhg" id="5Gtvoe0GWBi" role="1zc67B">
+                  <property role="TrG5h" value="e" />
+                  <node concept="nSUau" id="5Gtvoe0GWBj" role="1tU5fm">
+                    <node concept="3uibUv" id="5Gtvoe0GWBk" role="nSUat">
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="5Gtvoe0GWBl" role="1zc67A">
+                  <node concept="2xdQw9" id="5Gtvoe0GWBm" role="3cqZAp">
+                    <property role="2xdLsb" value="gZ5fh_4/error" />
+                    <node concept="3cpWs3" id="5Gtvoe0GWBn" role="9lYJi">
+                      <node concept="2OqwBi" id="5Gtvoe0GWBo" role="3uHU7w">
+                        <node concept="37vLTw" id="5Gtvoe0GWBp" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5Gtvoe0GWBi" resolve="e" />
+                        </node>
+                        <node concept="liA8E" id="5Gtvoe0GWBq" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="5Gtvoe0GWBr" role="3uHU7B" />
+                    </node>
+                    <node concept="37vLTw" id="5Gtvoe0GWBs" role="9lYJj">
+                      <ref role="3cqZAo" node="5Gtvoe0GWBi" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="5Gtvoe0GWBt" role="1zxBo7">
+                <node concept="2xdQw9" id="5Gtvoe0HAkR" role="3cqZAp">
+                  <node concept="3cpWs3" id="5Gtvoe0HAG1" role="9lYJi">
+                    <node concept="37vLTw" id="5Gtvoe0HAHl" role="3uHU7w">
+                      <ref role="3cqZAo" node="5Gtvoe0H_n5" resolve="remoteUrl" />
+                    </node>
+                    <node concept="Xl_RD" id="5Gtvoe0HAkT" role="3uHU7B">
+                      <property role="Xl_RC" value="Open " />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5Gtvoe0GWBu" role="3cqZAp">
+                  <node concept="3cpWsn" id="5Gtvoe0GWBv" role="3cpWs9">
+                    <property role="TrG5h" value="uri" />
+                    <node concept="3uibUv" id="5Gtvoe0GWBw" role="1tU5fm">
+                      <ref role="3uigEE" to="zf81:~URI" resolve="URI" />
+                    </node>
+                    <node concept="2ShNRf" id="5Gtvoe0GWBx" role="33vP2m">
+                      <node concept="1pGfFk" id="5Gtvoe0GWBy" role="2ShVmc">
+                        <ref role="37wK5l" to="zf81:~URI.&lt;init&gt;(java.lang.String)" resolve="URI" />
+                        <node concept="37vLTw" id="5Gtvoe0H_n9" role="37wK5m">
+                          <ref role="3cqZAo" node="5Gtvoe0H_n5" resolve="firstUrl" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5Gtvoe0GWB$" role="3cqZAp">
+                  <node concept="3cpWsn" id="5Gtvoe0GWB_" role="3cpWs9">
+                    <property role="TrG5h" value="desktop" />
+                    <node concept="3uibUv" id="5Gtvoe0GWBA" role="1tU5fm">
+                      <ref role="3uigEE" to="z60i:~Desktop" resolve="Desktop" />
+                    </node>
+                    <node concept="2YIFZM" id="5Gtvoe0GWBB" role="33vP2m">
+                      <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                      <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="5Gtvoe0GWBC" role="3cqZAp">
+                  <node concept="2OqwBi" id="5Gtvoe0GWBD" role="3clFbG">
+                    <node concept="37vLTw" id="5Gtvoe0GWBE" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5Gtvoe0GWB_" resolve="desktop" />
+                    </node>
+                    <node concept="liA8E" id="5Gtvoe0GWBF" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Desktop.browse(java.net.URI)" resolve="browse" />
+                      <node concept="37vLTw" id="5Gtvoe0GWBG" role="37wK5m">
+                        <ref role="3cqZAo" node="5Gtvoe0GWBv" resolve="uri" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5Gtvoe0HmY5" role="3clFbw">
+            <node concept="2OqwBi" id="5Gtvoe0HmY7" role="3fr31v">
+              <node concept="37vLTw" id="5Gtvoe0HmY8" role="2Oq$k0">
+                <ref role="3cqZAo" node="5Gtvoe0Hhj9" resolve="gitRepositories" />
+              </node>
+              <node concept="liA8E" id="5Gtvoe0HmY9" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="5Gtvoe0Ej_z" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="5Gtvoe0Ej_$" role="1oa70y" />
     </node>
   </node>
 </model>
