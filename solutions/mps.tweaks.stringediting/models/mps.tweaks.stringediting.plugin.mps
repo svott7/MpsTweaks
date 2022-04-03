@@ -3598,6 +3598,7 @@
     <property role="3GE5qa" value="examples" />
     <node concept="tnohg" id="5Gtvoe0DJ2j" role="tncku">
       <node concept="3clFbS" id="5Gtvoe0DJ2k" role="2VODD2">
+        <node concept="3clFbH" id="5Gtvoe0HEAj" role="3cqZAp" />
         <node concept="3cpWs8" id="5Gtvoe0Gksy" role="3cqZAp">
           <node concept="3cpWsn" id="5Gtvoe0Gksz" role="3cpWs9">
             <property role="TrG5h" value="gitRepositoryManager" />
