@@ -32,8 +32,8 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
   </imports>
   <registry>
@@ -870,8 +870,8 @@
           </node>
         </node>
         <node concept="3clFbF" id="3ZFBIUSxEQn" role="3cqZAp">
-          <node concept="2OqwBi" id="3ZFBIUSxFGk" role="3clFbG">
-            <node concept="2OqwBi" id="3ZFBIUSxF0C" role="2Oq$k0">
+          <node concept="37vLTI" id="1a7dmAoC49V" role="3clFbG">
+            <node concept="2OqwBi" id="3ZFBIUSxF0C" role="37vLTJ">
               <node concept="37vLTw" id="3ZFBIUSxEQl" role="2Oq$k0">
                 <ref role="3cqZAo" node="3ZFBIUSxE1q" resolve="root" />
               </node>
@@ -879,17 +879,15 @@
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
-            <node concept="tyxLq" id="3ZFBIUSxG3I" role="2OqNvi">
-              <node concept="2YIFZM" id="3ZFBIUSy2wp" role="tz02z">
-                <ref role="1Pybhc" node="3ZFBIUSxZ3A" resolve="Naming" />
-                <ref role="37wK5l" node="3ZFBIUSy1g$" resolve="toJavaIdentifierName" />
-                <node concept="2OqwBi" id="3ZFBIUSxGhX" role="37wK5m">
-                  <node concept="37vLTw" id="3ZFBIUSxG8Z" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3ZFBIUSxE1q" resolve="root" />
-                  </node>
-                  <node concept="3TrcHB" id="3ZFBIUSxGE4" role="2OqNvi">
-                    <ref role="3TsBF5" to="tp4k:hyuzpDp" resolve="caption" />
-                  </node>
+            <node concept="2YIFZM" id="1a7dmAoCgdL" role="37vLTx">
+              <ref role="37wK5l" to="18ew:~NameUtil.toValidCamelIdentifier(java.lang.String)" resolve="toValidCamelIdentifier" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <node concept="2OqwBi" id="1a7dmAoCgdM" role="37wK5m">
+                <node concept="37vLTw" id="1a7dmAoCgdN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3ZFBIUSxE1q" resolve="root" />
+                </node>
+                <node concept="3TrcHB" id="1a7dmAoCgdO" role="2OqNvi">
+                  <ref role="3TsBF5" to="tp4k:hyuzpDp" resolve="caption" />
                 </node>
               </node>
             </node>
@@ -924,9 +922,6 @@
     <property role="TrG5h" value="NameThisKeyMap" />
     <property role="2uzpH1" value="Name This Key Map" />
     <property role="3GE5qa" value="naming" />
-    <node concept="15s5l7" id="7lkqa1vlF0L" role="lGtFl">
-      <property role="huDt6" value="Test" />
-    </node>
     <node concept="1DS2jV" id="Ad1GYpmhUK" role="1NuT2Z">
       <property role="TrG5h" value="snode" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.NODE" resolve="NODE" />
@@ -1044,39 +1039,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="312cEu" id="3ZFBIUSxZ3A">
-    <property role="TrG5h" value="Naming" />
-    <property role="3GE5qa" value="naming" />
-    <node concept="2tJIrI" id="3ZFBIUSxZ4i" role="jymVt" />
-    <node concept="2YIFZL" id="3ZFBIUSy1g$" role="jymVt">
-      <property role="TrG5h" value="toJavaIdentifierName" />
-      <node concept="3clFbS" id="3ZFBIUSy1gB" role="3clF47">
-        <node concept="3clFbF" id="3ZFBIUSy1rm" role="3cqZAp">
-          <node concept="2OqwBi" id="3ZFBIUSy1D3" role="3clFbG">
-            <node concept="37vLTw" id="3ZFBIUSy1rl" role="2Oq$k0">
-              <ref role="3cqZAo" node="3ZFBIUSy1lH" resolve="name" />
-            </node>
-            <node concept="liA8E" id="3ZFBIUSy2dk" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
-              <node concept="Xl_RD" id="3ZFBIUSy2ft" role="37wK5m">
-                <property role="Xl_RC" value=" " />
-              </node>
-              <node concept="Xl_RD" id="3ZFBIUSy2nm" role="37wK5m">
-                <property role="Xl_RC" value="" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="3ZFBIUSxZ9q" role="1B3o_S" />
-      <node concept="17QB3L" id="3ZFBIUSy1gg" role="3clF45" />
-      <node concept="37vLTG" id="3ZFBIUSy1lH" role="3clF46">
-        <property role="TrG5h" value="name" />
-        <node concept="17QB3L" id="3ZFBIUSy1lG" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="3ZFBIUSxZ3B" role="1B3o_S" />
   </node>
   <node concept="tC5Ba" id="Ad1GYpm9SC">
     <property role="TrG5h" value="NamingActionsAsIntentionGroup" />
