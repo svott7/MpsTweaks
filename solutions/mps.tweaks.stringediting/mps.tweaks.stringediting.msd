@@ -23,6 +23,7 @@
     <dependency reexport="false">a381759b-acec-4e2e-8745-7bf905520fca(jetbrains.mps.ide.modelchecker.platform)</dependency>
     <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">190bd57b-8f4d-4411-955f-e9cc0378366a(jetbrains.mps.ide.modelchecker)</dependency>
     <dependency reexport="false">cab969fd-26dd-44f3-8b9e-5b546649b200(mps.tweaks.smodel)</dependency>
   </dependencies>
   <languageVersions>
@@ -60,6 +61,7 @@
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
+    <module reference="190bd57b-8f4d-4411-955f-e9cc0378366a(jetbrains.mps.ide.modelchecker)" version="0" />
     <module reference="a381759b-acec-4e2e-8745-7bf905520fca(jetbrains.mps.ide.modelchecker.platform)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
