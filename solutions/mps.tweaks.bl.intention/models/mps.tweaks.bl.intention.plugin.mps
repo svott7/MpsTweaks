@@ -475,6 +475,9 @@
       <node concept="tCFHf" id="52Y6DbuOPHg" role="ftvYc">
         <ref role="tCJdB" node="52Y6DbuOLu1" resolve="RemoveLValue" />
       </node>
+      <node concept="tCFHf" id="1BivCbO94Sm" role="ftvYc">
+        <ref role="tCJdB" node="1BivCbO91QM" resolve="ExtractCondition" />
+      </node>
       <node concept="2a7GMi" id="1Jivxq$kjZH" role="ftvYc" />
       <node concept="tCFHf" id="1k_gwWhw$$k" role="ftvYc">
         <ref role="tCJdB" node="2s6uFk0SrZt" resolve="LogBlExpression" />
@@ -6423,6 +6426,176 @@
       <property role="TrG5h" value="editorContext" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="1a7dmAoADce" role="1oa70y" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="1BivCbO91QM">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="TrG5h" value="ExtractCondition" />
+    <property role="2uzpH1" value="Extract Condition" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
+    <node concept="2XrIbr" id="1BivCbO9AX9" role="32lrUH">
+      <property role="TrG5h" value="ifStatement" />
+      <node concept="3Tqbb2" id="1BivCbO9BzG" role="3clF45">
+        <ref role="ehGHo" to="tpee:fzclF8n" resolve="IfStatement" />
+      </node>
+      <node concept="3clFbS" id="1BivCbO9AXb" role="3clF47">
+        <node concept="3clFbF" id="1BivCbO9BAT" role="3cqZAp">
+          <node concept="2OqwBi" id="1BivCbO9BAV" role="3clFbG">
+            <node concept="2OqwBi" id="1BivCbO9BAW" role="2Oq$k0">
+              <node concept="2WthIp" id="1BivCbO9BAX" role="2Oq$k0" />
+              <node concept="3gHZIF" id="1BivCbO9BAY" role="2OqNvi">
+                <ref role="2WH_rO" node="1BivCbO91Rc" resolve="node" />
+              </node>
+            </node>
+            <node concept="2Xjw5R" id="1BivCbO9BAZ" role="2OqNvi">
+              <node concept="1xMEDy" id="1BivCbO9BB0" role="1xVPHs">
+                <node concept="chp4Y" id="1BivCbO9BB1" role="ri$Ld">
+                  <ref role="cht4Q" to="tpee:fzclF8n" resolve="IfStatement" />
+                </node>
+              </node>
+              <node concept="1xIGOp" id="1BivCbO9D8C" role="1xVPHs" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="tnohg" id="1BivCbO91QN" role="tncku">
+      <node concept="3clFbS" id="1BivCbO91QO" role="2VODD2">
+        <node concept="3cpWs8" id="1BivCbOa6PR" role="3cqZAp">
+          <node concept="3KEzu6" id="1BivCbOb1Nn" role="3cpWs9">
+            <property role="TrG5h" value="ifStatement" />
+            <node concept="2OqwBi" id="1BivCbOb1No" role="33vP2m">
+              <node concept="2WthIp" id="1BivCbOb1Np" role="2Oq$k0" />
+              <node concept="2XshWL" id="1BivCbOb1Nq" role="2OqNvi">
+                <ref role="2WH_rO" node="1BivCbO9AX9" resolve="ifStatement" />
+              </node>
+            </node>
+            <node concept="PeGgZ" id="1BivCbOb1Nr" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1BivCbOazZG" role="3cqZAp">
+          <node concept="3KEzu6" id="1BivCbOb1KX" role="3cpWs9">
+            <property role="TrG5h" value="newExpressionStatement" />
+            <node concept="2pJPEk" id="1BivCbOb1KY" role="33vP2m">
+              <node concept="2pJPED" id="1BivCbOb1KZ" role="2pJPEn">
+                <ref role="2pJxaS" to="tpee:fzclF8j" resolve="ExpressionStatement" />
+                <node concept="2pIpSj" id="1BivCbOb1L0" role="2pJxcM">
+                  <ref role="2pIpSl" to="tpee:fzclF8k" resolve="expression" />
+                  <node concept="36biLy" id="1BivCbOb1L1" role="28nt2d">
+                    <node concept="2OqwBi" id="1BivCbOb1RE" role="36biLW">
+                      <node concept="37vLTw" id="1BivCbOb1RF" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1BivCbOb1Nn" resolve="ifStatement" />
+                      </node>
+                      <node concept="3TrEf2" id="1BivCbOb1RG" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:fzclF8o" resolve="condition" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="PeGgZ" id="1BivCbOb1L3" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1BivCbO91QX" role="3cqZAp">
+          <node concept="2OqwBi" id="1BivCbO91QY" role="3clFbG">
+            <node concept="37vLTw" id="1BivCbOa72x" role="2Oq$k0">
+              <ref role="3cqZAo" node="1BivCbOb1Nn" resolve="ifStatement" />
+            </node>
+            <node concept="1P9Npp" id="1BivCbO91R2" role="2OqNvi">
+              <node concept="37vLTw" id="1BivCbOazZN" role="1P9ThW">
+                <ref role="3cqZAo" node="1BivCbOb1KX" resolve="newStatement" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1BivCbO91R4" role="3cqZAp">
+          <node concept="2OqwBi" id="1BivCbO91R5" role="3clFbG">
+            <node concept="37vLTw" id="1BivCbO91R6" role="2Oq$k0">
+              <ref role="3cqZAo" node="1BivCbOb1KX" resolve="newStatement" />
+            </node>
+            <node concept="1OKiuA" id="1BivCbO91R7" role="2OqNvi">
+              <node concept="2OqwBi" id="1BivCbO91R8" role="lBI5i">
+                <node concept="2WthIp" id="1BivCbO91R9" role="2Oq$k0" />
+                <node concept="1DTwFV" id="1BivCbO91Ra" role="2OqNvi">
+                  <ref role="2WH_rO" node="1BivCbO91Rg" resolve="editorContext" />
+                </node>
+              </node>
+              <node concept="2B6iha" id="1BivCbO91Rb" role="lGT1i">
+                <property role="1lyBwo" value="1S2pyLby17G/firstEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S4$dB" id="1BivCbO91Rc" role="1NuT2Z">
+      <property role="TrG5h" value="node" />
+      <node concept="3Tm6S6" id="1BivCbO91Rd" role="1B3o_S" />
+      <node concept="1oajcY" id="1BivCbO91Re" role="1oa70y" />
+      <node concept="3Tqbb2" id="1BivCbO91Rf" role="1tU5fm" />
+    </node>
+    <node concept="1DS2jV" id="1BivCbO91Rg" role="1NuT2Z">
+      <property role="TrG5h" value="editorContext" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <node concept="1oajcY" id="1BivCbO91Rh" role="1oa70y" />
+    </node>
+    <node concept="2ScWuX" id="1BivCbO9_QR" role="tmbBb">
+      <node concept="3clFbS" id="1BivCbO9_QS" role="2VODD2">
+        <node concept="3clFbF" id="1BivCbO9BXR" role="3cqZAp">
+          <node concept="2OqwBi" id="1BivCbO9CgR" role="3clFbG">
+            <node concept="2OqwBi" id="1BivCbO9BXL" role="2Oq$k0">
+              <node concept="2WthIp" id="1BivCbO9BXO" role="2Oq$k0" />
+              <node concept="2XshWL" id="1BivCbO9BXQ" role="2OqNvi">
+                <ref role="2WH_rO" node="1BivCbO9AX9" resolve="ifStatement" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1BivCbO9CGs" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2r4_x_" id="1BivCbObv9y" role="lGtFl">
+      <node concept="1Pa9Pv" id="1BivCbObv9z" role="2r4PD$">
+        <node concept="1PaTwC" id="1BivCbObv9$" role="1PaQFQ">
+          <node concept="3oM_SD" id="1BivCbObv9_" role="1PaTwD">
+            <property role="3oM_SC" value="Extracts" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvlz" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvlM" role="1PaTwD">
+            <property role="3oM_SC" value="condition" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvlR" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvlX" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvm4" role="1PaTwD">
+            <property role="3oM_SC" value="new" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvmc" role="1PaTwD">
+            <property role="3oM_SC" value="statement" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvml" role="1PaTwD">
+            <property role="3oM_SC" value="expression." />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvnd" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvno" role="1PaTwD">
+            <property role="3oM_SC" value="body" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvn$" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbObvoH" role="1PaTwD">
+            <property role="3oM_SC" value="removed." />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
