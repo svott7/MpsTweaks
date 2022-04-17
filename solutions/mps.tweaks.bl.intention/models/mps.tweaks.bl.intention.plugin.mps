@@ -6107,8 +6107,8 @@
   </node>
   <node concept="sE7Ow" id="1a7dmAozVgV">
     <property role="3GE5qa" value="refactoring.method" />
-    <property role="TrG5h" value="WrapWithStaticMethod" />
-    <property role="2uzpH1" value="Wrap with Static Method" />
+    <property role="TrG5h" value="WrapWithStaticMethodCall" />
+    <property role="2uzpH1" value="Wrap with Static Method Call" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="tnohg" id="1a7dmAozVgW" role="tncku">
       <node concept="3clFbS" id="1a7dmAozVgX" role="2VODD2">
@@ -6196,11 +6196,44 @@
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="1a7dmAo_U$O" role="1oa70y" />
     </node>
+    <node concept="2r4_x_" id="1BivCbO4VON" role="lGtFl">
+      <node concept="1Pa9Pv" id="1BivCbO4VOO" role="2r4PD$">
+        <node concept="1PaTwC" id="1BivCbO4VOP" role="1PaQFQ">
+          <node concept="3oM_SD" id="1BivCbO4VQW" role="1PaTwD">
+            <property role="3oM_SC" value="Wraps" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VQX" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VQY" role="1PaTwD">
+            <property role="3oM_SC" value="selected" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VQZ" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VR0" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VR1" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VR2" role="1PaTwD">
+            <property role="3oM_SC" value="static" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VR3" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VR4" role="1PaTwD">
+            <property role="3oM_SC" value="call" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="sE7Ow" id="1a7dmAozVjs">
     <property role="3GE5qa" value="refactoring.method" />
-    <property role="TrG5h" value="WrapWithLocalMethod" />
-    <property role="2uzpH1" value="Wrap with Local Method" />
+    <property role="TrG5h" value="WrapWithLocalMethodCall" />
+    <property role="2uzpH1" value="Wrap with Local Method Call" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="tnohg" id="1a7dmAozVjt" role="tncku">
       <node concept="3clFbS" id="1a7dmAozVju" role="2VODD2">
@@ -6281,6 +6314,39 @@
       <property role="TrG5h" value="editorContext" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="1a7dmAo_RNz" role="1oa70y" />
+    </node>
+    <node concept="2r4_x_" id="1BivCbO4VK0" role="lGtFl">
+      <node concept="1Pa9Pv" id="1BivCbO4VK1" role="2r4PD$">
+        <node concept="1PaTwC" id="1BivCbO4VK2" role="1PaQFQ">
+          <node concept="3oM_SD" id="1BivCbO4VK3" role="1PaTwD">
+            <property role="3oM_SC" value="Wraps" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VM7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VMf" role="1PaTwD">
+            <property role="3oM_SC" value="selected" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VMo" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VMy" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VMH" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VNJ" role="1PaTwD">
+            <property role="3oM_SC" value="local" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VNk" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="1BivCbO4VNx" role="1PaTwD">
+            <property role="3oM_SC" value="call" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="1a7dmAoADbD">
