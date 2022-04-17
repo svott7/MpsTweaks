@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mps.tweaks.editor.wrapdotexpr" uuid="19cfafaa-983c-43a8-9a55-3949e89e08b1" languageVersion="0" moduleVersion="0">
+<language namespace="mps.tweaks.editor.expressionwrapping" uuid="19cfafaa-983c-43a8-9a55-3949e89e08b1" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -53,7 +53,7 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="118cc110-c028-453e-80ca-3cbea99fd892(mps.tweaks.editor.commonhints)" version="0" />
-    <module reference="19cfafaa-983c-43a8-9a55-3949e89e08b1(mps.tweaks.editor.wrapdotexpr)" version="0" />
+    <module reference="19cfafaa-983c-43a8-9a55-3949e89e08b1(mps.tweaks.editor.expressionwrapping)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
