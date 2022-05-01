@@ -311,7 +311,7 @@
             <node concept="3w_OXm" id="1BivCbO7_TY" role="2OqNvi" />
             <node concept="2OqwBi" id="1BivCbO7_TZ" role="2Oq$k0">
               <node concept="2YIFZM" id="1BivCbO8DYo" role="2Oq$k0">
-                <ref role="37wK5l" to="oxa:5vOxHF5Hf06" resolve="rootDotExpression" />
+                <ref role="37wK5l" to="oxa:5vOxHF5Hf06" resolve="rootExpressionOfSameConcept" />
                 <ref role="1Pybhc" to="oxa:2XN$iXtaVMc" resolve="ExpressionWrapping" />
                 <node concept="2Sf5sV" id="1BivCbO8DYp" role="37wK5m" />
               </node>
@@ -347,7 +347,7 @@
           <node concept="3cpWsn" id="1BivCbO7_Ub" role="3cpWs9">
             <property role="TrG5h" value="rootDotExpression" />
             <node concept="2YIFZM" id="1BivCbO8EbN" role="33vP2m">
-              <ref role="37wK5l" to="oxa:5vOxHF5Hf06" resolve="rootDotExpression" />
+              <ref role="37wK5l" to="oxa:5vOxHF5Hf06" resolve="rootExpressionOfSameConcept" />
               <ref role="1Pybhc" to="oxa:2XN$iXtaVMc" resolve="ExpressionWrapping" />
               <node concept="2Sf5sV" id="1BivCbO8EbO" role="37wK5m" />
             </node>

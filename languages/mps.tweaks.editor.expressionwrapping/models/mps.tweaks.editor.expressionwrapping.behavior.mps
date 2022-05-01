@@ -247,7 +247,7 @@
             <node concept="2OqwBi" id="Qs8f1kPIsu" role="3uHU7w">
               <node concept="2OqwBi" id="Qs8f1kPHT6" role="2Oq$k0">
                 <node concept="37vLTw" id="Qs8f1kPHGn" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Qs8f1kNYqe" resolve="expr" />
+                  <ref role="3cqZAo" node="Qs8f1kNYqe" resolve="expression" />
                 </node>
                 <node concept="3CFZ6_" id="Qs8f1kPIbI" role="2OqNvi">
                   <node concept="3CFYIy" id="Qs8f1kPIgH" role="3CFYIz">
@@ -260,9 +260,9 @@
             <node concept="2OqwBi" id="5vOxHF5HjtX" role="3uHU7B">
               <node concept="2OqwBi" id="5vOxHF5HiI0" role="2Oq$k0">
                 <node concept="1rXfSq" id="Qs8f1kO1Vd" role="2Oq$k0">
-                  <ref role="37wK5l" node="5vOxHF5Hf06" resolve="rootDotExpression" />
+                  <ref role="37wK5l" node="5vOxHF5Hf06" resolve="rootExpressionOfSameConcept" />
                   <node concept="37vLTw" id="Qs8f1kO1Ve" role="37wK5m">
-                    <ref role="3cqZAo" node="Qs8f1kNYqe" resolve="expr" />
+                    <ref role="3cqZAo" node="Qs8f1kNYqe" resolve="expression" />
                   </node>
                 </node>
                 <node concept="3CFZ6_" id="5vOxHF5HiUB" role="2OqNvi">
@@ -308,9 +308,9 @@
               <node concept="3clFbS" id="5vOxHF5Hfej" role="Jncv$">
                 <node concept="3cpWs6" id="5vOxHF5HfX3" role="3cqZAp">
                   <node concept="1rXfSq" id="5vOxHF5Hg1k" role="3cqZAk">
-                    <ref role="37wK5l" node="5vOxHF5Hf06" resolve="rootDotExpression" />
+                    <ref role="37wK5l" node="5vOxHF5Hf06" resolve="rootExpressionOfSameConcept" />
                     <node concept="Jnkvi" id="5vOxHF5Hg40" role="37wK5m">
-                      <ref role="1M0zk5" node="5vOxHF5Hfek" resolve="otherExpr" />
+                      <ref role="1M0zk5" node="5vOxHF5Hfek" resolve="operandDotExpression" />
                     </node>
                   </node>
                 </node>
@@ -345,9 +345,9 @@
               <node concept="3clFbS" id="1BivCbO8BmG" role="Jncv$">
                 <node concept="3cpWs6" id="1BivCbO8BmH" role="3cqZAp">
                   <node concept="1rXfSq" id="1BivCbO8BmI" role="3cqZAk">
-                    <ref role="37wK5l" node="5vOxHF5Hf06" resolve="rootDotExpression" />
+                    <ref role="37wK5l" node="5vOxHF5Hf06" resolve="rootExpressionOfSameConcept" />
                     <node concept="Jnkvi" id="1BivCbO8BmJ" role="37wK5m">
-                      <ref role="1M0zk5" node="1BivCbO8BmK" resolve="otherExpr" />
+                      <ref role="1M0zk5" node="1BivCbO8BmK" resolve="left" />
                     </node>
                   </node>
                 </node>

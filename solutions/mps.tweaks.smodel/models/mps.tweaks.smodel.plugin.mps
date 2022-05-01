@@ -810,7 +810,7 @@
           <node concept="1Wc70l" id="1BivCbO6_5r" role="3clFbG">
             <node concept="2OqwBi" id="1BivCbO6$no" role="3uHU7B">
               <node concept="37vLTw" id="1BivCbO6_wi" role="2Oq$k0">
-                <ref role="3cqZAo" node="1BivCbO6_yH" resolve="node" />
+                <ref role="3cqZAo" node="1BivCbO6_yH" resolve="abstractRule" />
               </node>
               <node concept="3x8VRR" id="1BivCbO6$MG" role="2OqNvi" />
             </node>
@@ -821,7 +821,7 @@
               <node concept="2OqwBi" id="Ad1GYpmfTN" role="3uHU7B">
                 <node concept="2OqwBi" id="Ad1GYpmfTO" role="2Oq$k0">
                   <node concept="37vLTw" id="1BivCbO6_wj" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1BivCbO6_yH" resolve="node" />
+                    <ref role="3cqZAo" node="1BivCbO6_yH" resolve="abstractRule" />
                   </node>
                   <node concept="3TrEf2" id="Ad1GYpmfTU" role="2OqNvi">
                     <ref role="3Tt5mk" to="tpd4:h5YuTL0" resolve="applicableNode" />
@@ -1040,7 +1040,7 @@
         <ref role="tCJdB" node="Ad1GYpmhUj" resolve="NameThisKeyMap" />
       </node>
       <node concept="tCFHf" id="Ad1GYpmpkr" role="ftvYc">
-        <ref role="tCJdB" node="Ad1GYpmndJ" resolve="NameActionMap" />
+        <ref role="tCJdB" node="Ad1GYpmndJ" resolve="NameThisActionMap" />
       </node>
       <node concept="tCFHf" id="3ZFBIUSxQLa" role="ftvYc">
         <ref role="tCJdB" node="3ZFBIUSxxYk" resolve="NameThisAction" />
@@ -2331,7 +2331,7 @@
         <ref role="tCJdB" node="7ERSpurb_fp" resolve="UseVerticalGridLayout" />
       </node>
       <node concept="tCFHf" id="7ERSpurbVth" role="ftvYc">
-        <ref role="tCJdB" node="7ERSpurbV1G" resolve="UseHorizontalGridLayout" />
+        <ref role="tCJdB" node="7ERSpurbV1G" resolve="UseHorizontalLayout" />
       </node>
       <node concept="2a7GMi" id="7ERSpurbhEm" role="ftvYc" />
       <node concept="tCFHf" id="6TyyN3PxgUL" role="ftvYc">
