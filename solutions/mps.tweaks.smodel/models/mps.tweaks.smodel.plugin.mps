@@ -3784,7 +3784,7 @@
     </node>
   </node>
   <node concept="312cEu" id="E4OT9Z951N">
-    <property role="TrG5h" value="EditorSelections" />
+    <property role="TrG5h" value="EditorNodeSelections" />
     <node concept="2tJIrI" id="E4OT9Z951O" role="jymVt" />
     <node concept="2YIFZL" id="E4OT9Z95CR" role="jymVt">
       <property role="TrG5h" value="selectName" />
