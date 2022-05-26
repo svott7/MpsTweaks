@@ -4371,7 +4371,7 @@
     </node>
     <node concept="2tJIrI" id="E4OT9YSrB5" role="jymVt" />
     <node concept="2YIFZL" id="4rZy0P5uRZ8" role="jymVt">
-      <property role="TrG5h" value="getMesageList" />
+      <property role="TrG5h" value="messageList" />
       <node concept="37vLTG" id="4rZy0P5uSEO" role="3clF46">
         <property role="TrG5h" value="mpsProject" />
         <node concept="3uibUv" id="4rZy0P5uSEP" role="1tU5fm">
@@ -4379,8 +4379,11 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4rZy0P5uRZ9" role="1B3o_S" />
-      <node concept="3uibUv" id="4rZy0P5uSCQ" role="3clF45">
-        <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
+      <node concept="3uibUv" id="E4OT9ZkvI4" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Optional" />
+        <node concept="3uibUv" id="E4OT9ZkvI5" role="11_B2D">
+          <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
+        </node>
       </node>
       <node concept="3clFbS" id="4rZy0P5uRZb" role="3clF47">
         <node concept="3cpWs8" id="4rZy0P5uSGK" role="3cqZAp">
@@ -4399,7 +4402,10 @@
         <node concept="3clFbJ" id="4rZy0P5uSGP" role="3cqZAp">
           <node concept="3clFbS" id="4rZy0P5uSGQ" role="3clFbx">
             <node concept="3cpWs6" id="4rZy0P5uSGR" role="3cqZAp">
-              <node concept="10Nm6u" id="4rZy0P5uUxL" role="3cqZAk" />
+              <node concept="2YIFZM" id="E4OT9ZkvHY" role="3cqZAk">
+                <ref role="37wK5l" to="33ny:~Optional.empty()" />
+                <ref role="1Pybhc" to="33ny:~Optional" />
+              </node>
             </node>
           </node>
           <node concept="3clFbC" id="4rZy0P5uSGS" role="3clFbw">
@@ -4411,7 +4417,7 @@
         </node>
         <node concept="3cpWs8" id="E4OT9YS8X1" role="3cqZAp">
           <node concept="3KEzu6" id="E4OT9YS8X2" role="3cpWs9">
-            <property role="TrG5h" value="iMessageList" />
+            <property role="TrG5h" value="messageList" />
             <node concept="2OqwBi" id="E4OT9YS8X3" role="33vP2m">
               <node concept="37vLTw" id="E4OT9YS8X4" role="2Oq$k0">
                 <ref role="3cqZAo" node="4rZy0P5uSGL" resolve="messageViewTool" />
@@ -4429,7 +4435,10 @@
         <node concept="3clFbJ" id="E4OT9YS8X8" role="3cqZAp">
           <node concept="3clFbS" id="E4OT9YS8X9" role="3clFbx">
             <node concept="3cpWs6" id="E4OT9YSgSp" role="3cqZAp">
-              <node concept="10Nm6u" id="E4OT9YSibW" role="3cqZAk" />
+              <node concept="2YIFZM" id="E4OT9ZkvHZ" role="3cqZAk">
+                <ref role="37wK5l" to="33ny:~Optional.empty()" />
+                <ref role="1Pybhc" to="33ny:~Optional" />
+              </node>
             </node>
           </node>
           <node concept="3fqX7Q" id="E4OT9YShUD" role="3clFbw">
@@ -4438,18 +4447,22 @@
                 <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
               </node>
               <node concept="37vLTw" id="E4OT9YShUH" role="2ZW6bz">
-                <ref role="3cqZAo" node="E4OT9YS8X2" resolve="iMessageList" />
+                <ref role="3cqZAo" node="E4OT9YS8X2" resolve="messageList" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="E4OT9YSjgk" role="3cqZAp">
-          <node concept="10QFUN" id="E4OT9YS8Xd" role="3clFbG">
-            <node concept="37vLTw" id="E4OT9YS8Xe" role="10QFUP">
-              <ref role="3cqZAo" node="E4OT9YS8X2" resolve="iMessageList" />
-            </node>
-            <node concept="3uibUv" id="E4OT9YS8Xf" role="10QFUM">
-              <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
+          <node concept="2YIFZM" id="E4OT9ZkvI0" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Optional.of(java.lang.Object)" />
+            <ref role="1Pybhc" to="33ny:~Optional" />
+            <node concept="10QFUN" id="E4OT9ZkvI1" role="37wK5m">
+              <node concept="37vLTw" id="E4OT9ZkvI2" role="10QFUP">
+                <ref role="3cqZAo" node="E4OT9YS8X2" resolve="messageList" />
+              </node>
+              <node concept="3uibUv" id="E4OT9ZkvI3" role="10QFUM">
+                <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
+              </node>
             </node>
           </node>
         </node>
@@ -4461,27 +4474,38 @@
       <node concept="3Tm1VV" id="4rZy0P5uIhM" role="1B3o_S" />
       <node concept="3cqZAl" id="4rZy0P5uIhN" role="3clF45" />
       <node concept="3clFbS" id="4rZy0P5uIhO" role="3clF47">
-        <node concept="3cpWs8" id="E4OT9YSl6h" role="3cqZAp">
-          <node concept="3KEzu6" id="E4OT9YSlem" role="3cpWs9">
-            <property role="TrG5h" value="messageList" />
-            <node concept="1rXfSq" id="E4OT9YSlen" role="33vP2m">
-              <ref role="37wK5l" node="4rZy0P5uRZ8" resolve="getList" />
-              <node concept="37vLTw" id="E4OT9YSleo" role="37wK5m">
+        <node concept="3clFbF" id="E4OT9YSkJh" role="3cqZAp">
+          <node concept="2OqwBi" id="E4OT9ZkzWQ" role="3clFbG">
+            <node concept="1rXfSq" id="E4OT9ZeaNG" role="2Oq$k0">
+              <ref role="37wK5l" node="4rZy0P5uRZ8" resolve="mesageList" />
+              <node concept="37vLTw" id="E4OT9ZeaNH" role="37wK5m">
                 <ref role="3cqZAo" node="4rZy0P5uKC7" resolve="mpsProject" />
               </node>
             </node>
-            <node concept="PeGgZ" id="E4OT9YSlep" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="E4OT9YSkJh" role="3cqZAp">
-          <node concept="2OqwBi" id="E4OT9YSlBF" role="3clFbG">
-            <node concept="37vLTw" id="E4OT9YSl6l" role="2Oq$k0">
-              <ref role="3cqZAo" node="E4OT9YSlem" resolve="list" />
-            </node>
-            <node concept="liA8E" id="E4OT9YSmeY" role="2OqNvi">
-              <ref role="37wK5l" to="57ty:~MessageList.setActivateOnMessage(boolean)" resolve="setActivateOnMessage" />
-              <node concept="37vLTw" id="E4OT9YSnVt" role="37wK5m">
-                <ref role="3cqZAo" node="E4OT9YSn1R" resolve="isActive" />
+            <node concept="liA8E" id="E4OT9Zk$5$" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Optional.ifPresent(java.util.function.Consumer)" resolve="ifPresent" />
+              <node concept="1bVj0M" id="E4OT9Zk$g0" role="37wK5m">
+                <node concept="3clFbS" id="E4OT9Zk$g1" role="1bW5cS">
+                  <node concept="3clFbF" id="E4OT9Zk_$8" role="3cqZAp">
+                    <node concept="2OqwBi" id="E4OT9Zk_VH" role="3clFbG">
+                      <node concept="37vLTw" id="E4OT9Zk_$7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="E4OT9Zk$F8" resolve="list" />
+                      </node>
+                      <node concept="liA8E" id="E4OT9ZkAR$" role="2OqNvi">
+                        <ref role="37wK5l" to="57ty:~MessageList.setActivateOnMessage(boolean)" resolve="setActivateOnMessage" />
+                        <node concept="37vLTw" id="E4OT9ZkBjs" role="37wK5m">
+                          <ref role="3cqZAo" node="E4OT9YSn1R" resolve="isActive" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTG" id="E4OT9Zk$F8" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="3uibUv" id="E4OT9Zk$F7" role="1tU5fm">
+                    <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -4510,25 +4534,36 @@
       <node concept="3Tm1VV" id="4rZy0P5uQQw" role="1B3o_S" />
       <node concept="3cqZAl" id="4rZy0P5uQQx" role="3clF45" />
       <node concept="3clFbS" id="4rZy0P5uQQy" role="3clF47">
-        <node concept="3cpWs8" id="E4OT9YSo$P" role="3cqZAp">
-          <node concept="3KEzu6" id="E4OT9YSo$Q" role="3cpWs9">
-            <property role="TrG5h" value="messageList" />
-            <node concept="1rXfSq" id="E4OT9YSo$R" role="33vP2m">
+        <node concept="3clFbF" id="E4OT9YSoT5" role="3cqZAp">
+          <node concept="2OqwBi" id="E4OT9YSpiW" role="3clFbG">
+            <node concept="1rXfSq" id="E4OT9ZeaQ0" role="2Oq$k0">
               <ref role="37wK5l" node="4rZy0P5uRZ8" resolve="getMesageList" />
-              <node concept="37vLTw" id="E4OT9YSo$S" role="37wK5m">
+              <node concept="37vLTw" id="E4OT9ZeaQ1" role="37wK5m">
                 <ref role="3cqZAo" node="4rZy0P5uR38" resolve="mpsProject" />
               </node>
             </node>
-            <node concept="PeGgZ" id="E4OT9YSo$T" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="E4OT9YSoT5" role="3cqZAp">
-          <node concept="2OqwBi" id="E4OT9YSpiW" role="3clFbG">
-            <node concept="37vLTw" id="E4OT9YSoT3" role="2Oq$k0">
-              <ref role="3cqZAo" node="E4OT9YSo$Q" resolve="messageList" />
-            </node>
-            <node concept="liA8E" id="E4OT9YSpTn" role="2OqNvi">
-              <ref role="37wK5l" to="57ty:~MessageList.clear()" resolve="clear" />
+            <node concept="liA8E" id="E4OT9ZkEiI" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Optional.ifPresent(java.util.function.Consumer)" resolve="ifPresent" />
+              <node concept="1bVj0M" id="E4OT9ZkEuP" role="37wK5m">
+                <node concept="3clFbS" id="E4OT9ZkEuQ" role="1bW5cS">
+                  <node concept="3clFbF" id="E4OT9ZkFAk" role="3cqZAp">
+                    <node concept="2OqwBi" id="E4OT9ZkFTW" role="3clFbG">
+                      <node concept="37vLTw" id="E4OT9ZkFAj" role="2Oq$k0">
+                        <ref role="3cqZAo" node="E4OT9ZkF4c" resolve="it" />
+                      </node>
+                      <node concept="liA8E" id="E4OT9YSpTn" role="2OqNvi">
+                        <ref role="37wK5l" to="57ty:~MessageList.clear()" resolve="clear" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTG" id="E4OT9ZkF4c" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="3uibUv" id="E4OT9ZkF4b" role="1tU5fm">
+                    <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
