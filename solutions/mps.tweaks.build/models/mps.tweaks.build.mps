@@ -1050,6 +1050,7 @@
         </node>
         <node concept="1SiIV0" id="3q45UAZ5pRD" role="3bR37C">
           <node concept="3bR9La" id="3q45UAZ5pRE" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
@@ -1097,6 +1098,17 @@
         <node concept="1SiIV0" id="26PAZwt2ycd" role="3bR37C">
           <node concept="3bR9La" id="26PAZwt2yce" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1_7hqbu4mXQ" resolve="jetbrains.mps.ide.modelchecker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2S7XOoHc9FT" role="3bR37C">
+          <node concept="3bR9La" id="2S7XOoHc9FU" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2S7XOoHc9FV" role="3bR37C">
+          <node concept="3bR9La" id="2S7XOoHc9FW" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>
@@ -1261,6 +1273,11 @@
         <node concept="1SiIV0" id="26PAZwsZoAQ" role="3bR37C">
           <node concept="3bR9La" id="26PAZwsZoAR" role="1SiIV1">
             <ref role="3bR37D" node="2NY6dYJtPdq" resolve="mps.tweaks.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2S7XOoHc9G5" role="3bR37C">
+          <node concept="3bR9La" id="2S7XOoHc9G6" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
           </node>
         </node>
       </node>
