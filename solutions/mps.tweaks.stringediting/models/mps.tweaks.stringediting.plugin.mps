@@ -127,6 +127,7 @@
         <reference id="1217252646389" name="key" index="1DUlNI" />
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
+      <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
@@ -145,6 +146,10 @@
       <concept id="1550313277221324859" name="jetbrains.mps.baseLanguage.extensionMethods.structure.ExtensionMethodCall" flags="nn" index="AQDAd" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
+      <concept id="481983775135178834" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginDeclaration" flags="ng" index="2uRRBy">
+        <child id="481983775135178836" name="initBlock" index="2uRRB$" />
+      </concept>
+      <concept id="481983775135178825" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginInitBlock" flags="in" index="2uRRBT" />
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4270,6 +4275,28 @@
     <property role="TrG5h" value="SetMPSDefaultMessageTabActive" />
     <node concept="tnohg" id="4rZy0P5aydK" role="tncku">
       <node concept="3clFbS" id="4rZy0P5aydL" role="2VODD2">
+        <node concept="3SKdUt" id="7yImMjplMrx" role="3cqZAp">
+          <node concept="1PaTwC" id="7yImMjplMry" role="1aUNEU">
+            <node concept="3oM_SD" id="7yImMjplMst" role="1PaTwD">
+              <property role="3oM_SC" value="todo" />
+            </node>
+            <node concept="3oM_SD" id="7yImMjplMs_" role="1PaTwD">
+              <property role="3oM_SC" value="toggle" />
+            </node>
+            <node concept="3oM_SD" id="7yImMjplMUc" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="7yImMjplMUY" role="1PaTwD">
+              <property role="3oM_SC" value="allow" />
+            </node>
+            <node concept="3oM_SD" id="7yImMjplMVl" role="1PaTwD">
+              <property role="3oM_SC" value="setting" />
+            </node>
+            <node concept="3oM_SD" id="7yImMjplMVJ" role="1PaTwD">
+              <property role="3oM_SC" value="inactive" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4rZy0P5uJmp" role="3cqZAp">
           <node concept="2YIFZM" id="4rZy0P5uJtv" role="3clFbG">
             <ref role="37wK5l" node="4rZy0P5uIhL" resolve="setActive" />
@@ -4522,6 +4549,54 @@
         <node concept="10P_77" id="E4OT9YSnEo" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="7yImMjplvEh" role="jymVt" />
+    <node concept="2YIFZL" id="7yImMjpluZm" role="jymVt">
+      <property role="TrG5h" value="setActive" />
+      <node concept="3Tm1VV" id="7yImMjpluZn" role="1B3o_S" />
+      <node concept="3cqZAl" id="7yImMjpluZo" role="3clF45" />
+      <node concept="3clFbS" id="7yImMjpluZp" role="3clF47">
+        <node concept="3clFbF" id="7yImMjplxq6" role="3cqZAp">
+          <node concept="1rXfSq" id="7yImMjplxq4" role="3clFbG">
+            <ref role="37wK5l" node="4rZy0P5uIhL" resolve="setActive" />
+            <node concept="37vLTw" id="7yImMjplxJa" role="37wK5m">
+              <ref role="3cqZAo" node="7yImMjpluZC" resolve="mpsProject" />
+            </node>
+            <node concept="3clFbT" id="7yImMjply16" role="37wK5m">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7yImMjpluZC" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="7yImMjpluZD" role="1tU5fm">
+          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7yImMjplvWc" role="jymVt" />
+    <node concept="2YIFZL" id="7yImMjplvj9" role="jymVt">
+      <property role="TrG5h" value="setNotActive" />
+      <node concept="3Tm1VV" id="7yImMjplvja" role="1B3o_S" />
+      <node concept="3cqZAl" id="7yImMjplvjb" role="3clF45" />
+      <node concept="3clFbS" id="7yImMjplvjc" role="3clF47">
+        <node concept="3clFbF" id="7yImMjplyAM" role="3cqZAp">
+          <node concept="1rXfSq" id="7yImMjplyAK" role="3clFbG">
+            <ref role="37wK5l" node="4rZy0P5uIhL" resolve="setActive" />
+            <node concept="37vLTw" id="7yImMjplySA" role="37wK5m">
+              <ref role="3cqZAo" node="7yImMjplvjr" resolve="mpsProject" />
+            </node>
+            <node concept="3clFbT" id="7yImMjplzct" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7yImMjplvjr" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="7yImMjplvjs" role="1tU5fm">
+          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="4rZy0P5uQtn" role="jymVt" />
     <node concept="2YIFZL" id="4rZy0P5uQQv" role="jymVt">
       <property role="TrG5h" value="clear" />
@@ -4570,6 +4645,20 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4rZy0P5uHPP" role="1B3o_S" />
+  </node>
+  <node concept="2uRRBy" id="7yImMjplhbf">
+    <property role="TrG5h" value="SetMpsDefaultMessageTabActiveOnMpsStartup" />
+    <node concept="2uRRBT" id="7yImMjplhev" role="2uRRB$">
+      <node concept="3clFbS" id="7yImMjplhew" role="2VODD2">
+        <node concept="3clFbF" id="7yImMjplheR" role="3cqZAp">
+          <node concept="2YIFZM" id="7yImMjplheT" role="3clFbG">
+            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessagesTab" />
+            <ref role="37wK5l" node="7yImMjpluZm" resolve="setActive" />
+            <node concept="1KvdUw" id="7yImMjplzq$" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
