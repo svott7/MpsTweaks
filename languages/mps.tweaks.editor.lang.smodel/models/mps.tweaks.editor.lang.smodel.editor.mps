@@ -2925,7 +2925,7 @@
         <node concept="2iRfu4" id="Qs8f1kCNAN" role="2iSdaV" />
         <node concept="3F0ifn" id="Qs8f1kBeL$" role="3EZMnx">
           <property role="3F0ifm" value="&lt;" />
-          <ref role="1k5W1q" node="Qs8f1kCzHz" resolve="SmallerFont" />
+          <ref role="1k5W1q" node="Qs8f1kCzHz" resolve="FontSize75" />
           <node concept="11LMrY" id="Qs8f1kBeS3" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -2934,7 +2934,7 @@
           </node>
         </node>
         <node concept="1HlG4h" id="Qs8f1kBf7n" role="3EZMnx">
-          <ref role="1k5W1q" node="Qs8f1kCzHz" resolve="SmallerFont" />
+          <ref role="1k5W1q" node="Qs8f1kCzHz" resolve="FontSize75" />
           <node concept="1HfYo3" id="Qs8f1kBf7o" role="1HlULh">
             <node concept="3TQlhw" id="Qs8f1kBf7p" role="1Hhtcw">
               <node concept="3clFbS" id="Qs8f1kBf7q" role="2VODD2">
@@ -3005,7 +3005,7 @@
         </node>
         <node concept="3F0ifn" id="Qs8f1kBeYd" role="3EZMnx">
           <property role="3F0ifm" value="&gt;" />
-          <ref role="1k5W1q" node="Qs8f1kCzHz" resolve="SmallerFont" />
+          <ref role="1k5W1q" node="Qs8f1kCzHz" resolve="FontSize75" />
           <node concept="11L4FC" id="Qs8f1kBf0r" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>

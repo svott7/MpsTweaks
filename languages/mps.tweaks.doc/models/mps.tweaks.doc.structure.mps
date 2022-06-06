@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
+    <import index="tp3j" ref="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -20,6 +21,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -58,6 +60,17 @@
       <property role="20kJfa" value="text" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3LpNTIWhzXD">
+    <property role="EcuMT" value="4348735182988525417" />
+    <property role="TrG5h" value="IntentionRef" />
+    <property role="34LRSv" value="intention reference" />
+    <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
+    <node concept="1TJgyj" id="3LpNTIWhSEv" role="1TKVEi">
+      <property role="IQ2ns" value="4348735182988610207" />
+      <property role="20kJfa" value="intention" />
+      <ref role="20lvS9" to="tp3j:2c3oNEsfcpP" resolve="BaseIntentionDeclaration" />
     </node>
   </node>
 </model>

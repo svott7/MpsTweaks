@@ -727,7 +727,7 @@
         <node concept="3clFbF" id="6Qju3tF7X1w" role="3cqZAp">
           <node concept="2YIFZM" id="6Qju3tF7XrW" role="3clFbG">
             <ref role="37wK5l" node="6Qju3tF7XbR" resolve="update" />
-            <ref role="1Pybhc" node="6Qju3tF7Bf8" resolve="MpsEditors" />
+            <ref role="1Pybhc" node="6Qju3tF7Bf8" resolve="IdeaEditors" />
             <node concept="2OqwBi" id="6Qju3tF7Xta" role="37wK5m">
               <node concept="2WthIp" id="6Qju3tF7Xtd" role="2Oq$k0" />
               <node concept="1DTwFV" id="6Qju3tF7Xtf" role="2OqNvi">
@@ -845,7 +845,7 @@
         <node concept="3clFbF" id="6Qju3tF7FZe" role="3cqZAp">
           <node concept="2OqwBi" id="6Qju3tF7T0v" role="3clFbG">
             <node concept="2YIFZM" id="6Qju3tF8jlg" role="2Oq$k0">
-              <ref role="1Pybhc" node="6Qju3tF7Bf8" resolve="MpsEditors" />
+              <ref role="1Pybhc" node="6Qju3tF7Bf8" resolve="IdeaEditors" />
               <ref role="37wK5l" node="6Qju3tF8jlb" resolve="openEditors" />
               <node concept="37vLTw" id="6Qju3tF8jlf" role="37wK5m">
                 <ref role="3cqZAo" node="6Qju3tF7F9Z" resolve="project" />

@@ -155,7 +155,7 @@
             <node concept="3clFbF" id="Qs8f1kNYzr" role="3cqZAp">
               <node concept="2YIFZM" id="Qs8f1kNY$j" role="3clFbG">
                 <ref role="37wK5l" to="oxa:Qs8f1kNYph" resolve="isWrapped" />
-                <ref role="1Pybhc" to="oxa:2XN$iXtaVMc" resolve="WrappingDotExpression" />
+                <ref role="1Pybhc" to="oxa:2XN$iXtaVMc" resolve="ExpressionWrapping" />
                 <node concept="pncrf" id="Qs8f1kNYJp" role="37wK5m" />
               </node>
             </node>
@@ -167,7 +167,7 @@
             <node concept="3clFbS" id="2XN$iXtatxS" role="2VODD2">
               <node concept="3clFbF" id="Qs8f1kNZrX" role="3cqZAp">
                 <node concept="2YIFZM" id="Qs8f1kNZrZ" role="3clFbG">
-                  <ref role="1Pybhc" to="oxa:2XN$iXtaVMc" resolve="WrappingDotExpression" />
+                  <ref role="1Pybhc" to="oxa:2XN$iXtaVMc" resolve="ExpressionWrapping" />
                   <ref role="37wK5l" to="oxa:Qs8f1kNYph" resolve="isWrapped" />
                   <node concept="pncrf" id="Qs8f1kNZs0" role="37wK5m" />
                 </node>
