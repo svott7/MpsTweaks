@@ -758,11 +758,22 @@
         <node concept="VLuvy" id="6QM7aN95tp_" role="3F10Kt">
           <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
+        <node concept="VPM3Z" id="6QM7aN9ePCi" role="3F10Kt" />
       </node>
       <node concept="PMmxH" id="6QM7aN99JrY" role="3EZMnx">
         <ref role="PMmxG" to="qi0f:7AKLO0DeZws" resolve="SmallVerticalGap50" />
       </node>
       <node concept="2EHx9g" id="6QM7aN99RHk" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="6QM7aN9e2_b" role="6VMZX">
+      <node concept="2iRfu4" id="6QM7aN9e2_c" role="2iSdaV" />
+      <node concept="3F0ifn" id="6QM7aN9e2_h" role="3EZMnx">
+        <property role="3F0ifm" value="full name:" />
+      </node>
+      <node concept="3F0A7n" id="6QM7aN9e2_r" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VPxyj" id="6QM7aN9e2_v" role="3F10Kt" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6QM7aN9aBLa">

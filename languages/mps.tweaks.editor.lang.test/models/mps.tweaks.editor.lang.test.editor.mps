@@ -281,6 +281,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -318,11 +319,6 @@
     <language id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc">
       <concept id="7954072934282220373" name="mps.tweaks.doc.structure.BaseConceptDoc" flags="ng" index="2r4_x_">
         <child id="7954072934282285396" name="text" index="2r4PD$" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1446,63 +1442,61 @@
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="6QM7aN981vz" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="2xdQw9" id="6QM7aN978SZ" role="8Wnug">
-                <node concept="3cpWs3" id="6QM7aN978SY" role="9lYJi">
-                  <node concept="Xl_RD" id="6QM7aN978SU" role="3uHU7B">
-                    <property role="Xl_RC" value="caret: " />
+            <node concept="3clFbJ" id="4n_AWUPMfpF" role="3cqZAp">
+              <node concept="3clFbS" id="4n_AWUPMfpH" role="3clFbx">
+                <node concept="3cpWs6" id="4n_AWUPMiIx" role="3cqZAp">
+                  <node concept="Xl_RD" id="4n_AWUPMj5v" role="3cqZAk">
+                    <property role="Xl_RC" value="ERROR: SELECTION START IS OUT OF BOUNDS" />
                   </node>
-                  <node concept="2OqwBi" id="6QM7aN978SV" role="3uHU7w">
-                    <node concept="37vLTw" id="6QM7aN978SW" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6QM7aN96nIR" resolve="node" />
-                    </node>
-                    <node concept="3TrcHB" id="6QM7aN978SX" role="2OqNvi">
-                      <ref role="3TsBF5" to="tp5g:hSLIFSk" resolve="caretPosition" />
-                    </node>
+                </node>
+              </node>
+              <node concept="3eOSWO" id="4n_AWUPMz0Z" role="3clFbw">
+                <node concept="2OqwBi" id="4n_AWUPMfWg" role="3uHU7B">
+                  <node concept="37vLTw" id="4n_AWUPMfC4" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6QM7aN96nIR" resolve="node" />
+                  </node>
+                  <node concept="3TrcHB" id="4n_AWUPMggD" role="2OqNvi">
+                    <ref role="3TsBF5" to="tp5g:5rZKa_fTvKN" resolve="selectionStart" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4n_AWUPMi7D" role="3uHU7w">
+                  <node concept="37vLTw" id="4n_AWUPMhxO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="zddwKdWklu" resolve="text" />
+                  </node>
+                  <node concept="liA8E" id="4n_AWUPMixy" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="6QM7aN981v$" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="2xdQw9" id="6QM7aN97_Rr" role="8Wnug">
-                <node concept="3cpWs3" id="6QM7aN97_Rs" role="9lYJi">
-                  <node concept="Xl_RD" id="6QM7aN97_Rt" role="3uHU7B">
-                    <property role="Xl_RC" value="caret start: " />
+            <node concept="3clFbJ" id="4n_AWUPMjIC" role="3cqZAp">
+              <node concept="3clFbS" id="4n_AWUPMjID" role="3clFbx">
+                <node concept="3cpWs6" id="4n_AWUPMjIE" role="3cqZAp">
+                  <node concept="Xl_RD" id="4n_AWUPMjIF" role="3cqZAk">
+                    <property role="Xl_RC" value="ERROR: SELECTION END IS OUT OF BOUNDS" />
                   </node>
-                  <node concept="2OqwBi" id="6QM7aN97_Ru" role="3uHU7w">
-                    <node concept="37vLTw" id="6QM7aN97_Rv" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6QM7aN96nIR" resolve="node" />
-                    </node>
-                    <node concept="3TrcHB" id="6QM7aN97_Rw" role="2OqNvi">
-                      <ref role="3TsBF5" to="tp5g:5rZKa_fTvKN" resolve="selectionStart" />
-                    </node>
+                </node>
+              </node>
+              <node concept="3eOSWO" id="4n_AWUPMzmp" role="3clFbw">
+                <node concept="2OqwBi" id="4n_AWUPMjIK" role="3uHU7B">
+                  <node concept="37vLTw" id="4n_AWUPMjIL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6QM7aN96nIR" resolve="node" />
+                  </node>
+                  <node concept="3TrcHB" id="4n_AWUPMjIM" role="2OqNvi">
+                    <ref role="3TsBF5" to="tp5g:5rZKa_fTvKP" resolve="selectionEnd" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4n_AWUPMjIH" role="3uHU7w">
+                  <node concept="37vLTw" id="4n_AWUPMjII" role="2Oq$k0">
+                    <ref role="3cqZAo" node="zddwKdWklu" resolve="text" />
+                  </node>
+                  <node concept="liA8E" id="4n_AWUPMjIJ" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="6QM7aN981v_" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="2xdQw9" id="6QM7aN97nCB" role="8Wnug">
-                <node concept="3cpWs3" id="6QM7aN97nCC" role="9lYJi">
-                  <node concept="Xl_RD" id="6QM7aN97nCD" role="3uHU7B">
-                    <property role="Xl_RC" value="caret end: " />
-                  </node>
-                  <node concept="2OqwBi" id="6QM7aN97nCE" role="3uHU7w">
-                    <node concept="37vLTw" id="6QM7aN97nCF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6QM7aN96nIR" resolve="node" />
-                    </node>
-                    <node concept="3TrcHB" id="6QM7aN97nCG" role="2OqNvi">
-                      <ref role="3TsBF5" to="tp5g:5rZKa_fTvKP" resolve="selectionEnd" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+            <node concept="3clFbH" id="4n_AWUPMfjf" role="3cqZAp" />
             <node concept="3cpWs8" id="6QM7aN97UJH" role="3cqZAp">
               <node concept="3cpWsn" id="6QM7aN97UJI" role="3cpWs9">
                 <property role="TrG5h" value="prefix" />
@@ -1685,7 +1679,7 @@
               <node concept="2yIwOk" id="6QM7aN96Tq9" role="2OqNvi" />
             </node>
             <node concept="Xl_RD" id="6QM7aN96SdK" role="3uHU7B">
-              <property role="Xl_RC" value="NOT SUPPORTED CONCEPT " />
+              <property role="Xl_RC" value="ERROR: NOT SUPPORTED CONCEPT " />
             </node>
           </node>
         </node>
