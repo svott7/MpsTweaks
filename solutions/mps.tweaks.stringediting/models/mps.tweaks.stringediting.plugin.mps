@@ -343,7 +343,7 @@
   <node concept="sE7Ow" id="6TyyN3PyLLP">
     <property role="TrG5h" value="DeletePreviousSubString" />
     <property role="2uzpH1" value="Delete Previous Substring" />
-    <property role="3GE5qa" value="string-editing" />
+    <property role="3GE5qa" value="" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="6TyyN3PySGB" role="1NuT2Z">
       <property role="TrG5h" value="editorContext" />
@@ -506,7 +506,7 @@
     </node>
   </node>
   <node concept="Zd50a" id="6TyyN3PAbXY">
-    <property role="3GE5qa" value="string-editing" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="StringEditingKeyMap" />
     <node concept="Zd509" id="6TyyN3PAbY1" role="Zd508">
       <ref role="1bYAoF" node="6TyyN3PyLLP" resolve="DeletePreviousSubString" />
@@ -527,7 +527,7 @@
   <node concept="sE7Ow" id="2s6uFk0NdR4">
     <property role="TrG5h" value="DeleteNextSubString" />
     <property role="2uzpH1" value="Delete Next Substring" />
-    <property role="3GE5qa" value="string-editing" />
+    <property role="3GE5qa" value="" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="2s6uFk0NdR5" role="1NuT2Z">
       <property role="TrG5h" value="editorContext" />
@@ -1213,7 +1213,7 @@
     </node>
   </node>
   <node concept="312cEu" id="60r304KOiuE">
-    <property role="3GE5qa" value="string-editing" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="LabelCell" />
     <node concept="2tJIrI" id="60r304KOZH6" role="jymVt" />
     <node concept="2RhdJD" id="60r304KRtRe" role="jymVt">
@@ -1629,7 +1629,7 @@
     <node concept="3Tm1VV" id="60r304KOiuF" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="60r304KPL3C">
-    <property role="3GE5qa" value="string-editing" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="StringManipulation" />
     <node concept="2tJIrI" id="60r304KPL40" role="jymVt" />
     <node concept="2YIFZL" id="60r304KPNCY" role="jymVt">
@@ -2075,7 +2075,7 @@
     <node concept="3Tm1VV" id="60r304KPL3D" role="1B3o_S" />
   </node>
   <node concept="2fD8I5" id="60r304KQidf">
-    <property role="3GE5qa" value="string-editing" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="SelectedText" />
     <node concept="2lGYhJ" id="60r304KQidH" role="2pHZQ9">
       <property role="TrG5h" value="text" />

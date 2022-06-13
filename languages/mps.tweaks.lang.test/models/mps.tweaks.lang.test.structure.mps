@@ -9,6 +9,7 @@
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -26,6 +27,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -34,6 +36,10 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -180,12 +186,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tp5g:3FlSiDCuCBp" resolve="MPSActionReference" />
     </node>
-    <node concept="1TJgyj" id="ED6CmTpGwV" role="1TKVEi">
-      <property role="IQ2ns" value="768174373086873659" />
+    <node concept="1TJgyj" id="6QM7aN9azuR" role="1TKVEi">
+      <property role="IQ2ns" value="7904411824423581623" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="tests" />
+      <property role="20kJfa" value="groups" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="ED6CmTpGw0" resolve="ActionTest" />
+      <ref role="20lvS9" node="6QM7aN9awAL" resolve="TestGroup" />
     </node>
     <node concept="PrWs8" id="hSLl9xe" role="PzmwI">
       <ref role="PrY4T" to="tpe3:hGB2rPm" resolve="ITestCase" />
@@ -201,6 +207,11 @@
     <property role="EcuMT" value="768174373086873600" />
     <property role="TrG5h" value="ActionTest" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6QM7aN99Wzv" role="1TKVEl">
+      <property role="IQ2nx" value="7904411824423422175" />
+      <property role="TrG5h" value="testName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="2IvnPUIp3ly" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="testNodeBefore" />
@@ -213,6 +224,12 @@
       <property role="IQ2ns" value="3143335925185262981" />
       <ref role="20lvS9" to="tp5g:hHqefK1" resolve="TestNode" />
     </node>
+    <node concept="1TJgyj" id="6TyyN3Pst5k" role="1TKVEi">
+      <property role="IQ2ns" value="7954072934282285396" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="description" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
     <node concept="PrWs8" id="ED6CmTqboj" role="PzmwI">
       <ref role="PrY4T" to="tpe3:hGBgSCX" resolve="ITestMethod" />
     </node>
@@ -221,6 +238,23 @@
     </node>
     <node concept="PrWs8" id="ED6CmTqk_y" role="PzmwI">
       <ref role="PrY4T" to="tpee:i2fhoOR" resolve="IMethodLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QM7aN9awAL">
+    <property role="EcuMT" value="7904411824423569841" />
+    <property role="TrG5h" value="TestGroup" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="6QM7aN9azuV" role="1TKVEl">
+      <property role="IQ2nx" value="7904411824423581627" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6QM7aN9azuP" role="1TKVEi">
+      <property role="IQ2ns" value="7904411824423581621" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tests" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="ED6CmTpGw0" resolve="ActionTest" />
     </node>
   </node>
 </model>
