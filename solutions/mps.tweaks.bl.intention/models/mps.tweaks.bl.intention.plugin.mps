@@ -295,11 +295,12 @@
       </concept>
     </language>
     <language id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc">
-      <concept id="4348735182988525417" name="mps.tweaks.doc.structure.IntentionRef" flags="ng" index="207Z3M">
-        <reference id="4348735182988610207" name="intention" index="207$k4" />
-      </concept>
+      <concept id="4348735182988525417" name="mps.tweaks.doc.structure.IntentionRef" flags="ng" index="207Z3M" />
       <concept id="7954072934282220373" name="mps.tweaks.doc.structure.BaseConceptDoc" flags="ng" index="2r4_x_">
         <child id="7954072934282285396" name="text" index="2r4PD$" />
+      </concept>
+      <concept id="7148968517242439361" name="mps.tweaks.doc.structure.AbstractRef" flags="ng" index="RAvCW">
+        <reference id="7148968517242439362" name="reference" index="RAvCZ" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -5952,7 +5953,7 @@
   </node>
   <node concept="sE7Ow" id="5Gtvoe0HFG7">
     <property role="3GE5qa" value="log" />
-    <property role="2uzpH1" value="Trace" />
+    <property role="2uzpH1" value="Log Trace" />
     <property role="TrG5h" value="LogTrace" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="2S4$dB" id="5Gtvoe0HI6s" role="1NuT2Z">
@@ -10041,8 +10042,8 @@
           <node concept="3oM_SD" id="3LpNTIWiVcC" role="1PaTwD">
             <property role="3oM_SC" value="intention" />
           </node>
-          <node concept="207Z3M" id="3LpNTIWiDcF" role="1PaTwD">
-            <ref role="207$k4" to="tpei:6SM4v6n0_Mq" resolve="SwapTernaryBranches" />
+          <node concept="207Z3M" id="2OGOfwwqdPz" role="1PaTwD">
+            <ref role="RAvCZ" to="tpei:6SM4v6n0_Mq" resolve="SwapTernaryBranches" />
           </node>
           <node concept="3oM_SD" id="7yImMjpouig" role="1PaTwD">
             <property role="3oM_SC" value="but" />

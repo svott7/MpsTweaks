@@ -20,6 +20,7 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tp5m" ref="r:00000000-0000-4000-0000-011c89590386(jetbrains.mps.lang.test.intentions)" />
     <import index="zcx7" ref="r:2cb1d046-e902-4f83-be07-ed6e493a5680(mps.tweaks.lang.test.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -145,8 +146,12 @@
       </concept>
     </language>
     <language id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc">
+      <concept id="4348735182988525417" name="mps.tweaks.doc.structure.IntentionRef" flags="ng" index="207Z3M" />
       <concept id="7954072934282220373" name="mps.tweaks.doc.structure.BaseConceptDoc" flags="ng" index="2r4_x_">
         <child id="7954072934282285396" name="text" index="2r4PD$" />
+      </concept>
+      <concept id="7148968517242439361" name="mps.tweaks.doc.structure.AbstractRef" flags="ng" index="RAvCW">
+        <reference id="7148968517242439362" name="reference" index="RAvCZ" />
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -725,13 +730,13 @@
           <node concept="3oM_SD" id="6QM7aN961Ru" role="1PaTwD">
             <property role="3oM_SC" value="Copy" />
           </node>
-          <node concept="3oM_SD" id="6QM7aN964nv" role="1PaTwD">
+          <node concept="3oM_SD" id="2OGOfwwniZi" role="1PaTwD">
             <property role="3oM_SC" value="of" />
           </node>
-          <node concept="3oM_SD" id="6QM7aN964nC" role="1PaTwD">
-            <property role="3oM_SC" value="AddCellAnnotation" />
+          <node concept="207Z3M" id="2OGOfwwkaXa" role="1PaTwD">
+            <ref role="RAvCZ" to="tp5m:hPL8dqL" resolve="AddCellAnnotation" />
           </node>
-          <node concept="3oM_SD" id="6QM7aN96aHd" role="1PaTwD">
+          <node concept="3oM_SD" id="2OGOfwwn$LM" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="6QM7aN96aHj" role="1PaTwD">
@@ -762,11 +767,8 @@
           <node concept="3oM_SD" id="6QM7aN96dZJ" role="1PaTwD">
             <property role="3oM_SC" value="-" />
           </node>
-          <node concept="3oM_SD" id="6QM7aN96e09" role="1PaTwD">
-            <property role="3oM_SC" value="isApplicable" />
-          </node>
-          <node concept="3oM_SD" id="6QM7aN96e0e" role="1PaTwD">
-            <property role="3oM_SC" value="section" />
+          <node concept="3oM_SD" id="2OGOfwwkaXq" role="1PaTwD">
+            <property role="3oM_SC" value="isApplicable()" />
           </node>
         </node>
       </node>
@@ -811,7 +813,9 @@
           </node>
         </node>
         <node concept="3clFbF" id="4n_AWUPNGF1" role="3cqZAp">
-          <node concept="Xl_RD" id="4n_AWUPNGF0" role="3clFbG" />
+          <node concept="Xl_RD" id="4n_AWUPNGF0" role="3clFbG">
+            <property role="Xl_RC" value="/NOT APPLICABLE/" />
+          </node>
         </node>
       </node>
     </node>

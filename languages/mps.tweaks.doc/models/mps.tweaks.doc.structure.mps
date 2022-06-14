@@ -8,6 +8,8 @@
   <imports>
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tp3j" ref="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -21,6 +23,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -32,11 +35,13 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -66,11 +71,38 @@
     <property role="EcuMT" value="4348735182988525417" />
     <property role="TrG5h" value="IntentionRef" />
     <property role="34LRSv" value="intention reference" />
-    <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
+    <property role="3GE5qa" value="ref" />
+    <ref role="1TJDcQ" node="6cQffPkFWr1" resolve="AbstractRef" />
     <node concept="1TJgyj" id="3LpNTIWhSEv" role="1TKVEi">
       <property role="IQ2ns" value="4348735182988610207" />
       <property role="20kJfa" value="intention" />
       <ref role="20lvS9" to="tp3j:2c3oNEsfcpP" resolve="BaseIntentionDeclaration" />
+      <ref role="20ksaX" node="6cQffPkFWr2" resolve="reference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6GilLr1x2hJ">
+    <property role="EcuMT" value="7715324866886640751" />
+    <property role="TrG5h" value="ConceptRef" />
+    <property role="34LRSv" value="concept reference" />
+    <property role="3GE5qa" value="ref" />
+    <ref role="1TJDcQ" node="6cQffPkFWr1" resolve="AbstractRef" />
+    <node concept="1TJgyj" id="gNgnhzJ" role="1TKVEi">
+      <property role="20kJfa" value="concept" />
+      <property role="IQ2ns" value="1154546997487" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+      <ref role="20ksaX" node="6cQffPkFWr2" resolve="reference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6cQffPkFWr1">
+    <property role="EcuMT" value="7148968517242439361" />
+    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="AbstractRef" />
+    <property role="3GE5qa" value="ref" />
+    <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
+    <node concept="1TJgyj" id="6cQffPkFWr2" role="1TKVEi">
+      <property role="IQ2ns" value="7148968517242439362" />
+      <property role="20kJfa" value="reference" />
+      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

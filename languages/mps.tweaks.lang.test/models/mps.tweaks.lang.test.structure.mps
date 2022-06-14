@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <devkit ref="1c472809-5ea1-44dd-84a6-5880d40a52ea(mps.tweaks.dockit)" />
+    <use id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc" version="0" />
   </languages>
   <imports>
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
@@ -13,14 +13,13 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="e29c93af-a404-4967-85a1-f8e3ecae70ef" name="mps.tweaks.lang.text.ext">
-      <concept id="7715324866886640751" name="mps.tweaks.lang.text.ext.structure.ConceptRef" flags="ng" index="2E_BdT">
-        <child id="7715324866886898224" name="conceptRef" index="2EA$kA" />
-      </concept>
-    </language>
     <language id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc">
       <concept id="7954072934282220373" name="mps.tweaks.doc.structure.BaseConceptDoc" flags="ng" index="2r4_x_">
         <child id="7954072934282285396" name="text" index="2r4PD$" />
+      </concept>
+      <concept id="7715324866886640751" name="mps.tweaks.doc.structure.ConceptRef" flags="ng" index="2E_BdT" />
+      <concept id="7148968517242439361" name="mps.tweaks.doc.structure.AbstractRef" flags="ng" index="RAvCW">
+        <reference id="7148968517242439362" name="reference" index="RAvCZ" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -49,13 +48,9 @@
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
-        <reference id="1154546997487" name="concept" index="3gnhBz" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -63,9 +58,6 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="3133179214568824809" name="jetbrains.mps.lang.text.structure.NodeWrapperElement" flags="nn" index="tu5oc">
-        <child id="3133179214568824810" name="node" index="tu5of" />
-      </concept>
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
@@ -108,7 +100,7 @@
             <property role="3oM_SC" value="for" />
           </node>
           <node concept="3oM_SD" id="12Zz9ivDLVe" role="1PaTwD">
-            <property role="3oM_SC" value="IDE" />
+            <property role="3oM_SC" value="MPS" />
           </node>
           <node concept="3oM_SD" id="12Zz9ivDLW7" role="1PaTwD">
             <property role="3oM_SC" value="Actions." />
@@ -130,17 +122,13 @@
           <node concept="3oM_SD" id="12Zz9ivDLVK" role="1PaTwD">
             <property role="3oM_SC" value="of" />
           </node>
-          <node concept="tu5oc" id="12Zz9ivDLZd" role="1PaTwD">
-            <node concept="2E_BdT" id="12Zz9ivDLWk" role="tu5of">
-              <node concept="3gn64h" id="12Zz9ivDLWm" role="2EA$kA">
-                <ref role="3gnhBz" to="tp5g:hSLiM3w" resolve="EditorTestCase" />
-              </node>
-            </node>
+          <node concept="2E_BdT" id="2OGOfwwk7Hn" role="1PaTwD">
+            <ref role="RAvCZ" to="tp5g:hSLiM3w" resolve="EditorTestCase" />
           </node>
-          <node concept="3oM_SD" id="12Zz9ivDLZs" role="1PaTwD">
+          <node concept="3oM_SD" id="6cQffPkF3oa" role="1PaTwD">
             <property role="3oM_SC" value="if" />
           </node>
-          <node concept="3oM_SD" id="12Zz9ivDLZG" role="1PaTwD">
+          <node concept="3oM_SD" id="2OGOfwwk7Iz" role="1PaTwD">
             <property role="3oM_SC" value="you" />
           </node>
           <node concept="3oM_SD" id="12Zz9ivDLZX" role="1PaTwD">
@@ -178,6 +166,7 @@
     <property role="EcuMT" value="768174373086867069" />
     <property role="TrG5h" value="MultiActionTestCase" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="experimental" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="ED6CmTpGw1" role="1TKVEi">
       <property role="IQ2ns" value="768174373086873601" />
@@ -206,6 +195,7 @@
   <node concept="1TIwiD" id="ED6CmTpGw0">
     <property role="EcuMT" value="768174373086873600" />
     <property role="TrG5h" value="ActionTest" />
+    <property role="3GE5qa" value="experimental" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6QM7aN99Wzv" role="1TKVEl">
       <property role="IQ2nx" value="7904411824423422175" />

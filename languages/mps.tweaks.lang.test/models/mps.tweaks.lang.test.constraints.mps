@@ -111,6 +111,11 @@
       <concept id="1177714083117" name="jetbrains.mps.baseLanguage.varVariable.structure.VarType" flags="in" index="PeGgZ" />
       <concept id="1236693300889" name="jetbrains.mps.baseLanguage.varVariable.structure.VarVariableDeclaration" flags="ng" index="3KEzu6" />
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="2shhEwKGiMJ">
     <ref role="1M2myG" to="zcx7:7UhbSS48Qzc" resolve="ActionTestCase" />
@@ -146,6 +151,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="ED6CmTthwZ">
+    <property role="3GE5qa" value="experimental" />
     <ref role="1M2myG" to="zcx7:ED6CmTpETX" resolve="MultiActionTestCase" />
     <node concept="EnEH3" id="ED6CmTthx0" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
