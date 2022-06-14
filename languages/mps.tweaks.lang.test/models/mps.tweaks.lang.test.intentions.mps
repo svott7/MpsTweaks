@@ -128,9 +128,6 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="8356039341262087992" name="line" index="1aUNEU" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
@@ -920,41 +917,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="4n_AWUPNBpv">
-    <property role="TrG5h" value="RunAllTest" />
-    <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="zcx7:ED6CmTpETX" resolve="MultiActionTestCase" />
-    <node concept="2S6ZIM" id="4n_AWUPNBpw" role="2ZfVej">
-      <node concept="3clFbS" id="4n_AWUPNBpx" role="2VODD2">
-        <node concept="3clFbF" id="4n_AWUPNBzv" role="3cqZAp">
-          <node concept="Xl_RD" id="4n_AWUPNBzu" role="3clFbG">
-            <property role="Xl_RC" value="Run All Tests" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="4n_AWUPNBpy" role="2ZfgGD">
-      <node concept="3clFbS" id="4n_AWUPNBpz" role="2VODD2">
-        <node concept="3SKdUt" id="4n_AWUPNBJ5" role="3cqZAp">
-          <node concept="1PaTwC" id="4n_AWUPNBJ6" role="1aUNEU">
-            <node concept="3oM_SD" id="4n_AWUPNBJb" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
-            </node>
-            <node concept="3oM_SD" id="4n_AWUPNBRI" role="1PaTwD">
-              <property role="3oM_SC" value="impl" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="4n_AWUPNBJt" role="2ZfVeh">
-      <node concept="3clFbS" id="4n_AWUPNBJu" role="2VODD2">
-        <node concept="3clFbF" id="4n_AWUPNBNy" role="3cqZAp">
-          <node concept="3clFbT" id="4n_AWUPNBNx" role="3clFbG" />
         </node>
       </node>
     </node>
