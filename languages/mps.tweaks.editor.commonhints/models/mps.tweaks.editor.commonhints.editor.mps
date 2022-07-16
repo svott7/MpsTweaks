@@ -113,7 +113,7 @@
     </node>
     <node concept="2BsEeg" id="1jh3YY5HWsN" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="NeatMpsGen" />
+      <property role="TrG5h" value="ChattyMpsGen" />
     </node>
     <node concept="2BsEeg" id="6RudgJuWY47" role="2ABdcP">
       <property role="2gpH_U" value="true" />

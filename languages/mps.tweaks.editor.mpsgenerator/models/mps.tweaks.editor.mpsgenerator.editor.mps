@@ -23,6 +23,7 @@
     <import index="tpf3" ref="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="qi0f" ref="r:866df931-cb25-45ef-8f87-6b19c3afdd68(mps.tweaks.editor.commonhints.editor)" />
+    <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -2882,7 +2883,7 @@
     </node>
   </node>
   <node concept="V5hpn" id="6G6BBtEiddB">
-    <property role="TrG5h" value="PrettyGeneratorStyles" />
+    <property role="TrG5h" value="ChattyGeneratorStyles" />
     <property role="3GE5qa" value="mpsgen" />
     <node concept="14StLt" id="6G6BBtEiddE" role="V601i">
       <property role="TrG5h" value="TemplateStyle" />
@@ -2924,8 +2925,17 @@
     </node>
     <node concept="14StLt" id="2Y4eUbC3ZxR" role="V601i">
       <property role="TrG5h" value="MacroKeyword" />
-      <node concept="VechU" id="2Y4eUbEZXe$" role="3F10Kt">
-        <property role="Vb096" value="fLJRk5B/darkGray" />
+      <node concept="3Xmtl4" id="6K5EsFlBC0q" role="3F10Kt">
+        <node concept="1wgc9g" id="6K5EsFlCOcH" role="3XvnJa">
+          <ref role="1wgcnl" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+        </node>
+      </node>
+      <node concept="1X3_iC" id="vup1Bx524M" role="lGtFl">
+        <property role="3V$3am" value="styleItem" />
+        <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
+        <node concept="VechU" id="2Y4eUbEZXe$" role="8Wnug">
+          <property role="Vb096" value="fLJRk5B/darkGray" />
+        </node>
       </node>
       <node concept="Vb9p2" id="2Y4eUbF0MB_" role="3F10Kt">
         <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />

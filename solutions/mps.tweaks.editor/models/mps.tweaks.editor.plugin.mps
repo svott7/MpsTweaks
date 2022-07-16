@@ -21,6 +21,7 @@
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="rvhr" ref="r:0a87eb62-6d3c-44eb-a613-00cbe6c4ae6d(mps.tweaks.smodel.plugin)" />
+    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -328,7 +329,7 @@
     <property role="TrG5h" value="MpsTweaksEditorHints" />
     <node concept="2tJIrI" id="42BB1zBZJ_Z" role="jymVt" />
     <node concept="Wx3nA" id="42BB1zC07rF" role="jymVt">
-      <property role="TrG5h" value="defaultMpsTweaksHints" />
+      <property role="TrG5h" value="DEFAULT_MPS_TWEAKS_HINTS" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="42BB1zBZXYm" role="1B3o_S" />
       <node concept="2hMVRd" id="42BB1zC05Yb" role="1tU5fm">
@@ -357,7 +358,7 @@
     </node>
     <node concept="2tJIrI" id="6Qju3tFd4Dr" role="jymVt" />
     <node concept="Wx3nA" id="6Qju3tFd6Wc" role="jymVt">
-      <property role="TrG5h" value="defaultMpsTweaksGeneratorHints" />
+      <property role="TrG5h" value="DEFAULT_MPS_TWEAKS_GENERATOR_HINTS" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="6Qju3tFd5x8" role="1B3o_S" />
       <node concept="2hMVRd" id="6Qju3tFd6zu" role="1tU5fm">
@@ -653,10 +654,27 @@
           <node concept="2YIFZM" id="42BB1zC09ZG" role="3clFbG">
             <ref role="37wK5l" node="42BB1zC03CP" resolve="setDefault" />
             <ref role="1Pybhc" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
-            <node concept="2YIFZM" id="42BB1zC0pxb" role="37wK5m">
-              <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
-              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <node concept="1KvdUw" id="42BB1zC0py9" role="37wK5m" />
+            <node concept="2OqwBi" id="vup1Bx428w" role="37wK5m">
+              <node concept="1KvdUw" id="vup1Bx41J5" role="2Oq$k0" />
+              <node concept="liA8E" id="vup1Bx44ca" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="vup1Bx4p2E" role="3cqZAp">
+          <node concept="2YIFZM" id="vup1Bx4pd3" role="3clFbG">
+            <ref role="37wK5l" node="52Y6DbuH6Pg" resolve="unset" />
+            <ref role="1Pybhc" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
+            <node concept="2OqwBi" id="vup1Bx4pCs" role="37wK5m">
+              <node concept="1KvdUw" id="vup1Bx4pf1" role="2Oq$k0" />
+              <node concept="liA8E" id="vup1Bx4r7M" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+              </node>
+            </node>
+            <node concept="10M0yZ" id="vup1Bx4Qid" role="37wK5m">
+              <ref role="3cqZAo" node="6Qju3tFd6Wc" resolve="defaultMpsTweaksGeneratorHints" />
+              <ref role="1PxDUh" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
             </node>
           </node>
         </node>
