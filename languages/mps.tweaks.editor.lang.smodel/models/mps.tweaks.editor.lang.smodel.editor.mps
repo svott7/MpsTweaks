@@ -1904,7 +1904,7 @@
                 </node>
                 <node concept="2YIFZM" id="6Qju3tF8vDs" role="3uHU7B">
                   <ref role="37wK5l" node="6Qju3tF8sPz" resolve="varUsages" />
-                  <ref role="1Pybhc" node="6Qju3tF8srx" resolve="Helper" />
+                  <ref role="1Pybhc" node="6Qju3tF8srx" resolve="EditorHelper" />
                   <node concept="pncrf" id="6Qju3tF8vMZ" role="37wK5m" />
                 </node>
               </node>
@@ -1927,7 +1927,7 @@
                 </node>
                 <node concept="3eOSWO" id="6Qju3tFc6CP" role="3K4Cdx">
                   <node concept="2YIFZM" id="6Qju3tFbDY_" role="3uHU7B">
-                    <ref role="1Pybhc" node="6Qju3tF8srx" resolve="Helper" />
+                    <ref role="1Pybhc" node="6Qju3tF8srx" resolve="EditorHelper" />
                     <ref role="37wK5l" node="6Qju3tF8sPz" resolve="varUsages" />
                     <node concept="pncrf" id="6Qju3tFbDYA" role="37wK5m" />
                   </node>
@@ -2267,7 +2267,7 @@
                                   </node>
                                 </node>
                                 <node concept="Jnkvi" id="6ZITWSgXACD" role="3uHU7B">
-                                  <ref role="1M0zk5" node="6ZITWSgX9Fo" resolve="parameterDeclaration" />
+                                  <ref role="1M0zk5" node="6ZITWSgX9Fo" resolve="variableDeclaration" />
                                 </node>
                               </node>
                             </node>
@@ -3480,7 +3480,7 @@
               <node concept="3clFbF" id="2v69eKc6I0q" role="3cqZAp">
                 <node concept="2YIFZM" id="Qs8f1kK7JM" role="3clFbG">
                   <ref role="37wK5l" node="Qs8f1kIPAH" resolve="getConceptFunctionHeader" />
-                  <ref role="1Pybhc" node="6Qju3tF8srx" resolve="Helper" />
+                  <ref role="1Pybhc" node="6Qju3tF8srx" resolve="EditorHelper" />
                   <node concept="pncrf" id="Qs8f1kK7OM" role="37wK5m" />
                 </node>
               </node>
@@ -3696,7 +3696,7 @@
               <node concept="3fqX7Q" id="4n_AWUPIuhn" role="3clFbG">
                 <node concept="2YIFZM" id="4n_AWUPIuhp" role="3fr31v">
                   <ref role="37wK5l" node="4n_AWUPH6aO" resolve="isDefaultClosureLiteral" />
-                  <ref role="1Pybhc" node="6Qju3tF8srx" resolve="Helper" />
+                  <ref role="1Pybhc" node="6Qju3tF8srx" resolve="EditorHelper" />
                   <node concept="pncrf" id="4n_AWUPIuhq" role="37wK5m" />
                 </node>
               </node>
@@ -3734,7 +3734,7 @@
             <node concept="3clFbF" id="4n_AWUPINKZ" role="3cqZAp">
               <node concept="3fqX7Q" id="4n_AWUPINL1" role="3clFbG">
                 <node concept="2YIFZM" id="4n_AWUPINL2" role="3fr31v">
-                  <ref role="1Pybhc" node="6Qju3tF8srx" resolve="Helper" />
+                  <ref role="1Pybhc" node="6Qju3tF8srx" resolve="EditorHelper" />
                   <ref role="37wK5l" node="4n_AWUPH6aO" resolve="isDefaultClosureLiteral" />
                   <node concept="pncrf" id="4n_AWUPINL3" role="37wK5m" />
                 </node>
@@ -3749,7 +3749,7 @@
             <node concept="3clFbF" id="4n_AWUPJa4h" role="3cqZAp">
               <node concept="2YIFZM" id="4n_AWUPJaa4" role="3clFbG">
                 <ref role="37wK5l" node="4n_AWUPH6aO" resolve="isDefaultClosureLiteral" />
-                <ref role="1Pybhc" node="6Qju3tF8srx" resolve="Helper" />
+                <ref role="1Pybhc" node="6Qju3tF8srx" resolve="EditorHelper" />
                 <node concept="pncrf" id="4n_AWUPJabh" role="37wK5m" />
               </node>
             </node>

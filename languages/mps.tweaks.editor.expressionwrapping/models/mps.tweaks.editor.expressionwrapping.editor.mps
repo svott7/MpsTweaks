@@ -14,6 +14,8 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="l36t" ref="r:87dca7c3-9c03-4bb2-90a6-6d5e60f0974a(jetbrains.mps.baseLanguage.checkedDots.editor)" />
+    <import index="pxpg" ref="r:5a550369-d6d9-4c89-a89b-1bb748dc20b3(jetbrains.mps.baseLanguage.checkedDots.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -270,6 +272,61 @@
         <ref role="1ERwB7" to="tpen:gAp5u0y" resolve="BinaryOperation_RightArgument_Actions" />
       </node>
       <node concept="l2Vlx" id="i0v2fyL" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="KFQkIYxA1v">
+    <ref role="1XX52x" to="pxpg:3ysSjmiKK8V" resolve="CheckedDotExpression" />
+    <node concept="2aJ2om" id="KFQkIYxA1w" role="CpUAK">
+      <ref role="2$4xQ3" to="qi0f:6RudgJvtxu1" resolve="LightweightSModel" />
+    </node>
+    <node concept="3EZMnI" id="KFQkIYxA1x" role="2wV5jI">
+      <node concept="3F1sOY" id="KFQkIYxA1y" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:hqOq$gm" resolve="operand" />
+      </node>
+      <node concept="3EZMnI" id="KFQkIYxA1z" role="3EZMnx">
+        <node concept="3XFhqQ" id="KFQkIYxA1$" role="3EZMnx" />
+        <node concept="2iRfu4" id="KFQkIYxA1_" role="2iSdaV" />
+        <node concept="3XFhqQ" id="KFQkIYxA1A" role="3EZMnx" />
+        <node concept="pkWqt" id="KFQkIYxA1B" role="pqm2j">
+          <node concept="3clFbS" id="KFQkIYxA1C" role="2VODD2">
+            <node concept="3clFbF" id="KFQkIYxA1D" role="3cqZAp">
+              <node concept="2YIFZM" id="KFQkIYxA1E" role="3clFbG">
+                <ref role="37wK5l" to="oxa:Qs8f1kNYph" resolve="isWrapped" />
+                <ref role="1Pybhc" to="oxa:2XN$iXtaVMc" resolve="ExpressionWrapping" />
+                <node concept="pncrf" id="KFQkIYxA1F" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pVoyu" id="KFQkIYxA1G" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+          <node concept="3nzxsE" id="KFQkIYxA1H" role="3n$kyP">
+            <node concept="3clFbS" id="KFQkIYxA1I" role="2VODD2">
+              <node concept="3clFbF" id="KFQkIYxA1J" role="3cqZAp">
+                <node concept="2YIFZM" id="KFQkIYxA1K" role="3clFbG">
+                  <ref role="1Pybhc" to="oxa:2XN$iXtaVMc" resolve="ExpressionWrapping" />
+                  <ref role="37wK5l" to="oxa:Qs8f1kNYph" resolve="isWrapped" />
+                  <node concept="pncrf" id="KFQkIYxA1L" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3ysSjmiKK90" role="3EZMnx">
+        <property role="3F0ifm" value=".?" />
+        <ref role="1k5W1q" to="tpen:hFDnyG9" resolve="Dot" />
+        <ref role="1ERwB7" to="l36t:4AZBXnbnf5d" resolve="CheckedDot_Actions_MakeUnchecked" />
+        <node concept="VPM3Z" id="4AZBXnbnf5c" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3ysSjmiKK91" role="3EZMnx">
+        <property role="1cu_pB" value="hQNNVxO/3" />
+        <ref role="1ERwB7" to="l36t:2P0iSQl3y9L" resolve="CheckedDotExpression_Actions_DeleteOperation" />
+        <ref role="1NtTu8" to="tpee:hqOqNr4" resolve="operation" />
+      </node>
+      <node concept="l2Vlx" id="KFQkIYxA1P" role="2iSdaV" />
     </node>
   </node>
 </model>

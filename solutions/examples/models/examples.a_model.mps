@@ -589,7 +589,7 @@
                             </node>
                           </node>
                           <node concept="Rm8GO" id="1KUoCipvCtf" role="37wK5m">
-                            <ref role="1Px2BO" to="gspm:~JBPopupFactory$ActionSelectionAid" resolve="ActionSelectionAid" />
+                            <ref role="1Px2BO" to="gspm:~JBPopupFactory$ActionSelectionAid" resolve="JBPopupFactory.ActionSelectionAid" />
                             <ref role="Rm8GQ" to="gspm:~JBPopupFactory$ActionSelectionAid.SPEEDSEARCH" resolve="SPEEDSEARCH" />
                           </node>
                           <node concept="3clFbT" id="nVETL0vf4H" role="37wK5m">

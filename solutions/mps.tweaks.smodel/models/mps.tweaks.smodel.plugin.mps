@@ -2482,7 +2482,7 @@
         <ref role="tCJdB" node="3cFKtE1DGWl" resolve="AddOrDetach_PunctuationRight" />
       </node>
       <node concept="tCFHf" id="1Jivxq$6mna" role="ftvYc">
-        <ref role="tCJdB" node="1Jivxq$682L" resolve="EditStyle_Folding" />
+        <ref role="tCJdB" node="1Jivxq$682L" resolve="ToggleUsesFolding" />
       </node>
     </node>
   </node>

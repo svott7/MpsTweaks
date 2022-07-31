@@ -195,8 +195,8 @@
             <node concept="3clFbS" id="6QM7aN9et8T" role="3clFbx">
               <node concept="2MkqsV" id="6QM7aN9etzz" role="3cqZAp">
                 <node concept="2YIFZM" id="6QM7aN9et$B" role="2MkJ7o">
-                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" />
-                  <ref role="1Pybhc" to="wyt6:~String" />
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                   <node concept="Xl_RD" id="6QM7aN9et$C" role="37wK5m">
                     <property role="Xl_RC" value="Test name '%s' is not unique" />
                   </node>

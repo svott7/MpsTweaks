@@ -368,7 +368,7 @@
         <node concept="2i4dXS" id="6Qju3tFdhdP" role="2ShVmc">
           <node concept="17QB3L" id="6Qju3tFdhR3" role="HW$YZ" />
           <node concept="2pYGij" id="42BB1zC3A0z" role="HW$Y0">
-            <ref role="2pYH_C" to="qi0f:1jh3YY5HWsN" resolve="NeatMpsGen" />
+            <ref role="2pYH_C" to="qi0f:1jh3YY5HWsN" resolve="ChattyMpsGen" />
           </node>
         </node>
       </node>
@@ -384,7 +384,7 @@
               <ref role="3cqZAo" node="42BB1zC0hIi" resolve="project" />
             </node>
             <node concept="37vLTw" id="42BB1zC09J_" role="37wK5m">
-              <ref role="3cqZAo" node="42BB1zC07rF" resolve="defaultMpsTweaksHints" />
+              <ref role="3cqZAo" node="42BB1zC07rF" resolve="DEFAULT_MPS_TWEAKS_HINTS" />
             </node>
           </node>
         </node>
@@ -409,7 +409,7 @@
               <ref role="3cqZAo" node="52Y6DbuH6tn" resolve="project" />
             </node>
             <node concept="37vLTw" id="52Y6DbuHycn" role="37wK5m">
-              <ref role="3cqZAo" node="42BB1zC07rF" resolve="defaultMpsTweaksHints" />
+              <ref role="3cqZAo" node="42BB1zC07rF" resolve="DEFAULT_MPS_TWEAKS_HINTS" />
             </node>
           </node>
         </node>
@@ -673,7 +673,7 @@
               </node>
             </node>
             <node concept="10M0yZ" id="vup1Bx4Qid" role="37wK5m">
-              <ref role="3cqZAo" node="6Qju3tFd6Wc" resolve="defaultMpsTweaksGeneratorHints" />
+              <ref role="3cqZAo" node="6Qju3tFd6Wc" resolve="DEFAULT_MPS_TWEAKS_GENERATOR_HINTS" />
               <ref role="1PxDUh" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
             </node>
           </node>
@@ -913,7 +913,7 @@
       <node concept="tCFHf" id="6Qju3tFduF2" role="ftvYc">
         <ref role="tCJdB" node="1B8loX25DHZ" resolve="SetMpsTweaksEditorHint" />
         <node concept="10M0yZ" id="6Qju3tFduM3" role="2J__8u">
-          <ref role="3cqZAo" node="42BB1zC07rF" resolve="defaultMpsTweaksHints" />
+          <ref role="3cqZAo" node="42BB1zC07rF" resolve="DEFAULT_MPS_TWEAKS_HINTS" />
           <ref role="1PxDUh" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
         </node>
         <node concept="Xl_RD" id="6Qju3tFduOl" role="2J__8u">
@@ -923,7 +923,7 @@
       <node concept="tCFHf" id="6Qju3tFduPo" role="ftvYc">
         <ref role="tCJdB" node="1B8loX25DHZ" resolve="SetMpsTweaksEditorHint" />
         <node concept="10M0yZ" id="6Qju3tFduUa" role="2J__8u">
-          <ref role="3cqZAo" node="6Qju3tFd6Wc" resolve="defaultMpsTweaksGeneratorHints" />
+          <ref role="3cqZAo" node="6Qju3tFd6Wc" resolve="DEFAULT_MPS_TWEAKS_GENERATOR_HINTS" />
           <ref role="1PxDUh" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
         </node>
         <node concept="Xl_RD" id="6Qju3tFduPq" role="2J__8u">
@@ -933,7 +933,7 @@
       <node concept="tCFHf" id="6Qju3tFdAkv" role="ftvYc">
         <ref role="tCJdB" node="52Y6DbuHyqh" resolve="UnsetMpsTweaksEditorHint" />
         <node concept="10M0yZ" id="6Qju3tFdAwc" role="2J__8u">
-          <ref role="3cqZAo" node="42BB1zC07rF" resolve="defaultMpsTweaksHints" />
+          <ref role="3cqZAo" node="42BB1zC07rF" resolve="DEFAULT_MPS_TWEAKS_HINTS" />
           <ref role="1PxDUh" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
         </node>
         <node concept="Xl_RD" id="6Qju3tFdAkx" role="2J__8u">
@@ -943,7 +943,7 @@
       <node concept="tCFHf" id="6Qju3tFdAkF" role="ftvYc">
         <ref role="tCJdB" node="52Y6DbuHyqh" resolve="UnsetMpsTweaksEditorHint" />
         <node concept="10M0yZ" id="6Qju3tFdAkG" role="2J__8u">
-          <ref role="3cqZAo" node="6Qju3tFd6Wc" resolve="defaultMpsTweaksGeneratorHints" />
+          <ref role="3cqZAo" node="6Qju3tFd6Wc" resolve="DEFAULT_MPS_TWEAKS_GENERATOR_HINTS" />
           <ref role="1PxDUh" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
         </node>
         <node concept="Xl_RD" id="6Qju3tFdAkH" role="2J__8u">
