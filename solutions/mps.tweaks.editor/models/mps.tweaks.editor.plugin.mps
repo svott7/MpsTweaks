@@ -36,6 +36,7 @@
         <child id="1227008813498" name="constructionParameter" index="2JrayB" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
       </concept>
+      <concept id="1203082695294" name="jetbrains.mps.lang.plugin.structure.DoUpdateBlock" flags="in" index="tkhdA" />
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
@@ -54,7 +55,6 @@
       </concept>
       <concept id="1227019068586" name="jetbrains.mps.lang.plugin.structure.ToStringConceptFunction" flags="in" index="2K2imR" />
       <concept id="1227019310584" name="jetbrains.mps.lang.plugin.structure.ToStringParameter" flags="nn" index="2K3dj_" />
-      <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
         <reference id="1217252646389" name="key" index="1DUlNI" />
@@ -296,9 +296,9 @@
         </node>
       </node>
     </node>
-    <node concept="2ScWuX" id="6Qju3tFdoaF" role="tmbBb">
-      <node concept="3clFbS" id="6Qju3tFdoaG" role="2VODD2">
-        <node concept="3clFbF" id="6Qju3tFdoID" role="3cqZAp">
+    <node concept="tkhdA" id="3esO25c3pUQ" role="tmbBb">
+      <node concept="3clFbS" id="3esO25c3pUR" role="2VODD2">
+        <node concept="3clFbF" id="3esO25c3q1O" role="3cqZAp">
           <node concept="2OqwBi" id="6Qju3tFdoYa" role="3clFbG">
             <node concept="tl45R" id="6Qju3tFdoIC" role="2Oq$k0" />
             <node concept="AQDAd" id="6Qju3tFdtfb" role="2OqNvi">
@@ -756,9 +756,9 @@
         </node>
       </node>
     </node>
-    <node concept="2ScWuX" id="6Qju3tFd$sq" role="tmbBb">
-      <node concept="3clFbS" id="6Qju3tFd$sr" role="2VODD2">
-        <node concept="3clFbF" id="6Qju3tFd$Ag" role="3cqZAp">
+    <node concept="tkhdA" id="3esO25c3qUY" role="tmbBb">
+      <node concept="3clFbS" id="3esO25c3qUZ" role="2VODD2">
+        <node concept="3clFbF" id="3esO25c3r1W" role="3cqZAp">
           <node concept="2OqwBi" id="6Qju3tFd$Ah" role="3clFbG">
             <node concept="tl45R" id="6Qju3tFd$Ai" role="2Oq$k0" />
             <node concept="AQDAd" id="6Qju3tFd$Aj" role="2OqNvi">
