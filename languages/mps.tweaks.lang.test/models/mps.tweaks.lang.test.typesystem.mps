@@ -101,6 +101,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -127,6 +130,7 @@
   </registry>
   <node concept="18kY7G" id="6QM7aN9ebAd">
     <property role="TrG5h" value="check_MultiActionTestCase_uniqeNames" />
+    <property role="3GE5qa" value="" />
     <node concept="3clFbS" id="6QM7aN9ebAe" role="18ibNy">
       <node concept="2Gpval" id="6QM7aN9ecyT" role="3cqZAp">
         <node concept="2GrKxI" id="6QM7aN9ecyV" role="2Gsz3X">
