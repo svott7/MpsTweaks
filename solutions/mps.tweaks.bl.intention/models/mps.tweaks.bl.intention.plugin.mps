@@ -274,9 +274,6 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
-      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199542442495" name="jetbrains.mps.baseLanguage.closures.structure.FunctionType" flags="in" index="1ajhzC">
@@ -10124,35 +10121,52 @@
     <property role="3GE5qa" value="refactoring.annotation" />
     <property role="2uzpH1" value="@NotNull" />
     <property role="TrG5h" value="AddNotNullAnnotation" />
-    <node concept="2XrIbr" id="KFQkIYxQii" role="32lrUH">
-      <property role="TrG5h" value="hasAnnotation" />
-      <node concept="3clFbS" id="KFQkIYxQij" role="3clF47">
-        <node concept="3clFbF" id="KFQkIYxQik" role="3cqZAp">
-          <node concept="2EnYce" id="KFQkIYxQil" role="3clFbG">
-            <node concept="2OqwBi" id="KFQkIYxQim" role="2Oq$k0">
-              <node concept="2OqwBi" id="KFQkIYxQin" role="2Oq$k0">
-                <node concept="2WthIp" id="KFQkIYxQio" role="2Oq$k0" />
-                <node concept="3gHZIF" id="KFQkIYxQip" role="2OqNvi">
-                  <ref role="2WH_rO" node="8TBVw9h3yR" resolve="node" />
-                </node>
-              </node>
-              <node concept="2Xjw5R" id="KFQkIYxQiq" role="2OqNvi">
-                <node concept="1xMEDy" id="KFQkIYxQir" role="1xVPHs">
-                  <node concept="chp4Y" id="KFQkIYxQis" role="ri$Ld">
-                    <ref role="cht4Q" to="tpee:hiAJDhU" resolve="HasAnnotation" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="KFQkIYxQit" role="1xVPHs" />
+    <node concept="2XrIbr" id="72oxZEt_xGy" role="32lrUH">
+      <property role="TrG5h" value="annotationParent" />
+      <node concept="3clFbS" id="72oxZEt_xGz" role="3clF47">
+        <node concept="3clFbF" id="72oxZEt_xG$" role="3cqZAp">
+          <node concept="2OqwBi" id="72oxZEt_xG_" role="3clFbG">
+            <node concept="2OqwBi" id="72oxZEt_xGA" role="2Oq$k0">
+              <node concept="2WthIp" id="72oxZEt_xGB" role="2Oq$k0" />
+              <node concept="3gHZIF" id="72oxZEt_xGC" role="2OqNvi">
+                <ref role="2WH_rO" node="8TBVw9h3yR" resolve="node" />
               </node>
             </node>
-            <node concept="3Tsc0h" id="KFQkIYxQiu" role="2OqNvi">
+            <node concept="2Xjw5R" id="72oxZEt_xGD" role="2OqNvi">
+              <node concept="1xMEDy" id="72oxZEt_xGE" role="1xVPHs">
+                <node concept="chp4Y" id="72oxZEt_xGF" role="ri$Ld">
+                  <ref role="cht4Q" to="tpee:hiAJDhU" resolve="HasAnnotation" />
+                </node>
+              </node>
+              <node concept="1xIGOp" id="72oxZEt_xGG" role="1xVPHs" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="72oxZEt_xGH" role="1B3o_S" />
+      <node concept="3Tqbb2" id="72oxZEt_xGI" role="3clF45">
+        <ref role="ehGHo" to="tpee:hiAJDhU" resolve="HasAnnotation" />
+      </node>
+    </node>
+    <node concept="2XrIbr" id="72oxZEt_xGJ" role="32lrUH">
+      <property role="TrG5h" value="annotations" />
+      <node concept="3clFbS" id="72oxZEt_xGK" role="3clF47">
+        <node concept="3clFbF" id="72oxZEt_xGL" role="3cqZAp">
+          <node concept="2OqwBi" id="72oxZEt_xGM" role="3clFbG">
+            <node concept="2OqwBi" id="72oxZEt_xGN" role="2Oq$k0">
+              <node concept="2WthIp" id="72oxZEt_xGO" role="2Oq$k0" />
+              <node concept="2XshWL" id="72oxZEt_xGP" role="2OqNvi">
+                <ref role="2WH_rO" node="72oxZEt_xGy" resolve="annotationParent" />
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="72oxZEt_xGQ" role="2OqNvi">
               <ref role="3TtcxE" to="tpee:hiAJF2X" resolve="annotation" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="KFQkIYxQiv" role="1B3o_S" />
-      <node concept="2I9FWS" id="KFQkIYxQiw" role="3clF45">
+      <node concept="3Tm6S6" id="72oxZEt_xGR" role="1B3o_S" />
+      <node concept="2I9FWS" id="72oxZEt_xGS" role="3clF45">
         <ref role="2I9WkF" to="tpee:hiAHcMF" resolve="AnnotationInstance" />
       </node>
     </node>
@@ -10166,17 +10180,17 @@
       <node concept="3clFbS" id="8TBVw9h19$" role="2VODD2">
         <node concept="3clFbF" id="8TBVw9h3Zj" role="3cqZAp">
           <node concept="2OqwBi" id="8TBVw9hmRH" role="3clFbG">
-            <node concept="2OqwBi" id="1$fIVvQi_Xv" role="2Oq$k0">
-              <node concept="2WthIp" id="1$fIVvQi_Xy" role="2Oq$k0" />
-              <node concept="2XshWL" id="1$fIVvQi_X$" role="2OqNvi">
-                <ref role="2WH_rO" node="KFQkIYxQii" resolve="hasAnnotation" />
-              </node>
-            </node>
             <node concept="TSZUe" id="8TBVw9hrnu" role="2OqNvi">
               <node concept="2c44tf" id="8TBVw9hv1y" role="25WWJ7">
                 <node concept="2AHcQZ" id="8TBVw9hvd1" role="2c44tc">
                   <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
                 </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="72oxZEt_z5$" role="2Oq$k0">
+              <node concept="2WthIp" id="72oxZEt_z5_" role="2Oq$k0" />
+              <node concept="2XshWL" id="72oxZEt_z5A" role="2OqNvi">
+                <ref role="2WH_rO" node="72oxZEt_xGJ" resolve="annotations" />
               </node>
             </node>
           </node>
@@ -10185,31 +10199,25 @@
     </node>
     <node concept="2ScWuX" id="8TBVw9jOhg" role="tmbBb">
       <node concept="3clFbS" id="8TBVw9jOhh" role="2VODD2">
-        <node concept="3clFbJ" id="1$fIVvQgCiZ" role="3cqZAp">
-          <node concept="3clFbS" id="1$fIVvQgCj1" role="3clFbx">
-            <node concept="3cpWs6" id="1$fIVvQgERy" role="3cqZAp">
-              <node concept="3clFbT" id="1$fIVvQgEWc" role="3cqZAk" />
+        <node concept="3clFbJ" id="72oxZEt_y9N" role="3cqZAp">
+          <node concept="3clFbS" id="72oxZEt_y9O" role="3clFbx">
+            <node concept="3cpWs6" id="72oxZEt_y9P" role="3cqZAp">
+              <node concept="3clFbT" id="72oxZEt_y9Q" role="3cqZAk" />
             </node>
           </node>
-          <node concept="2OqwBi" id="1$fIVvQgCOI" role="3clFbw">
-            <node concept="2OqwBi" id="1$fIVvQgCn4" role="2Oq$k0">
-              <node concept="2WthIp" id="1$fIVvQgCn5" role="2Oq$k0" />
-              <node concept="2XshWL" id="1$fIVvQgCn6" role="2OqNvi">
-                <ref role="2WH_rO" node="KFQkIYxQii" resolve="hasAnnotation" />
+          <node concept="2OqwBi" id="72oxZEt_y9R" role="3clFbw">
+            <node concept="2OqwBi" id="72oxZEt_y9S" role="2Oq$k0">
+              <node concept="2WthIp" id="72oxZEt_y9T" role="2Oq$k0" />
+              <node concept="2XshWL" id="72oxZEt_y9U" role="2OqNvi">
+                <ref role="2WH_rO" node="72oxZEt_xGy" resolve="annotationParent" />
               </node>
             </node>
-            <node concept="1v1jN8" id="KFQkIYxYQY" role="2OqNvi" />
+            <node concept="3w_OXm" id="72oxZEt_y9V" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbF" id="8TBVw9jOUA" role="3cqZAp">
           <node concept="3fqX7Q" id="8TBVw9k1cv" role="3clFbG">
             <node concept="2OqwBi" id="8TBVw9k1cx" role="3fr31v">
-              <node concept="2OqwBi" id="1$fIVvQgrn1" role="2Oq$k0">
-                <node concept="2WthIp" id="1$fIVvQgrn4" role="2Oq$k0" />
-                <node concept="2XshWL" id="1$fIVvQgrn6" role="2OqNvi">
-                  <ref role="2WH_rO" node="KFQkIYxQii" resolve="hasAnnotation" />
-                </node>
-              </node>
               <node concept="2HwmR7" id="8TBVw9k1cB" role="2OqNvi">
                 <node concept="1bVj0M" id="8TBVw9k1cC" role="23t8la">
                   <node concept="3clFbS" id="8TBVw9k1cD" role="1bW5cS">
@@ -10232,6 +10240,12 @@
                   </node>
                 </node>
               </node>
+              <node concept="2OqwBi" id="72oxZEt_yCZ" role="2Oq$k0">
+                <node concept="2WthIp" id="72oxZEt_yD0" role="2Oq$k0" />
+                <node concept="2XshWL" id="72oxZEt_yD1" role="2OqNvi">
+                  <ref role="2WH_rO" node="72oxZEt_xGJ" resolve="annotations" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -10243,34 +10257,51 @@
     <property role="2uzpH1" value="@Nullable" />
     <property role="TrG5h" value="AddNullableAnnotation" />
     <node concept="2XrIbr" id="KFQkIYp3kz" role="32lrUH">
-      <property role="TrG5h" value="hasAnnotation" />
+      <property role="TrG5h" value="annotationParent" />
       <node concept="3clFbS" id="KFQkIYp3k_" role="3clF47">
         <node concept="3clFbF" id="KFQkIYp3kA" role="3cqZAp">
-          <node concept="2EnYce" id="KFQkIYxFWu" role="3clFbG">
-            <node concept="2OqwBi" id="KFQkIYp3kB" role="2Oq$k0">
-              <node concept="2OqwBi" id="KFQkIYp3kC" role="2Oq$k0">
-                <node concept="2WthIp" id="KFQkIYp3kD" role="2Oq$k0" />
-                <node concept="3gHZIF" id="KFQkIYp3kE" role="2OqNvi">
-                  <ref role="2WH_rO" node="1$fIVvQdQA_" resolve="node" />
-                </node>
-              </node>
-              <node concept="2Xjw5R" id="KFQkIYp3kF" role="2OqNvi">
-                <node concept="1xMEDy" id="KFQkIYp3kG" role="1xVPHs">
-                  <node concept="chp4Y" id="KFQkIYp3kH" role="ri$Ld">
-                    <ref role="cht4Q" to="tpee:hiAJDhU" resolve="HasAnnotation" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="KFQkIYp3kI" role="1xVPHs" />
+          <node concept="2OqwBi" id="KFQkIYp3kB" role="3clFbG">
+            <node concept="2OqwBi" id="KFQkIYp3kC" role="2Oq$k0">
+              <node concept="2WthIp" id="KFQkIYp3kD" role="2Oq$k0" />
+              <node concept="3gHZIF" id="KFQkIYp3kE" role="2OqNvi">
+                <ref role="2WH_rO" node="1$fIVvQdQA_" resolve="node" />
               </node>
             </node>
-            <node concept="3Tsc0h" id="KFQkIYxGdI" role="2OqNvi">
-              <ref role="3TtcxE" to="tpee:hiAJF2X" resolve="annotation" />
+            <node concept="2Xjw5R" id="KFQkIYp3kF" role="2OqNvi">
+              <node concept="1xMEDy" id="KFQkIYp3kG" role="1xVPHs">
+                <node concept="chp4Y" id="KFQkIYp3kH" role="ri$Ld">
+                  <ref role="cht4Q" to="tpee:hiAJDhU" resolve="HasAnnotation" />
+                </node>
+              </node>
+              <node concept="1xIGOp" id="KFQkIYp3kI" role="1xVPHs" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm6S6" id="KFQkIYp3kJ" role="1B3o_S" />
-      <node concept="2I9FWS" id="KFQkIYxGJ4" role="3clF45">
+      <node concept="3Tqbb2" id="72oxZEt$xRc" role="3clF45">
+        <ref role="ehGHo" to="tpee:hiAJDhU" resolve="HasAnnotation" />
+      </node>
+    </node>
+    <node concept="2XrIbr" id="72oxZEt$wk7" role="32lrUH">
+      <property role="TrG5h" value="annotations" />
+      <node concept="3clFbS" id="72oxZEt$wk9" role="3clF47">
+        <node concept="3clFbF" id="72oxZEt$_fa" role="3cqZAp">
+          <node concept="2OqwBi" id="72oxZEt$_lz" role="3clFbG">
+            <node concept="2OqwBi" id="72oxZEt$_f4" role="2Oq$k0">
+              <node concept="2WthIp" id="72oxZEt$_f7" role="2Oq$k0" />
+              <node concept="2XshWL" id="72oxZEt$_f9" role="2OqNvi">
+                <ref role="2WH_rO" node="KFQkIYp3kz" resolve="annotationParent" />
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="72oxZEt$_A3" role="2OqNvi">
+              <ref role="3TtcxE" to="tpee:hiAJF2X" resolve="annotation" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="72oxZEt$yJr" role="1B3o_S" />
+      <node concept="2I9FWS" id="72oxZEt$_X4" role="3clF45">
         <ref role="2I9WkF" to="tpee:hiAHcMF" resolve="AnnotationInstance" />
       </node>
     </node>
@@ -10284,10 +10315,10 @@
       <node concept="3clFbS" id="1$fIVvQdQAE" role="2VODD2">
         <node concept="3clFbF" id="1$fIVvQdQAF" role="3cqZAp">
           <node concept="2OqwBi" id="1$fIVvQdQAG" role="3clFbG">
-            <node concept="2OqwBi" id="KFQkIYp4$w" role="2Oq$k0">
-              <node concept="2WthIp" id="KFQkIYp4$z" role="2Oq$k0" />
-              <node concept="2XshWL" id="KFQkIYp4$_" role="2OqNvi">
-                <ref role="2WH_rO" node="KFQkIYp3kz" resolve="hasAnnotation" />
+            <node concept="2OqwBi" id="72oxZEt$AsH" role="2Oq$k0">
+              <node concept="2WthIp" id="72oxZEt$AsK" role="2Oq$k0" />
+              <node concept="2XshWL" id="72oxZEt$AsM" role="2OqNvi">
+                <ref role="2WH_rO" node="72oxZEt$wk7" resolve="annotations" />
               </node>
             </node>
             <node concept="TSZUe" id="1$fIVvQdQAM" role="2OqNvi">
@@ -10316,16 +10347,16 @@
                 <ref role="2WH_rO" node="KFQkIYp3kz" resolve="hasAnnotation" />
               </node>
             </node>
-            <node concept="1v1jN8" id="KFQkIYxPlj" role="2OqNvi" />
+            <node concept="3w_OXm" id="72oxZEt$yCV" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbF" id="1$fIVvQdQAR" role="3cqZAp">
           <node concept="3fqX7Q" id="1$fIVvQdQAS" role="3clFbG">
             <node concept="2OqwBi" id="1$fIVvQdQAT" role="3fr31v">
-              <node concept="2OqwBi" id="KFQkIYp58$" role="2Oq$k0">
-                <node concept="2WthIp" id="KFQkIYp58_" role="2Oq$k0" />
-                <node concept="2XshWL" id="KFQkIYp58A" role="2OqNvi">
-                  <ref role="2WH_rO" node="KFQkIYp3kz" resolve="hasAnnotation" />
+              <node concept="2OqwBi" id="72oxZEt$AkG" role="2Oq$k0">
+                <node concept="2WthIp" id="72oxZEt$AkJ" role="2Oq$k0" />
+                <node concept="2XshWL" id="72oxZEt$AkL" role="2OqNvi">
+                  <ref role="2WH_rO" node="72oxZEt$wk7" resolve="annotations" />
                 </node>
               </node>
               <node concept="2HwmR7" id="1$fIVvQdQAZ" role="2OqNvi">
