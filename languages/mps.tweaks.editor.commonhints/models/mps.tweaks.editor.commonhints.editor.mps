@@ -196,5 +196,41 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="4WKLVXy77K6">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="SmallVerticalGap80" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="3F0ifn" id="4WKLVXy77K7" role="2wV5jI">
+      <node concept="VPM3Z" id="4WKLVXy77K8" role="3F10Kt" />
+      <node concept="VPxyj" id="4WKLVXy77K9" role="3F10Kt" />
+      <node concept="VSNWy" id="4WKLVXy77Ka" role="3F10Kt">
+        <node concept="1cFabM" id="4WKLVXy77Kb" role="1d8cEk">
+          <node concept="3clFbS" id="4WKLVXy77Kc" role="2VODD2">
+            <node concept="3clFbF" id="4WKLVXy77Kd" role="3cqZAp">
+              <node concept="10QFUN" id="4WKLVXy77Ke" role="3clFbG">
+                <node concept="1eOMI4" id="4WKLVXy77Kf" role="10QFUP">
+                  <node concept="17qRlL" id="4WKLVXy77Kg" role="1eOMHV">
+                    <node concept="3b6qkQ" id="4WKLVXy77Kh" role="3uHU7w">
+                      <property role="$nhwW" value="0.8" />
+                    </node>
+                    <node concept="2OqwBi" id="4WKLVXy77Ki" role="3uHU7B">
+                      <node concept="2YIFZM" id="4WKLVXy77Kj" role="2Oq$k0">
+                        <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                      </node>
+                      <node concept="liA8E" id="4WKLVXy77Kk" role="2OqNvi">
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="10Oyi0" id="4WKLVXy77Kl" role="10QFUM" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
