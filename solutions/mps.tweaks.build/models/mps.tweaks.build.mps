@@ -130,7 +130,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="12Zz9ivFCfw">
-    <property role="TrG5h" value="MpsTweaks" />
+    <property role="TrG5h" value="MpsTweaksBuild" />
     <property role="2DA0ip" value="../.." />
     <node concept="10PD9b" id="12Zz9ivFCfx" role="10PD9s" />
     <node concept="3b7kt6" id="12Zz9ivFCfy" role="10PD9s" />
@@ -165,7 +165,7 @@
       </node>
       <node concept="3_J27D" id="12Zz9ivFCfK" role="m$_w8">
         <node concept="3Mxwew" id="3esO25c2Adb" role="3MwsjC">
-          <property role="3MwjfP" value="1.03" />
+          <property role="3MwjfP" value="1.04" />
         </node>
       </node>
       <node concept="m$f5U" id="12Zz9ivFCfM" role="m$_yh">
