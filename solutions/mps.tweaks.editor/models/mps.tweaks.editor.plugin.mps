@@ -26,6 +26,7 @@
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
@@ -223,7 +224,7 @@
   <node concept="2DaZZR" id="42BB1zBZaxY" />
   <node concept="sE7Ow" id="1B8loX25DHZ">
     <property role="TrG5h" value="SetMpsTweaksEditorHint" />
-    <property role="2uzpH1" value="Set all MPS Tweaks Editor Hints" />
+    <property role="2uzpH1" value="Set MPS Tweaks Editor Hints" />
     <node concept="2JriF1" id="6Qju3tFdimQ" role="2JrayB">
       <property role="TrG5h" value="hints" />
       <node concept="3Tm6S6" id="6Qju3tFdimR" role="1B3o_S" />
@@ -352,6 +353,23 @@
           </node>
           <node concept="2pYGij" id="42BB1zC08L_" role="HW$Y0">
             <ref role="2pYH_C" to="qi0f:TtN5BdmRHS" resolve="LightweightMpsConsole" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="19D2RHgUTuP" role="jymVt" />
+    <node concept="Wx3nA" id="19D2RHgUTaj" role="jymVt">
+      <property role="TrG5h" value="DEFAULT_MPS_BL_TWEAKS_HINTS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="19D2RHgUTak" role="1B3o_S" />
+      <node concept="2hMVRd" id="19D2RHgUTal" role="1tU5fm">
+        <node concept="17QB3L" id="19D2RHgUTam" role="2hN53Y" />
+      </node>
+      <node concept="2ShNRf" id="19D2RHgUTan" role="33vP2m">
+        <node concept="2i4dXS" id="19D2RHgUTao" role="2ShVmc">
+          <node concept="17QB3L" id="19D2RHgUTap" role="HW$YZ" />
+          <node concept="2pYGij" id="19D2RHgUTaq" role="HW$Y0">
+            <ref role="2pYH_C" to="qi0f:19D2RHgUO7H" resolve="LightweightBl" />
           </node>
         </node>
       </node>
@@ -683,7 +701,7 @@
   </node>
   <node concept="sE7Ow" id="52Y6DbuHyqh">
     <property role="TrG5h" value="UnsetMpsTweaksEditorHint" />
-    <property role="2uzpH1" value="Unset all MPS Tweaks Editor Hints" />
+    <property role="2uzpH1" value="Unset MPS Tweaks Editor Hints" />
     <node concept="2JriF1" id="6Qju3tFd_08" role="2JrayB">
       <property role="TrG5h" value="hints" />
       <node concept="3Tm6S6" id="6Qju3tFd_09" role="1B3o_S" />
@@ -910,6 +928,7 @@
       <ref role="tU$_T" to="tprs:hF$mBpz" resolve="IDEAView" />
     </node>
     <node concept="ftmFs" id="6Qju3tFduEZ" role="ftER_">
+      <node concept="2a7GMi" id="19D2RHgVYdw" role="ftvYc" />
       <node concept="tCFHf" id="6Qju3tFduF2" role="ftvYc">
         <ref role="tCJdB" node="1B8loX25DHZ" resolve="SetMpsTweaksEditorHint" />
         <node concept="10M0yZ" id="6Qju3tFduM3" role="2J__8u">
@@ -930,6 +949,16 @@
           <property role="Xl_RC" value="Generator Hints" />
         </node>
       </node>
+      <node concept="tCFHf" id="19D2RHgUWmi" role="ftvYc">
+        <ref role="tCJdB" node="1B8loX25DHZ" resolve="SetMpsTweaksEditorHint" />
+        <node concept="10M0yZ" id="19D2RHgUWHp" role="2J__8u">
+          <ref role="3cqZAo" node="19D2RHgUTaj" resolve="DEFAULT_MPS_BL_TWEAKS_HINTS" />
+          <ref role="1PxDUh" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
+        </node>
+        <node concept="Xl_RD" id="19D2RHgUWmk" role="2J__8u">
+          <property role="Xl_RC" value="BaseLanguage Hints" />
+        </node>
+      </node>
       <node concept="tCFHf" id="6Qju3tFdAkv" role="ftvYc">
         <ref role="tCJdB" node="52Y6DbuHyqh" resolve="UnsetMpsTweaksEditorHint" />
         <node concept="10M0yZ" id="6Qju3tFdAwc" role="2J__8u">
@@ -948,6 +977,16 @@
         </node>
         <node concept="Xl_RD" id="6Qju3tFdAkH" role="2J__8u">
           <property role="Xl_RC" value="Generator Hints" />
+        </node>
+      </node>
+      <node concept="tCFHf" id="19D2RHgUWx2" role="ftvYc">
+        <ref role="tCJdB" node="52Y6DbuHyqh" resolve="UnsetMpsTweaksEditorHint" />
+        <node concept="10M0yZ" id="19D2RHgUWTB" role="2J__8u">
+          <ref role="3cqZAo" node="19D2RHgUTaj" resolve="DEFAULT_MPS_BL_TWEAKS_HINTS" />
+          <ref role="1PxDUh" node="42BB1zBZJ$V" resolve="MpsTweaksEditorHints" />
+        </node>
+        <node concept="Xl_RD" id="19D2RHgUWx4" role="2J__8u">
+          <property role="Xl_RC" value="BaseLanguage Hints" />
         </node>
       </node>
     </node>

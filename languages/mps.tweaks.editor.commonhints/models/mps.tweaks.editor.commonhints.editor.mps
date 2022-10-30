@@ -94,6 +94,10 @@
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="LightweightSModel" />
     </node>
+    <node concept="2BsEeg" id="19D2RHgUO7H" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="LightweightBl" />
+    </node>
     <node concept="2BsEeg" id="7ERSpuqQNgD" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="LightweightSModel__Experimental" />
