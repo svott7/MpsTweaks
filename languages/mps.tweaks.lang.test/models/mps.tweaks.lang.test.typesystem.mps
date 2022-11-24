@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tp5l" ref="r:00000000-0000-4000-0000-011c89590385(jetbrains.mps.lang.test.typesystem)" />
     <import index="yv9k" ref="r:2b5a2db2-e6bc-4d0d-9417-29c0a1b88db7(mps.tweaks.lang.test.behavior)" implicit="true" />
     <import index="zcx7" ref="r:2cb1d046-e902-4f83-be07-ed6e493a5680(mps.tweaks.lang.test.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -77,8 +78,16 @@
       </concept>
     </language>
     <language id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc">
+      <concept id="2826067960244085687" name="mps.tweaks.doc.structure.AnyRef" flags="ng" index="mjxpx">
+        <child id="7400021826774799510" name="ref" index="2tJFKM" />
+      </concept>
       <concept id="7954072934282220373" name="mps.tweaks.doc.structure.BaseConceptDoc" flags="ng" index="2r4_x_">
         <child id="7954072934282285396" name="text" index="2r4PD$" />
+      </concept>
+    </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
+        <reference id="7256306938026143658" name="target" index="2aWVGs" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -348,13 +357,15 @@
           <node concept="3oM_SD" id="5HbhpAQu2ys" role="1PaTwD">
             <property role="3oM_SC" value="Inspired" />
           </node>
-          <node concept="3oM_SD" id="5HbhpAQu2yx" role="1PaTwD">
+          <node concept="3oM_SD" id="2sSdtoLtE_6" role="1PaTwD">
             <property role="3oM_SC" value="by" />
           </node>
-          <node concept="3oM_SD" id="5HbhpAQu2Jw" role="1PaTwD">
-            <property role="3oM_SC" value="checkBeforeContainsCellAnnotation_EditorTestCase," />
+          <node concept="mjxpx" id="2sSdtoLtOiT" role="1PaTwD">
+            <node concept="ZC_QK" id="2sSdtoLtOj0" role="2tJFKM">
+              <ref role="2aWVGs" to="tp5l:5aRyplrT$il" resolve="checkBeforeContainsCellAnnotation_EditorTestCase" />
+            </node>
           </node>
-          <node concept="3oM_SD" id="5HbhpAQulFY" role="1PaTwD">
+          <node concept="3oM_SD" id="2sSdtoLu7HI" role="1PaTwD">
             <property role="3oM_SC" value="but" />
           </node>
         </node>

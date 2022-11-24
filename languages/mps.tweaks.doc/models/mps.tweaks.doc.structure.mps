@@ -11,6 +11,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -103,6 +104,20 @@
       <property role="IQ2ns" value="7148968517242439362" />
       <property role="20kJfa" value="reference" />
       <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2sSdtoLtyeR">
+    <property role="EcuMT" value="2826067960244085687" />
+    <property role="3GE5qa" value="ref" />
+    <property role="TrG5h" value="AnyRef" />
+    <property role="34LRSv" value="any ref" />
+    <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
+    <node concept="1TJgyj" id="6qMaajV39im" role="1TKVEi">
+      <property role="IQ2ns" value="7400021826774799510" />
+      <property role="20lmBu" value="fLJjDmT" />
+      <property role="20lbJX" value="fLJekj4" />
+      <property role="20kJfa" value="ref" />
+      <ref role="20lvS9" to="dvox:k2ZBl8CwzR" resolve="NodeIdentity" />
     </node>
   </node>
 </model>

@@ -17,6 +17,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -83,6 +84,9 @@
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -97,6 +101,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -223,6 +228,34 @@
         </node>
       </node>
       <node concept="17QB3L" id="3LpNTIWisPj" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2sSdtoLtyoT">
+    <property role="3GE5qa" value="ref" />
+    <ref role="13h7C2" to="636o:2sSdtoLtyeR" resolve="AnyRef" />
+    <node concept="13hLZK" id="2sSdtoLtyoU" role="13h7CW">
+      <node concept="3clFbS" id="2sSdtoLtyoV" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2sSdtoLtyp4" role="13h7CS">
+      <property role="TrG5h" value="getTextualRepresentation" />
+      <ref role="13i0hy" to="vdrq:fB3l81it7u" resolve="getTextualRepresentation" />
+      <node concept="3Tm1VV" id="2sSdtoLtyp5" role="1B3o_S" />
+      <node concept="3clFbS" id="2sSdtoLtyp8" role="3clF47">
+        <node concept="3clFbF" id="2sSdtoLtMdy" role="3cqZAp">
+          <node concept="2OqwBi" id="2sSdtoLtNko" role="3clFbG">
+            <node concept="2OqwBi" id="2sSdtoLtMnz" role="2Oq$k0">
+              <node concept="13iPFW" id="2sSdtoLtMdx" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2sSdtoLtMzT" role="2OqNvi">
+                <ref role="3Tt5mk" to="636o:6qMaajV39im" resolve="ref" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="2sSdtoLtNBu" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2sSdtoLtyp9" role="3clF45" />
     </node>
   </node>
 </model>
