@@ -44,10 +44,12 @@
         <child id="768174373086873601" name="action" index="2NNXa4" />
       </concept>
       <concept id="768174373086873600" name="mps.tweaks.lang.test.structure.ActionTest" flags="ng" index="2NNXa5">
-        <property id="7904411824423422175" name="testName" index="2$_thN" />
         <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
         <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
         <child id="7954072934282285396" name="description" index="2r4PD$" />
+      </concept>
+      <concept id="6578428207197624605" name="mps.tweaks.lang.test.structure.OptionalTestName" flags="ng" index="3H9XM4">
+        <property id="7904411824423581627" name="testName2" index="2$A2Go" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -78,7 +80,7 @@
       <property role="2$A2Gn" value="Word" />
       <node concept="2NNXa5" id="2NY6dYJsO55" role="2$A2Gp">
         <property role="TrG5h" value="FirstPosition" />
-        <property role="2$_thN" value="First Position: Nothing to delete" />
+        <property role="2$A2Go" value="First Position: Nothing to delete" />
         <node concept="1qefOq" id="2NY6dYJsO5d" role="25YQCW">
           <node concept="Xl_RD" id="2NY6dYJsO5e" role="1qenE9">
             <property role="Xl_RC" value="Hello" />
@@ -106,7 +108,7 @@
       </node>
       <node concept="2NNXa5" id="6QM7aN96UZq" role="2$A2Gp">
         <property role="TrG5h" value="Word_LastPosition" />
-        <property role="2$_thN" value="Last Position: Delete whole word" />
+        <property role="2$A2Go" value="Last Position: Delete whole word" />
         <node concept="1qefOq" id="6QM7aN96UZr" role="25YQCW">
           <node concept="Xl_RD" id="6QM7aN96UZs" role="1qenE9">
             <property role="Xl_RC" value="Hello" />
@@ -133,7 +135,7 @@
       </node>
       <node concept="2NNXa5" id="6QM7aN99J5i" role="2$A2Gp">
         <property role="TrG5h" value="Word_MiddlePosition" />
-        <property role="2$_thN" value="Middle Position: Delete letters before cursor" />
+        <property role="2$A2Go" value="Middle Position: Delete letters before cursor" />
         <node concept="1qefOq" id="6QM7aN99J5j" role="25YQCW">
           <node concept="Xl_RD" id="6QM7aN99J5k" role="1qenE9">
             <property role="Xl_RC" value="Hello" />
@@ -161,7 +163,7 @@
       </node>
       <node concept="2NNXa5" id="6QM7aN99ErH" role="2$A2Gp">
         <property role="TrG5h" value="Word_LastPosition_And_Space" />
-        <property role="2$_thN" value="Delete Space and Word" />
+        <property role="2$A2Go" value="Delete Space and Word" />
         <node concept="1qefOq" id="6QM7aN99ErI" role="25YQCW">
           <node concept="Xl_RD" id="6QM7aN99ErJ" role="1qenE9">
             <property role="Xl_RC" value="Hello   " />
@@ -190,7 +192,7 @@
     <node concept="2$A1kt" id="4n_AWUPK6jx" role="2$A2Gr">
       <property role="2$A2Gn" value="Number" />
       <node concept="2NNXa5" id="4n_AWUPK1II" role="2$A2Gp">
-        <property role="2$_thN" value="Word of Numbers" />
+        <property role="2$A2Go" value="Word of Numbers" />
         <node concept="1qefOq" id="4n_AWUPK1Jd" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPK1Jc" role="1qenE9">
             <property role="Xl_RC" value="Hello 42" />
@@ -217,7 +219,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPK6mg" role="2$A2Gp">
-        <property role="2$_thN" value="Spaces plus Word of Numbers" />
+        <property role="2$A2Go" value="Spaces plus Word of Numbers" />
         <node concept="1qefOq" id="4n_AWUPK6mh" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPK6mi" role="1qenE9">
             <property role="Xl_RC" value="Hello 42  " />
@@ -244,7 +246,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPK6lf" role="2$A2Gp">
-        <property role="2$_thN" value="Word including Numbers" />
+        <property role="2$A2Go" value="Word including Numbers" />
         <node concept="1qefOq" id="4n_AWUPK6lg" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPK6lh" role="1qenE9">
             <property role="Xl_RC" value="Hello42" />
@@ -274,7 +276,7 @@
     <node concept="2$A1kt" id="4n_AWUPNc9A" role="2$A2Gr">
       <property role="2$A2Gn" value="Capital Letters" />
       <node concept="2NNXa5" id="4n_AWUPNcbn" role="2$A2Gp">
-        <property role="2$_thN" value="Last position" />
+        <property role="2$A2Go" value="Last position" />
         <node concept="1qefOq" id="4n_AWUPNcbp" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPNcbD" role="1qenE9">
             <property role="Xl_RC" value="AAAAA" />
@@ -300,7 +302,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPNcc5" role="2$A2Gp">
-        <property role="2$_thN" value="Middle position" />
+        <property role="2$A2Go" value="Middle position" />
         <node concept="1qefOq" id="4n_AWUPNcc6" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPNcc7" role="1qenE9">
             <property role="Xl_RC" value="AAAAA" />
@@ -327,7 +329,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPNLVN" role="2$A2Gp">
-        <property role="2$_thN" value="World only" />
+        <property role="2$A2Go" value="World only" />
         <node concept="1qefOq" id="4n_AWUPNLVO" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPNLVP" role="1qenE9">
             <property role="Xl_RC" value="testABCWorld" />
@@ -354,7 +356,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPNMyx" role="2$A2Gp">
-        <property role="2$_thN" value="Delete Single Capital Letter And previous Word" />
+        <property role="2$A2Go" value="Delete Single Capital Letter And previous Word" />
         <node concept="1qefOq" id="4n_AWUPNMyy" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPNMyz" role="1qenE9">
             <property role="Xl_RC" value="testABCWorld" />
@@ -384,7 +386,7 @@
     <node concept="2$A1kt" id="4n_AWUPN65Q" role="2$A2Gr">
       <property role="2$A2Gn" value="Stop Chars" />
       <node concept="2NNXa5" id="4n_AWUPN67a" role="2$A2Gp">
-        <property role="2$_thN" value="Space" />
+        <property role="2$A2Go" value="Space" />
         <node concept="1qefOq" id="4n_AWUPN67c" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPN67d" role="1qenE9">
             <property role="Xl_RC" value="A B " />
@@ -411,7 +413,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPN7eO" role="2$A2Gp">
-        <property role="2$_thN" value="Underscore" />
+        <property role="2$A2Go" value="Underscore" />
         <node concept="1qefOq" id="4n_AWUPN7eP" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPN7eQ" role="1qenE9">
             <property role="Xl_RC" value="A_B_" />
@@ -438,7 +440,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPN8nJ" role="2$A2Gp">
-        <property role="2$_thN" value="Minus" />
+        <property role="2$A2Go" value="Minus" />
         <node concept="1qefOq" id="4n_AWUPN8nK" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPN8nL" role="1qenE9">
             <property role="Xl_RC" value="A-B-" />
@@ -465,7 +467,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPN9xx" role="2$A2Gp">
-        <property role="2$_thN" value="Mixed: only delete first stop char" />
+        <property role="2$A2Go" value="Mixed: only delete first stop char" />
         <node concept="1qefOq" id="4n_AWUPN9xy" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPN9xz" role="1qenE9">
             <property role="Xl_RC" value="A- _" />
@@ -496,7 +498,7 @@
       <property role="2$A2Gn" value="Sentence" />
       <node concept="2NNXa5" id="6QM7aN94HOi" role="2$A2Gp">
         <property role="TrG5h" value="Sentence_End" />
-        <property role="2$_thN" value="Last Position" />
+        <property role="2$A2Go" value="Last Position" />
         <node concept="1qefOq" id="6QM7aN94HOm" role="25YQFr">
           <node concept="Xl_RD" id="6QM7aN94HOn" role="1qenE9">
             <property role="Xl_RC" value="Hello " />
@@ -534,7 +536,7 @@
       </node>
       <node concept="2NNXa5" id="6QM7aN9dR6j" role="2$A2Gp">
         <property role="TrG5h" value="Sentence_End" />
-        <property role="2$_thN" value="In the Middle" />
+        <property role="2$A2Go" value="In the Middle" />
         <node concept="1qefOq" id="6QM7aN9dR6k" role="25YQFr">
           <node concept="Xl_RD" id="6QM7aN9dR6l" role="1qenE9">
             <property role="Xl_RC" value="Hello  World" />
@@ -575,7 +577,7 @@
       <property role="2$A2Gn" value="Camel Case" />
       <node concept="2NNXa5" id="6QM7aN96emo" role="2$A2Gp">
         <property role="TrG5h" value="Sentence_End" />
-        <property role="2$_thN" value="Word" />
+        <property role="2$A2Go" value="Word" />
         <node concept="1qefOq" id="6QM7aN96emF" role="25YQCW">
           <node concept="Xl_RD" id="6QM7aN96emG" role="1qenE9">
             <property role="Xl_RC" value="HelloWorldTest" />
@@ -611,7 +613,7 @@
       <property role="2$A2Gn" value="Word" />
       <node concept="2NNXa5" id="2OGOfwwfjcN" role="2$A2Gp">
         <property role="TrG5h" value="FirstPosition" />
-        <property role="2$_thN" value="First Position: Delete Word" />
+        <property role="2$A2Go" value="First Position: Delete Word" />
         <node concept="1qefOq" id="2OGOfwwfjcO" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjcP" role="1qenE9">
             <property role="Xl_RC" value="Hello" />
@@ -638,7 +640,7 @@
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjcU" role="2$A2Gp">
         <property role="TrG5h" value="Word_LastPosition" />
-        <property role="2$_thN" value="Last Position: Delete nothing" />
+        <property role="2$A2Go" value="Last Position: Delete nothing" />
         <node concept="1qefOq" id="2OGOfwwfjcV" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjcW" role="1qenE9">
             <property role="Xl_RC" value="Hello" />
@@ -666,7 +668,7 @@
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjd1" role="2$A2Gp">
         <property role="TrG5h" value="Word_MiddlePosition" />
-        <property role="2$_thN" value="Middle Position: Delete letters after cursor" />
+        <property role="2$A2Go" value="Middle Position: Delete letters after cursor" />
         <node concept="1qefOq" id="2OGOfwwfjd2" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjd3" role="1qenE9">
             <property role="Xl_RC" value="Hello" />
@@ -694,7 +696,7 @@
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjd8" role="2$A2Gp">
         <property role="TrG5h" value="Word_LastPosition_And_Space" />
-        <property role="2$_thN" value="Delete Spaces until word" />
+        <property role="2$A2Go" value="Delete Spaces until word" />
         <node concept="1qefOq" id="2OGOfwwfjd9" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjda" role="1qenE9">
             <property role="Xl_RC" value="  Hello" />
@@ -722,7 +724,7 @@
       </node>
       <node concept="2NNXa5" id="2OGOfwwgtEM" role="2$A2Gp">
         <property role="TrG5h" value="Word_LastPosition_And_Space" />
-        <property role="2$_thN" value="Delete Word and Spaces" />
+        <property role="2$A2Go" value="Delete Word and Spaces" />
         <node concept="1qefOq" id="2OGOfwwgtEN" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwgtEO" role="1qenE9">
             <property role="Xl_RC" value="   Hello   " />
@@ -752,7 +754,7 @@
     <node concept="2$A1kt" id="2OGOfwwfjdf" role="2$A2Gr">
       <property role="2$A2Gn" value="Number" />
       <node concept="2NNXa5" id="2OGOfwwfjdg" role="2$A2Gp">
-        <property role="2$_thN" value="Word of Numbers" />
+        <property role="2$A2Go" value="Word of Numbers" />
         <node concept="1qefOq" id="2OGOfwwfjdh" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjdi" role="1qenE9">
             <property role="Xl_RC" value="Hello 42 Hello" />
@@ -779,7 +781,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjdu" role="2$A2Gp">
-        <property role="2$_thN" value="Word including Numbers" />
+        <property role="2$A2Go" value="Word including Numbers" />
         <node concept="1qefOq" id="2OGOfwwfjdv" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjdw" role="1qenE9">
             <property role="Xl_RC" value="Test42Hello" />
@@ -806,7 +808,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="2OGOfwwhesI" role="2$A2Gp">
-        <property role="2$_thN" value="Stop before Number" />
+        <property role="2$A2Go" value="Stop before Number" />
         <node concept="1qefOq" id="2OGOfwwhesJ" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwhesK" role="1qenE9">
             <property role="Xl_RC" value="Test42" />
@@ -836,7 +838,7 @@
     <node concept="2$A1kt" id="2OGOfwwfjd_" role="2$A2Gr">
       <property role="2$A2Gn" value="Capital Letters and Camel Case" />
       <node concept="2NNXa5" id="2OGOfwwfjdA" role="2$A2Gp">
-        <property role="2$_thN" value="First position" />
+        <property role="2$A2Go" value="First position" />
         <node concept="1qefOq" id="2OGOfwwfjdB" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjdC" role="1qenE9">
             <property role="Xl_RC" value="AAAAA" />
@@ -862,7 +864,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjdH" role="2$A2Gp">
-        <property role="2$_thN" value="Middle position" />
+        <property role="2$A2Go" value="Middle position" />
         <node concept="1qefOq" id="2OGOfwwfjdI" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjdJ" role="1qenE9">
             <property role="Xl_RC" value="ABCDE" />
@@ -889,7 +891,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjdO" role="2$A2Gp">
-        <property role="2$_thN" value="World only" />
+        <property role="2$A2Go" value="World only" />
         <node concept="1qefOq" id="2OGOfwwfjdP" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjdQ" role="1qenE9">
             <property role="Xl_RC" value="testABCWorld" />
@@ -916,7 +918,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="2OGOfwwhJSk" role="2$A2Gp">
-        <property role="2$_thN" value="World only 2" />
+        <property role="2$A2Go" value="World only 2" />
         <node concept="1qefOq" id="2OGOfwwhJSl" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwhJSm" role="1qenE9">
             <property role="Xl_RC" value="testAbcWorld" />
@@ -946,7 +948,7 @@
     <node concept="2$A1kt" id="2OGOfwwfje2" role="2$A2Gr">
       <property role="2$A2Gn" value="Stop Chars" />
       <node concept="2NNXa5" id="2OGOfwwfje3" role="2$A2Gp">
-        <property role="2$_thN" value="Space" />
+        <property role="2$A2Go" value="Space" />
         <node concept="1qefOq" id="2OGOfwwfje4" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfje5" role="1qenE9">
             <property role="Xl_RC" value="A B" />
@@ -973,7 +975,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjea" role="2$A2Gp">
-        <property role="2$_thN" value="Underscore" />
+        <property role="2$A2Go" value="Underscore" />
         <node concept="1qefOq" id="2OGOfwwfjeb" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjec" role="1qenE9">
             <property role="Xl_RC" value="A_B" />
@@ -1000,7 +1002,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjeh" role="2$A2Gp">
-        <property role="2$_thN" value="Minus" />
+        <property role="2$A2Go" value="Minus" />
         <node concept="1qefOq" id="2OGOfwwfjei" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjej" role="1qenE9">
             <property role="Xl_RC" value="A-B" />
@@ -1027,7 +1029,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="2OGOfwwfjeo" role="2$A2Gp">
-        <property role="2$_thN" value="Mixed: only delete first stop char" />
+        <property role="2$A2Go" value="Mixed: only delete first stop char" />
         <node concept="1qefOq" id="2OGOfwwfjep" role="25YQCW">
           <node concept="Xl_RD" id="2OGOfwwfjeq" role="1qenE9">
             <property role="Xl_RC" value="A- _" />
@@ -1058,7 +1060,7 @@
       <property role="2$A2Gn" value="Sentence" />
       <node concept="2NNXa5" id="2OGOfwwfjew" role="2$A2Gp">
         <property role="TrG5h" value="Sentence_End" />
-        <property role="2$_thN" value="Last Position" />
+        <property role="2$A2Go" value="Last Position" />
         <node concept="1qefOq" id="2OGOfwwfjex" role="25YQFr">
           <node concept="Xl_RD" id="2OGOfwwfjey" role="1qenE9">
             <property role="Xl_RC" value="Hello " />

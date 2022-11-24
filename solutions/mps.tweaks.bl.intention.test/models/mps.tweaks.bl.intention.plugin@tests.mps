@@ -202,9 +202,11 @@
         <child id="768174373086873659" name="tests" index="2NNXaY" />
       </concept>
       <concept id="768174373086873600" name="mps.tweaks.lang.test.structure.ActionTest" flags="ng" index="2NNXa5">
-        <property id="7904411824423422175" name="testName" index="2$_thN" />
         <child id="3143335925185262946" name="testNodeBefore" index="25YQCX" />
         <child id="3143335925185262981" name="testNodeResult" index="25YQFs" />
+      </concept>
+      <concept id="6578428207197624605" name="mps.tweaks.lang.test.structure.OptionalTestName" flags="ng" index="3H9XM4">
+        <property id="7904411824423581627" name="testName2" index="2$A2Gn" />
       </concept>
       <concept id="9120123007403256012" name="mps.tweaks.lang.test.structure.ActionTestCase" flags="lg" index="1UG$t2">
         <child id="9120123007403333625" name="action" index="1UHrxR" />
@@ -1218,7 +1220,7 @@
   <node concept="2NNVjS" id="KFQkIYw5y8">
     <node concept="2$A1kt" id="KFQkIYw5ya" role="2$A2Gr">
       <node concept="2NNXa5" id="KFQkIYw5yc" role="2$A2Gp">
-        <property role="2$_thN" value="void to string" />
+        <property role="2$A2Gn" value="void to string" />
         <node concept="1qefOq" id="KFQkIYw5ye" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYw5$p" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1264,7 +1266,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIYw621" role="2$A2Gp">
-        <property role="2$_thN" value="void to object" />
+        <property role="2$A2Gn" value="void to object" />
         <node concept="1qefOq" id="KFQkIYw622" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYw623" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1310,7 +1312,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIYwsD9" role="2$A2Gp">
-        <property role="2$_thN" value="string to object" />
+        <property role="2$A2Gn" value="string to object" />
         <node concept="1qefOq" id="KFQkIYwsDa" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYwsDb" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1373,7 +1375,7 @@
   <node concept="2NNVjS" id="KFQkIYwIlg">
     <node concept="2$A1kt" id="KFQkIYwIlh" role="2$A2Gr">
       <node concept="2NNXa5" id="KFQkIYwIli" role="2$A2Gp">
-        <property role="2$_thN" value="method" />
+        <property role="2$A2Gn" value="method" />
         <node concept="1qefOq" id="KFQkIYwIlj" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYwIlk" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1411,7 +1413,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIYwJ4q" role="2$A2Gp">
-        <property role="2$_thN" value="parameter" />
+        <property role="2$A2Gn" value="parameter" />
         <node concept="1qefOq" id="KFQkIYwJ4r" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYwJ4s" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1456,7 +1458,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIYwJGD" role="2$A2Gp">
-        <property role="2$_thN" value="parameter type selected" />
+        <property role="2$A2Gn" value="parameter type selected" />
         <node concept="1qefOq" id="KFQkIYwJGE" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYwJGF" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1509,7 +1511,7 @@
   <node concept="2NNVjS" id="KFQkIYy0fq">
     <node concept="2$A1kt" id="KFQkIYy0fr" role="2$A2Gr">
       <node concept="2NNXa5" id="KFQkIYy0fs" role="2$A2Gp">
-        <property role="2$_thN" value="method" />
+        <property role="2$A2Gn" value="method" />
         <node concept="1qefOq" id="KFQkIYy0ft" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYy0fu" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1551,7 +1553,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIYy0fH" role="2$A2Gp">
-        <property role="2$_thN" value="parameter" />
+        <property role="2$A2Gn" value="parameter" />
         <node concept="1qefOq" id="KFQkIYy0fI" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYy0fJ" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1596,7 +1598,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIYy0g2" role="2$A2Gp">
-        <property role="2$_thN" value="parameter type selected" />
+        <property role="2$A2Gn" value="parameter type selected" />
         <node concept="1qefOq" id="KFQkIYy0g3" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYy0g4" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1649,7 +1651,7 @@
   <node concept="2NNVjS" id="KFQkIYzjI$">
     <node concept="2$A1kt" id="KFQkIYzjI_" role="2$A2Gr">
       <node concept="2NNXa5" id="KFQkIY$cI3" role="2$A2Gp">
-        <property role="2$_thN" value="default method" />
+        <property role="2$A2Gn" value="default method" />
         <node concept="1qefOq" id="KFQkIY$cI4" role="25YQCX">
           <node concept="3clFb_" id="KFQkIY$cI5" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1686,7 +1688,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIYEzbO" role="2$A2Gp">
-        <property role="2$_thN" value="publi method and cursor inside body" />
+        <property role="2$A2Gn" value="publi method and cursor inside body" />
         <node concept="1qefOq" id="KFQkIYEzbP" role="25YQCX">
           <node concept="3clFb_" id="KFQkIYEzbQ" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1724,7 +1726,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIY_1O5" role="2$A2Gp">
-        <property role="2$_thN" value="protected field and selected type" />
+        <property role="2$A2Gn" value="protected field and selected type" />
         <node concept="1qefOq" id="KFQkIY_7Ue" role="25YQCX">
           <node concept="312cEg" id="KFQkIY_7Ub" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1749,7 +1751,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="KFQkIY_8Dk" role="2$A2Gp">
-        <property role="2$_thN" value="static field" />
+        <property role="2$A2Gn" value="static field" />
         <node concept="1qefOq" id="KFQkIY_8Dl" role="25YQCX">
           <node concept="Wx3nA" id="KFQkIY_8HF" role="1qenE9">
             <property role="TrG5h" value="foo" />
@@ -1884,7 +1886,7 @@
   <node concept="2NNVjS" id="7w9c3sqjxfP">
     <node concept="2$A1kt" id="7w9c3sqj_wD" role="2$A2Gr">
       <node concept="2NNXa5" id="7w9c3sqj_wF" role="2$A2Gp">
-        <property role="2$_thN" value="T" />
+        <property role="2$A2Gn" value="T" />
         <node concept="1qefOq" id="7w9c3sq_Wbc" role="25YQFs">
           <node concept="312cEu" id="7w9c3sqA1gc" role="1qenE9">
             <property role="TrG5h" value="Dummy" />
@@ -1967,7 +1969,7 @@
   <node concept="2NNVjS" id="7w9c3sqCFb8">
     <node concept="2$A1kt" id="7w9c3sqCFba" role="2$A2Gr">
       <node concept="2NNXa5" id="7w9c3sqCFbc" role="2$A2Gp">
-        <property role="2$_thN" value="First line selected" />
+        <property role="2$A2Gn" value="First line selected" />
         <node concept="1qefOq" id="7w9c3sqCFbe" role="25YQCX">
           <node concept="312cEu" id="7w9c3sqCFca" role="1qenE9">
             <property role="TrG5h" value="Dummy" />
@@ -2002,7 +2004,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="7w9c3sqDEf9" role="2$A2Gp">
-        <property role="2$_thN" value="Middle line selected" />
+        <property role="2$A2Gn" value="Middle line selected" />
         <node concept="1qefOq" id="7w9c3sqDEfa" role="25YQCX">
           <node concept="312cEu" id="7w9c3sqDEfb" role="1qenE9">
             <property role="TrG5h" value="Dummy" />
@@ -2037,7 +2039,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="7w9c3sqDEgx" role="2$A2Gp">
-        <property role="2$_thN" value="Last line selected" />
+        <property role="2$A2Gn" value="Last line selected" />
         <node concept="1qefOq" id="7w9c3sqDEgy" role="25YQCX">
           <node concept="312cEu" id="7w9c3sqDEgz" role="1qenE9">
             <property role="TrG5h" value="Dummy" />
@@ -2072,7 +2074,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="7w9c3sqDF$9" role="2$A2Gp">
-        <property role="2$_thN" value="ComplexCase" />
+        <property role="2$A2Gn" value="ComplexCase" />
         <node concept="1qefOq" id="7w9c3sqDF$a" role="25YQCX">
           <node concept="312cEu" id="7w9c3sqDF$b" role="1qenE9">
             <property role="TrG5h" value="Dummy" />
