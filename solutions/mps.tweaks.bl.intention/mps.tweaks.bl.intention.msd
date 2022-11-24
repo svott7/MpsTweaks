@@ -53,6 +53,7 @@
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />
     <language slang="l:ac12167b-cd9f-41ab-a7b5-a48087a2f0cf:mps.tweaks.doc" version="0" />
     <language slang="l:19cfafaa-983c-43a8-9a55-3949e89e08b1:mps.tweaks.editor.expressionwrapping" version="0" />
+    <language slang="l:1ea0557a-2e88-4ea2-a505-afebbb4e29ec:mps.tweaks.editor.lang.editor" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
