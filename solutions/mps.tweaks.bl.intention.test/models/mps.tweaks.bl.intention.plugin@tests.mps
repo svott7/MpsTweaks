@@ -1780,7 +1780,6 @@
   <node concept="2NNVjS" id="2cHAKBFT3YZ">
     <node concept="2$A1kt" id="5HbhpAQcS7a" role="2$A2Gr">
       <node concept="2NNXa5" id="5HbhpAQcSvc" role="2$A2Gp">
-        <property role="2$_thN" value="test" />
         <node concept="1qefOq" id="5HbhpAQcSvg" role="25YQCX">
           <node concept="9aQIb" id="5HbhpAQcSve" role="1qenE9">
             <node concept="3clFbS" id="5HbhpAQcSvf" role="9aQI4">

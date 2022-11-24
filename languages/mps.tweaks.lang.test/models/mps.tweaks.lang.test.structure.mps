@@ -23,11 +23,13 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -201,6 +203,7 @@
       <property role="IQ2nx" value="7904411824423422175" />
       <property role="TrG5h" value="testName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="5HbhpAQrbyO" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="2IvnPUIp3ly" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -226,6 +229,9 @@
     <node concept="PrWs8" id="ED6CmTqk_C" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="5HbhpAQrbyF" role="PzmwI">
+      <ref role="PrY4T" node="5HbhpAQr9$u" resolve="OptionalTestName" />
+    </node>
     <node concept="PrWs8" id="ED6CmTqk_y" role="PzmwI">
       <ref role="PrY4T" to="tpee:i2fhoOR" resolve="IMethodLike" />
     </node>
@@ -234,17 +240,24 @@
     <property role="EcuMT" value="7904411824423569841" />
     <property role="TrG5h" value="TestGroup" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6QM7aN9azuV" role="1TKVEl">
-      <property role="IQ2nx" value="7904411824423581627" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="6QM7aN9azuP" role="1TKVEi">
       <property role="IQ2ns" value="7904411824423581621" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="tests" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="ED6CmTpGw0" resolve="ActionTest" />
+    </node>
+    <node concept="PrWs8" id="5HbhpAQr9F7" role="PzmwI">
+      <ref role="PrY4T" node="5HbhpAQr9$u" resolve="OptionalTestName" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5HbhpAQr9$u">
+    <property role="TrG5h" value="OptionalTestName" />
+    <property role="EcuMT" value="6578428207197624605" />
+    <node concept="1TJgyi" id="6QM7aN9azuV" role="1TKVEl">
+      <property role="IQ2nx" value="7904411824423581627" />
+      <property role="TrG5h" value="testName2" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
