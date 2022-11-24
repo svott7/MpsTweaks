@@ -16,7 +16,6 @@
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="zcx7" ref="r:2cb1d046-e902-4f83-be07-ed6e493a5680(mps.tweaks.lang.test.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" implicit="true" />
@@ -153,7 +152,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="ED6CmTthwZ">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="multi" />
     <ref role="1M2myG" to="zcx7:ED6CmTpETX" resolve="MultiActionTestCase" />
     <node concept="EnEH3" id="ED6CmTthx0" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -187,7 +186,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6QM7aN9a1Ow">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="multi" />
     <ref role="1M2myG" to="zcx7:ED6CmTpGw0" resolve="ActionTest" />
     <node concept="EnEH3" id="6QM7aN9a22Q" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />

@@ -202,6 +202,7 @@
         <child id="768174373086873659" name="tests" index="2NNXaY" />
       </concept>
       <concept id="768174373086873600" name="mps.tweaks.lang.test.structure.ActionTest" flags="ng" index="2NNXa5">
+        <property id="6578428207198511114" name="isNotApplicable" index="3Hcmmj" />
         <child id="3143335925185262946" name="testNodeBefore" index="25YQCX" />
         <child id="3143335925185262981" name="testNodeResult" index="25YQFs" />
       </concept>
@@ -1870,6 +1871,68 @@
                         <ref role="2Gs0qQ" node="5HbhpAQcZ2k" resolve="i" />
                       </node>
                       <node concept="Xl_RD" id="5HbhpAQcZ2z" role="3uHU7B" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2$A1kt" id="5HbhpAQvwHw" role="2$A2Gr">
+      <property role="2$A2Gn" value="Not Applicable" />
+      <node concept="2NNXa5" id="5HbhpAQvx5B" role="2$A2Gp">
+        <property role="3Hcmmj" value="true" />
+        <property role="2$A2Gn" value="dfs" />
+        <node concept="1qefOq" id="5HbhpAQvx5D" role="25YQCX">
+          <node concept="9aQIb" id="5HbhpAQvx5E" role="1qenE9">
+            <node concept="3clFbS" id="5HbhpAQvx5F" role="9aQI4">
+              <node concept="3clFbF" id="5HbhpAQvx5G" role="3cqZAp">
+                <node concept="2OqwBi" id="5HbhpAQvx5H" role="3clFbG">
+                  <node concept="2YIFZM" id="5HbhpAQvx5I" role="2Oq$k0">
+                    <ref role="37wK5l" to="33ny:~List.of(java.lang.Object,java.lang.Object)" resolve="of" />
+                    <ref role="1Pybhc" to="33ny:~List" resolve="List" />
+                    <node concept="3cmrfG" id="5HbhpAQvx5J" role="37wK5m">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="3cmrfG" id="5HbhpAQvx5K" role="37wK5m">
+                      <property role="3cmrfH" value="2" />
+                    </node>
+                    <node concept="LIFWc" id="2sSdtoLbOU4" role="lGtFl">
+                      <property role="LIFWa" value="1" />
+                      <property role="OXtK3" value="true" />
+                      <property role="p6zMq" value="1" />
+                      <property role="p6zMs" value="1" />
+                      <property role="LIFWd" value="property_name" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5HbhpAQvx5L" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Iterable.forEach(java.util.function.Consumer)" resolve="forEach" />
+                    <node concept="1bVj0M" id="5HbhpAQvx5M" role="37wK5m">
+                      <node concept="3clFbS" id="5HbhpAQvx5N" role="1bW5cS">
+                        <node concept="2xdQw9" id="5HbhpAQvx5O" role="3cqZAp">
+                          <node concept="3cpWs3" id="5HbhpAQvx5P" role="9lYJi">
+                            <node concept="37vLTw" id="5HbhpAQvx5Q" role="3uHU7w">
+                              <ref role="3cqZAo" node="5HbhpAQvx5W" resolve="i" />
+                            </node>
+                            <node concept="Xl_RD" id="5HbhpAQvx5R" role="3uHU7B" />
+                          </node>
+                        </node>
+                        <node concept="2xdQw9" id="5HbhpAQvx5S" role="3cqZAp">
+                          <property role="2xdLsb" value="h1akgim/info" />
+                          <node concept="3cpWs3" id="5HbhpAQvx5T" role="9lYJi">
+                            <node concept="37vLTw" id="5HbhpAQvx5U" role="3uHU7w">
+                              <ref role="3cqZAo" node="5HbhpAQvx5W" resolve="i" />
+                            </node>
+                            <node concept="Xl_RD" id="5HbhpAQvx5V" role="3uHU7B" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTG" id="5HbhpAQvx5W" role="1bW2Oz">
+                        <property role="TrG5h" value="i" />
+                        <node concept="10Oyi0" id="5HbhpAQvx5X" role="1tU5fm" />
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -7,7 +7,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tp5l" ref="r:00000000-0000-4000-0000-011c89590385(jetbrains.mps.lang.test.typesystem)" />
     <import index="yv9k" ref="r:2b5a2db2-e6bc-4d0d-9417-29c0a1b88db7(mps.tweaks.lang.test.behavior)" implicit="true" />
     <import index="zcx7" ref="r:2cb1d046-e902-4f83-be07-ed6e493a5680(mps.tweaks.lang.test.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -167,7 +166,7 @@
   </registry>
   <node concept="18kY7G" id="6QM7aN9ebAd">
     <property role="TrG5h" value="check_MultiActionTestCase_uniqeNames" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="multi" />
     <node concept="3clFbS" id="6QM7aN9ebAe" role="18ibNy">
       <node concept="2Gpval" id="6QM7aN9ecyT" role="3cqZAp">
         <node concept="2GrKxI" id="6QM7aN9ecyV" role="2Gsz3X">
@@ -276,8 +275,8 @@
     </node>
   </node>
   <node concept="18kY7G" id="5HbhpAQtYgw">
-    <property role="TrG5h" value="check_ActionTest" />
-    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="check_ActionTestCursorState" />
+    <property role="3GE5qa" value="multi" />
     <node concept="3clFbS" id="5HbhpAQtYgx" role="18ibNy">
       <node concept="3clFbJ" id="5aRyplrT$in" role="3cqZAp">
         <node concept="1Wc70l" id="5aRyplrTWEA" role="3clFbw">

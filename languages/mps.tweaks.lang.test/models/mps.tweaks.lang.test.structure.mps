@@ -167,7 +167,7 @@
     <property role="EcuMT" value="768174373086867069" />
     <property role="TrG5h" value="MultiActionTestCase" />
     <property role="19KtqR" value="true" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="multi" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="ED6CmTpGw1" role="1TKVEi">
       <property role="IQ2ns" value="768174373086873601" />
@@ -196,8 +196,13 @@
   <node concept="1TIwiD" id="ED6CmTpGw0">
     <property role="EcuMT" value="768174373086873600" />
     <property role="TrG5h" value="ActionTest" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="multi" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5HbhpAQuy0a" role="1TKVEl">
+      <property role="IQ2nx" value="6578428207198511114" />
+      <property role="TrG5h" value="checkIsNotApplicable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="2IvnPUIp3ly" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="testNodeBefore" />
@@ -232,6 +237,7 @@
   <node concept="1TIwiD" id="6QM7aN9awAL">
     <property role="EcuMT" value="7904411824423569841" />
     <property role="TrG5h" value="TestGroup" />
+    <property role="3GE5qa" value="multi" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6QM7aN9azuP" role="1TKVEi">
       <property role="IQ2ns" value="7904411824423581621" />
@@ -247,6 +253,7 @@
   <node concept="PlHQZ" id="5HbhpAQr9$u">
     <property role="TrG5h" value="OptionalTestName" />
     <property role="EcuMT" value="6578428207197624605" />
+    <property role="3GE5qa" value="multi" />
     <node concept="1TJgyi" id="6QM7aN9azuV" role="1TKVEl">
       <property role="IQ2nx" value="7904411824423581627" />
       <property role="TrG5h" value="optionalTestName" />
