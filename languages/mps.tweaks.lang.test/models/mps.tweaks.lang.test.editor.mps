@@ -37,7 +37,6 @@
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
-      <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="4242538589859161874" name="jetbrains.mps.lang.editor.structure.ExplicitHintsSpecification" flags="ng" index="2w$q5c">
         <child id="4242538589859162459" name="hints" index="2w$qW5" />
@@ -89,7 +88,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -147,7 +145,6 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -715,30 +712,10 @@
         <node concept="3F0ifn" id="ED6CmTpHOn" role="3EZMnx">
           <property role="3F0ifm" value="Test" />
         </node>
-        <node concept="3F0A7n" id="6QM7aN99WSW" role="3EZMnx">
-          <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="zcx7:6QM7aN99Wzv" resolve="testName" />
-          <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-          <node concept="pkWqt" id="5HbhpAQrGyG" role="pqm2j">
-            <node concept="3clFbS" id="5HbhpAQrGyH" role="2VODD2">
-              <node concept="3clFbF" id="5HbhpAQrGAG" role="3cqZAp">
-                <node concept="2OqwBi" id="5HbhpAQrHA$" role="3clFbG">
-                  <node concept="2OqwBi" id="5HbhpAQrGT3" role="2Oq$k0">
-                    <node concept="pncrf" id="5HbhpAQrGAF" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="5HbhpAQrHfk" role="2OqNvi">
-                      <ref role="3TsBF5" to="zcx7:6QM7aN99Wzv" resolve="testName" />
-                    </node>
-                  </node>
-                  <node concept="17RvpY" id="5HbhpAQrI1c" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3F0A7n" id="5HbhpAQrj_w" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <property role="1$x2rV" value="&lt;name&gt;" />
-          <ref role="1NtTu8" to="zcx7:6QM7aN9azuV" resolve="testName2" />
+          <ref role="1NtTu8" to="zcx7:6QM7aN9azuV" resolve="optionalTestName" />
           <node concept="ljvvj" id="5HbhpAQrj_U" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -1182,7 +1159,7 @@
       <node concept="3F0A7n" id="6QM7aN9aBLv" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="&lt;name&gt;" />
-        <ref role="1NtTu8" to="zcx7:6QM7aN9azuV" resolve="name" />
+        <ref role="1NtTu8" to="zcx7:6QM7aN9azuV" resolve="optionalTestName" />
         <node concept="ljvvj" id="6QM7aN9aBLz" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1214,7 +1191,7 @@
           <property role="3F0ifm" value="Group" />
         </node>
         <node concept="3F0A7n" id="6QM7aN9d3HH" role="3EZMnx">
-          <ref role="1NtTu8" to="zcx7:6QM7aN9azuV" resolve="name" />
+          <ref role="1NtTu8" to="zcx7:6QM7aN9azuV" resolve="optionalTestName" />
           <node concept="ljvvj" id="6QM7aN9d3HI" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>

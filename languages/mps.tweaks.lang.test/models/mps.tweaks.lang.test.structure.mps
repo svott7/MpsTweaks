@@ -23,7 +23,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -199,12 +198,6 @@
     <property role="TrG5h" value="ActionTest" />
     <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6QM7aN99Wzv" role="1TKVEl">
-      <property role="IQ2nx" value="7904411824423422175" />
-      <property role="TrG5h" value="testName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="5HbhpAQrbyO" role="lGtFl" />
-    </node>
     <node concept="1TJgyj" id="2IvnPUIp3ly" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="testNodeBefore" />
@@ -256,7 +249,7 @@
     <property role="EcuMT" value="6578428207197624605" />
     <node concept="1TJgyi" id="6QM7aN9azuV" role="1TKVEl">
       <property role="IQ2nx" value="7904411824423581627" />
-      <property role="TrG5h" value="testName2" />
+      <property role="TrG5h" value="optionalTestName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
