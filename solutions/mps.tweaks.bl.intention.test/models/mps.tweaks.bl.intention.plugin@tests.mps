@@ -206,7 +206,7 @@
         <child id="3143335925185262981" name="testNodeResult" index="25YQFs" />
       </concept>
       <concept id="6578428207197624605" name="mps.tweaks.lang.test.structure.OptionalTestName" flags="ng" index="3H9XM4">
-        <property id="7904411824423581627" name="testName2" index="2$A2Gn" />
+        <property id="7904411824423581627" name="optionalTestName" index="2$A2Gn" />
       </concept>
       <concept id="9120123007403256012" name="mps.tweaks.lang.test.structure.ActionTestCase" flags="lg" index="1UG$t2">
         <child id="9120123007403333625" name="action" index="1UHrxR" />
