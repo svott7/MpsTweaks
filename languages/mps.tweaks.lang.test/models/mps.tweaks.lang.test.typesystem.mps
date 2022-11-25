@@ -91,6 +91,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -120,6 +123,10 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -467,6 +474,113 @@
     <node concept="1YaCAy" id="2sSdtoLtjbD" role="1YuTPh">
       <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="zcx7:ED6CmTpGw0" resolve="ActionTest" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5CtXlv$Hlxo">
+    <property role="TrG5h" value="check_ActionTestGroup" />
+    <property role="3GE5qa" value="multi" />
+    <node concept="3clFbS" id="5CtXlv$Hlxp" role="18ibNy">
+      <node concept="3clFbJ" id="5CtXlv$Hlxy" role="3cqZAp">
+        <node concept="1Wc70l" id="5CtXlv$Hm_0" role="3clFbw">
+          <node concept="2OqwBi" id="5CtXlv$HnHM" role="3uHU7w">
+            <node concept="2OqwBi" id="5CtXlv$HnbE" role="2Oq$k0">
+              <node concept="2OqwBi" id="5CtXlv$HmDY" role="2Oq$k0">
+                <node concept="1YBJjd" id="5CtXlv$Hm_O" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5CtXlv$Hlxr" resolve="node" />
+                </node>
+                <node concept="2qgKlT" id="5CtXlv$HmUL" role="2OqNvi">
+                  <ref role="37wK5l" to="yv9k:5CtXlv$H2tP" resolve="multiTest" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5CtXlv$Hnvr" role="2OqNvi">
+                <ref role="3Tt5mk" to="zcx7:ED6CmTpGw1" resolve="action" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5CtXlv$HnUV" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="5CtXlv$Hm21" role="3uHU7B">
+            <node concept="2OqwBi" id="5CtXlv$HlFy" role="2Oq$k0">
+              <node concept="1YBJjd" id="5CtXlv$HlxI" role="2Oq$k0">
+                <ref role="1YBMHb" node="5CtXlv$Hlxr" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="5CtXlv$HlPo" role="2OqNvi">
+                <ref role="3Tt5mk" to="zcx7:5CtXlv$FXtv" resolve="action" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5CtXlv$Hmex" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5CtXlv$Hlx$" role="3clFbx">
+          <node concept="a7r0C" id="5CtXlv$HplT" role="3cqZAp">
+            <node concept="2YIFZM" id="5CtXlv$HvjG" role="a7wSD">
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" />
+              <ref role="1Pybhc" to="wyt6:~String" />
+              <node concept="Xl_RD" id="5CtXlv$HvjH" role="37wK5m">
+                <property role="Xl_RC" value="This action overrides the action of %s" />
+              </node>
+              <node concept="2OqwBi" id="5CtXlv$HwbD" role="37wK5m">
+                <node concept="35c_gC" id="5CtXlv$HvzY" role="2Oq$k0">
+                  <ref role="35c_gD" to="zcx7:ED6CmTpETX" resolve="MultiActionTestCase" />
+                </node>
+                <node concept="3n3YKJ" id="5CtXlv$HFRH" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5CtXlv$HpSg" role="1urrMF">
+              <node concept="1YBJjd" id="5CtXlv$HpJN" role="2Oq$k0">
+                <ref role="1YBMHb" node="5CtXlv$Hlxr" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="5CtXlv$Hqd$" role="2OqNvi">
+                <ref role="3Tt5mk" to="zcx7:5CtXlv$FXtv" resolve="action" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5CtXlv$HKp7" role="3cqZAp">
+        <node concept="1Wc70l" id="5CtXlv$HKp8" role="3clFbw">
+          <node concept="2OqwBi" id="5CtXlv$HKp9" role="3uHU7w">
+            <node concept="2OqwBi" id="5CtXlv$HKpa" role="2Oq$k0">
+              <node concept="2OqwBi" id="5CtXlv$HKpb" role="2Oq$k0">
+                <node concept="1YBJjd" id="5CtXlv$HKpc" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5CtXlv$Hlxr" resolve="node" />
+                </node>
+                <node concept="2qgKlT" id="5CtXlv$HKpd" role="2OqNvi">
+                  <ref role="37wK5l" to="yv9k:5CtXlv$H2tP" resolve="multiTest" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5CtXlv$HKpe" role="2OqNvi">
+                <ref role="3Tt5mk" to="zcx7:ED6CmTpGw1" resolve="action" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="5CtXlv$HLfV" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="5CtXlv$HKpg" role="3uHU7B">
+            <node concept="2OqwBi" id="5CtXlv$HKph" role="2Oq$k0">
+              <node concept="1YBJjd" id="5CtXlv$HKpi" role="2Oq$k0">
+                <ref role="1YBMHb" node="5CtXlv$Hlxr" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="5CtXlv$HKpj" role="2OqNvi">
+                <ref role="3Tt5mk" to="zcx7:5CtXlv$FXtv" resolve="action" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="5CtXlv$HKSS" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5CtXlv$HKpl" role="3clFbx">
+          <node concept="2MkqsV" id="5CtXlv$HLJZ" role="3cqZAp">
+            <node concept="Xl_RD" id="5CtXlv$HLKb" role="2MkJ7o">
+              <property role="Xl_RC" value="Either the group or the container must have an action selected." />
+            </node>
+            <node concept="1YBJjd" id="5CtXlv$HLNs" role="1urrMF">
+              <ref role="1YBMHb" node="5CtXlv$Hlxr" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5CtXlv$Hlxr" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="zcx7:6QM7aN9awAL" resolve="ActionTestGroup" />
     </node>
   </node>
 </model>

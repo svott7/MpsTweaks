@@ -45,6 +45,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -189,12 +190,12 @@
     <property role="TrG5h" value="MultiActionTestCase" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="multi" />
+    <property role="34LRSv" value="Multi Action Test Case" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="ED6CmTpGw1" role="1TKVEi">
       <property role="IQ2ns" value="768174373086873601" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="action" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tp5g:3FlSiDCuCBp" resolve="MPSActionReference" />
     </node>
     <node concept="1TJgyj" id="6QM7aN9azuR" role="1TKVEi">
@@ -202,7 +203,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="groups" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6QM7aN9awAL" resolve="TestGroup" />
+      <ref role="20lvS9" node="6QM7aN9awAL" resolve="ActionTestGroup" />
     </node>
     <node concept="PrWs8" id="hSLl9xe" role="PzmwI">
       <ref role="PrY4T" to="tpe3:hGB2rPm" resolve="ITestCase" />
@@ -212,6 +213,9 @@
     </node>
     <node concept="PrWs8" id="1Zcerrmzg6Y" role="PzmwI">
       <ref role="PrY4T" to="tp5g:1Zcerrmzb_y" resolve="TestProjectAware" />
+    </node>
+    <node concept="PrWs8" id="5CtXlv$IdGJ" role="PzmwI">
+      <ref role="PrY4T" node="5HbhpAQr9$u" resolve="OptionalTestName" />
     </node>
     <node concept="1irR5M" id="5CtXlv$FTlR" role="rwd14">
       <property role="2$rrk2" value="5" />
@@ -275,7 +279,7 @@
   </node>
   <node concept="1TIwiD" id="6QM7aN9awAL">
     <property role="EcuMT" value="7904411824423569841" />
-    <property role="TrG5h" value="TestGroup" />
+    <property role="TrG5h" value="ActionTestGroup" />
     <property role="3GE5qa" value="multi" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6QM7aN9azuP" role="1TKVEi">
@@ -285,8 +289,17 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="ED6CmTpGw0" resolve="ActionTest" />
     </node>
+    <node concept="1TJgyj" id="5CtXlv$FXtv" role="1TKVEi">
+      <property role="IQ2ns" value="6493615995585812319" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" to="tp5g:3FlSiDCuCBp" resolve="MPSActionReference" />
+    </node>
     <node concept="PrWs8" id="5HbhpAQr9F7" role="PzmwI">
       <ref role="PrY4T" node="5HbhpAQr9$u" resolve="OptionalTestName" />
+    </node>
+    <node concept="PrWs8" id="7W8$nBNkRT9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="5HbhpAQr9$u">
