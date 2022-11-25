@@ -7,21 +7,38 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="57ty" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.messages(MPS.Platform/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
+    <import index="al1t" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.diagnostic(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242773" name="modifiers" index="pLAjc" />
+        <property id="1207318242774" name="keycode" index="pLAjf" />
+      </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
+      <concept id="1562714432501166198" name="jetbrains.mps.lang.plugin.structure.SimpleShortcutChange" flags="lg" index="Zd509">
+        <child id="1562714432501166206" name="keystroke" index="Zd501" />
+      </concept>
+      <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
+        <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
+      </concept>
+      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ng" index="1bYyw_">
+        <reference id="6193305307616734326" name="action" index="1bYAoF" />
+      </concept>
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
         <reference id="1217252646389" name="key" index="1DUlNI" />
@@ -40,6 +57,10 @@
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
+        <child id="1224071154657" name="classifierType" index="0kSFW" />
+        <child id="1224071154656" name="expression" index="0kSFX" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -89,6 +110,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -128,7 +150,13 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -161,6 +189,15 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+        <property id="6328114375520539781" name="url" index="1X82VU" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable">
@@ -529,6 +566,170 @@
             <node concept="1KvdUw" id="7yImMjplzq$" role="37wK5m" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="5CtXlv$BM99">
+    <property role="2uzpH1" value="Open Fatal Errors Dialog" />
+    <property role="TrG5h" value="OpenFatalErrorsDialog" />
+    <node concept="tnohg" id="5CtXlv$BM9a" role="tncku">
+      <node concept="3clFbS" id="5CtXlv$BM9b" role="2VODD2">
+        <node concept="3SKdUt" id="5CtXlv$CkCN" role="3cqZAp">
+          <node concept="1PaTwC" id="5CtXlv$CkCO" role="1aUNEU">
+            <node concept="3oM_SD" id="5CtXlv$CkF5" role="1PaTwD">
+              <property role="3oM_SC" value="You" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkF6" role="1PaTwD">
+              <property role="3oM_SC" value="can" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkF7" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkF8" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkF9" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFa" role="1PaTwD">
+              <property role="3oM_SC" value="Intellij" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFb" role="1PaTwD">
+              <property role="3oM_SC" value="status" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFc" role="1PaTwD">
+              <property role="3oM_SC" value="bar" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFd" role="1PaTwD">
+              <property role="3oM_SC" value="widget" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFe" role="1PaTwD">
+              <property role="3oM_SC" value="ids" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFf" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFg" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFh" role="1PaTwD">
+              <property role="3oM_SC" value="file" />
+              <property role="1X82VU" value="https://github.com/JetBrains/intellij-community/blob/c052c934734d12133bddac322c39f4ea6e899c79/platform/platform-resources/src/META-INF/LangExtensions.xml#L1260" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkIR" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFn" role="1PaTwD">
+              <property role="3oM_SC" value="MPS" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFo" role="1PaTwD">
+              <property role="3oM_SC" value="widget" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFp" role="1PaTwD">
+              <property role="3oM_SC" value="(loaded" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFq" role="1PaTwD">
+              <property role="3oM_SC" value="models)" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFr" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFs" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="5CtXlv$CkFt" role="1PaTwD">
+              <property role="3oM_SC" value="file." />
+              <property role="1X82VU" value="https://github.com/JetBrains/MPS/blob/master/plugins/mps-memtool/META-INF/plugin.xml#L25" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5CtXlv$BSnJ" role="3cqZAp">
+          <node concept="3KEzu6" id="5CtXlv$CjwJ" role="3cpWs9">
+            <property role="TrG5h" value="DIALOG_ID" />
+            <node concept="Xl_RD" id="5CtXlv$CjwK" role="33vP2m">
+              <property role="Xl_RC" value="FatalError" />
+            </node>
+            <node concept="PeGgZ" id="5CtXlv$CjwL" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="5CtXlv$CkJn" role="3cqZAp" />
+        <node concept="3cpWs8" id="5CtXlv$CcjZ" role="3cqZAp">
+          <node concept="3KEzu6" id="5CtXlv$CjsN" role="3cpWs9">
+            <property role="TrG5h" value="widget" />
+            <node concept="0kSF2" id="5CtXlv$CjsO" role="33vP2m">
+              <node concept="3uibUv" id="5CtXlv$CjsP" role="0kSFW">
+                <ref role="3uigEE" to="al1t:~IdeMessagePanel" resolve="IdeMessagePanel" />
+              </node>
+              <node concept="2EnYce" id="5CtXlv$CjsQ" role="0kSFX">
+                <node concept="2OqwBi" id="5CtXlv$CjsR" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5CtXlv$CjsS" role="2Oq$k0">
+                    <node concept="2YIFZM" id="5CtXlv$CjsT" role="2Oq$k0">
+                      <ref role="37wK5l" to="jkny:~WindowManager.getInstance()" resolve="getInstance" />
+                      <ref role="1Pybhc" to="jkny:~WindowManager" resolve="WindowManager" />
+                    </node>
+                    <node concept="liA8E" id="5CtXlv$CjsU" role="2OqNvi">
+                      <ref role="37wK5l" to="jkny:~WindowManager.getIdeFrame(com.intellij.openapi.project.Project)" resolve="getIdeFrame" />
+                      <node concept="2OqwBi" id="5CtXlv$CjsV" role="37wK5m">
+                        <node concept="2WthIp" id="5CtXlv$CjsW" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="5CtXlv$CjsX" role="2OqNvi">
+                          <ref role="2WH_rO" node="5CtXlv$BP42" resolve="ideaProject" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5CtXlv$CjsY" role="2OqNvi">
+                    <ref role="37wK5l" to="jkny:~IdeFrame.getStatusBar()" resolve="getStatusBar" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5CtXlv$CjsZ" role="2OqNvi">
+                  <ref role="37wK5l" to="jkny:~StatusBar.getWidget(java.lang.String)" resolve="getWidget" />
+                  <node concept="37vLTw" id="5CtXlv$Cjt0" role="37wK5m">
+                    <ref role="3cqZAo" node="5CtXlv$CjwJ" resolve="DIALOG_ID" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="PeGgZ" id="5CtXlv$Cjt1" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5CtXlv$CcfO" role="3cqZAp">
+          <node concept="3clFbS" id="5CtXlv$CcfQ" role="3clFbx">
+            <node concept="3cpWs6" id="5CtXlv$CiwV" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="5CtXlv$Ci21" role="3clFbw">
+            <node concept="10Nm6u" id="5CtXlv$Cibo" role="3uHU7w" />
+            <node concept="37vLTw" id="5CtXlv$ChKK" role="3uHU7B">
+              <ref role="3cqZAo" node="5CtXlv$CjsN" resolve="widget" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5CtXlv$Cixe" role="3cqZAp" />
+        <node concept="3clFbF" id="5CtXlv$BQpt" role="3cqZAp">
+          <node concept="2OqwBi" id="5CtXlv$C5xB" role="3clFbG">
+            <node concept="37vLTw" id="5CtXlv$BSDL" role="2Oq$k0">
+              <ref role="3cqZAo" node="5CtXlv$CjsN" resolve="widget" />
+            </node>
+            <node concept="liA8E" id="5CtXlv$C6G9" role="2OqNvi">
+              <ref role="37wK5l" to="al1t:~IdeMessagePanel.openErrorsDialog(com.intellij.diagnostic.LogMessage)" resolve="openErrorsDialog" />
+              <node concept="10Nm6u" id="5CtXlv$C6Hi" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="5CtXlv$BP42" role="1NuT2Z">
+      <property role="TrG5h" value="ideaProject" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="5CtXlv$BP43" role="1oa70y" />
+    </node>
+  </node>
+  <node concept="Zd50a" id="5CtXlv$CiD2">
+    <property role="TrG5h" value="KeyMapChanges" />
+    <node concept="Zd509" id="5CtXlv$CiD3" role="Zd508">
+      <ref role="1bYAoF" node="5CtXlv$BM99" resolve="OpenFatalErrorsDialog" />
+      <node concept="pLAjd" id="5CtXlv$CiD4" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_E" />
       </node>
     </node>
   </node>
