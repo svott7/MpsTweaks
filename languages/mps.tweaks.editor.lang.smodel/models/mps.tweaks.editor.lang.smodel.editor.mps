@@ -3850,7 +3850,7 @@
       <ref role="1PE7su" to="tpen:5UYpxeVafB6" resolve="BaseMethodDeclaration_BodyComponent" />
     </node>
     <node concept="2aJ2om" id="5HbhpAQ646w" role="3XTboT">
-      <ref role="2$4xQ3" to="qi0f:hmWFe846_G" resolve="LightweightMpsEditor" />
+      <ref role="2$4xQ3" to="qi0f:7ERSpuqQNgD" resolve="LightweightSModel__Experimental" />
     </node>
     <node concept="3EZMnI" id="5UYpxeVafB8" role="2wV5jI">
       <property role="S$Qs1" value="true" />
