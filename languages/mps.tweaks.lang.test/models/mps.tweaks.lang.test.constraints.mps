@@ -274,7 +274,7 @@
               <node concept="PeGgZ" id="6QM7aN9dSCP" role="1tU5fm" />
               <node concept="3cpWs3" id="6QM7aN9dVm2" role="33vP2m">
                 <node concept="37vLTw" id="5HbhpAQrhFB" role="3uHU7w">
-                  <ref role="3cqZAo" node="5HbhpAQrhFz" resolve="optionalName" />
+                  <ref role="3cqZAo" node="5HbhpAQrhFz" resolve="testName" />
                 </node>
                 <node concept="3cpWs3" id="6QM7aN9e15v" role="3uHU7B">
                   <node concept="Xl_RD" id="6QM7aN9e1gz" role="3uHU7w">

@@ -16,9 +16,6 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="1ea0557a-2e88-4ea2-a505-afebbb4e29ec" name="mps.tweaks.editor.lang.editor" version="0" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -56,6 +53,19 @@
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
@@ -69,6 +79,7 @@
         <child id="1227008813498" name="constructionParameter" index="2JrayB" />
         <child id="1205851242421" name="methodDeclaration" index="32lrUH" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
@@ -641,7 +652,7 @@
         <ref role="tCJdB" node="5Gtvoe0HFG7" resolve="LogTrace" />
       </node>
       <node concept="tCFHf" id="5Y$H7J3iwM1" role="ftvYc">
-        <ref role="tCJdB" node="1VqqEpar5Ws" resolve="LogNode" />
+        <ref role="tCJdB" node="1VqqEpar5Ws" resolve="LogNodesPresentation" />
       </node>
       <node concept="2a7GMi" id="zddwKdZl1b" role="ftvYc" />
       <node concept="tCFHf" id="zddwKdZl1B" role="ftvYc">
@@ -700,7 +711,7 @@
       </node>
       <node concept="2a7GMi" id="5HbhpAQbviR" role="ftvYc" />
       <node concept="tCFHf" id="5HbhpAQbvkv" role="ftvYc">
-        <ref role="tCJdB" node="2cHAKBFSPIQ" resolve="ForEachMethodToForEachLoop" />
+        <ref role="tCJdB" node="2cHAKBFSPIQ" resolve="ForEachMethod_To_ForEachLoop_StreamAPI" />
       </node>
       <node concept="tCFHf" id="2sSdtoLfOxF" role="ftvYc">
         <ref role="tCJdB" node="2sSdtoLfuaw" resolve="ForEachMethod_To_ForEachLoop_SModelAPI" />
@@ -709,10 +720,10 @@
         <ref role="tCJdB" node="2sSdtoLn3Gi" resolve="ForEachStatement_To_ForEachMethod_SModelAPI" />
       </node>
       <node concept="tCFHf" id="2sSdtoLur5p" role="ftvYc">
-        <ref role="tCJdB" node="6ZITWSgUjzH" resolve="ToIfStatement" />
+        <ref role="tCJdB" node="6ZITWSgUjzH" resolve="IfInstanceOfStatement_To_InstanceOfExpression" />
       </node>
       <node concept="tCFHf" id="2sSdtoLur79" role="ftvYc">
-        <ref role="tCJdB" node="6ZITWSgTH0p" resolve="ToIfInstanceOfStatement" />
+        <ref role="tCJdB" node="6ZITWSgTH0p" resolve="InstanceOfExpression_To_IfInstanceOfStatement" />
       </node>
       <node concept="2a7GMi" id="8TBVw9igzx" role="ftvYc" />
       <node concept="tCFHf" id="8TBVw9ig$T" role="ftvYc">
@@ -5045,6 +5056,15 @@
           <node concept="3oM_SD" id="1s9vchRE4x9" role="1PaTwD">
             <property role="3oM_SC" value="any" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1irR5M" id="7W8$nBNoFWP" role="3Uehp1">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irPie" id="7W8$nBNoFYB" role="1irR9h">
+        <property role="1irPi9" value="!" />
+        <node concept="3PKj8D" id="7W8$nBNoFYO" role="3PKjny">
+          <property role="3PKj8l" value="BB1111" />
         </node>
       </node>
     </node>
@@ -10513,7 +10533,7 @@
               <node concept="2OqwBi" id="KFQkIY$cna" role="2Oq$k0">
                 <node concept="2WthIp" id="KFQkIY$cnd" role="2Oq$k0" />
                 <node concept="2XshWL" id="KFQkIY$cnf" role="2OqNvi">
-                  <ref role="2WH_rO" node="KFQkIY$8Jj" resolve="get" />
+                  <ref role="2WH_rO" node="KFQkIY$8Jj" resolve="classifierMember" />
                 </node>
               </node>
               <node concept="3TrEf2" id="KFQkIYylaY" role="2OqNvi">
@@ -10881,7 +10901,7 @@
         <node concept="3clFbF" id="2sSdtoLn3Gy" role="3cqZAp">
           <node concept="2OqwBi" id="2sSdtoLn3Gz" role="3clFbG">
             <node concept="37vLTw" id="2sSdtoLn3G$" role="2Oq$k0">
-              <ref role="3cqZAo" node="2sSdtoLn3Gs" resolve="forEachStatement" />
+              <ref role="3cqZAo" node="2sSdtoLn3Gs" resolve="forEachOperation" />
             </node>
             <node concept="1OKiuA" id="2sSdtoLn3G_" role="2OqNvi">
               <node concept="2OqwBi" id="2sSdtoLn3GA" role="lBI5i">
@@ -11150,7 +11170,7 @@
             <node concept="2OqwBi" id="KFQkIYp4Kx" role="2Oq$k0">
               <node concept="2WthIp" id="KFQkIYp4Ky" role="2Oq$k0" />
               <node concept="2XshWL" id="KFQkIYp4Kz" role="2OqNvi">
-                <ref role="2WH_rO" node="KFQkIYp3kz" resolve="hasAnnotation" />
+                <ref role="2WH_rO" node="KFQkIYp3kz" resolve="annotationParent" />
               </node>
             </node>
             <node concept="3w_OXm" id="72oxZEt$yCV" role="2OqNvi" />
@@ -12448,7 +12468,7 @@
                   <node concept="36biLy" id="2sSdtoLncQM" role="28nt2d">
                     <node concept="2OqwBi" id="2sSdtoLndmc" role="36biLW">
                       <node concept="37vLTw" id="2sSdtoLnd20" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2sSdtoLn4bI" resolve="node" />
+                        <ref role="3cqZAo" node="2sSdtoLn4bI" resolve="forEachStatement" />
                       </node>
                       <node concept="3TrEf2" id="2sSdtoLnelv" role="2OqNvi">
                         <ref role="3Tt5mk" to="tp2q:gMGsD4q" resolve="inputSequence" />
@@ -12516,7 +12536,7 @@
             <node concept="2OqwBi" id="2sSdtoLuywM" role="2Oq$k0">
               <node concept="2WthIp" id="2sSdtoLuywP" role="2Oq$k0" />
               <node concept="3gHZIF" id="2sSdtoLuywR" role="2OqNvi">
-                <ref role="2WH_rO" node="6ZITWSgTH0N" resolve="node" />
+                <ref role="2WH_rO" node="6ZITWSgTH0N" resolve="instanceOfOperation" />
               </node>
             </node>
             <node concept="2Xjw5R" id="2sSdtoLuzkp" role="2OqNvi">

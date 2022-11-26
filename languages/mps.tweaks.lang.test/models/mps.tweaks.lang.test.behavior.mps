@@ -207,7 +207,7 @@
       <node concept="3clFbS" id="2shhEwKELug" role="3clF47">
         <node concept="3clFbF" id="2shhEwKELCm" role="3cqZAp">
           <node concept="2YIFZM" id="2sSdtoLdG7v" role="3clFbG">
-            <ref role="37wK5l" node="4lrizS2kbj3" resolve="testCode2" />
+            <ref role="37wK5l" node="4lrizS2kbj3" resolve="testCode" />
             <ref role="1Pybhc" node="72oxZEtEw4L" resolve="ActionTests" />
             <node concept="2OqwBi" id="2sSdtoLdG7w" role="37wK5m">
               <node concept="13iPFW" id="2sSdtoLdG7x" role="2Oq$k0" />
@@ -361,7 +361,7 @@
               <ref role="37wK5l" node="5CtXlv$GYwJ" resolve="group" />
             </node>
             <node concept="2qgKlT" id="5CtXlv$I3j$" role="2OqNvi">
-              <ref role="37wK5l" node="5CtXlv$H03$" resolve="action" />
+              <ref role="37wK5l" node="5CtXlv$H03$" resolve="thisOrParentAction" />
             </node>
           </node>
         </node>
@@ -438,7 +438,7 @@
       <node concept="3clFbS" id="ED6CmTqkKQ" role="3clF47">
         <node concept="3clFbF" id="4lrizS2krPy" role="3cqZAp">
           <node concept="2YIFZM" id="4lrizS2ktkv" role="3clFbG">
-            <ref role="37wK5l" node="4lrizS2kbj3" resolve="testCode2" />
+            <ref role="37wK5l" node="4lrizS2kbj3" resolve="testCode" />
             <ref role="1Pybhc" node="72oxZEtEw4L" resolve="ActionTests" />
             <node concept="BsUDl" id="5CtXlv$H0CI" role="37wK5m">
               <ref role="37wK5l" node="5CtXlv$GXxP" resolve="action" />
@@ -613,7 +613,7 @@
             </node>
           </node>
           <node concept="37vLTw" id="4lrizS2kf7A" role="3clFbw">
-            <ref role="3cqZAo" node="4lrizS2kbm1" resolve="isNotApplicable" />
+            <ref role="3cqZAo" node="4lrizS2kbm1" resolve="checkIsNotApplicable" />
           </node>
           <node concept="9aQIb" id="4lrizS2km3B" role="9aQIa">
             <node concept="3clFbS" id="4lrizS2km3C" role="9aQI4">

@@ -925,7 +925,7 @@
           <node concept="37vLTI" id="1a7dmAoC49V" role="3clFbG">
             <node concept="2OqwBi" id="3ZFBIUSxF0C" role="37vLTJ">
               <node concept="37vLTw" id="3ZFBIUSxEQl" role="2Oq$k0">
-                <ref role="3cqZAo" node="3ZFBIUSxE1q" resolve="root" />
+                <ref role="3cqZAo" node="3ZFBIUSxE1q" resolve="action" />
               </node>
               <node concept="3TrcHB" id="3ZFBIUSxFmd" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -936,7 +936,7 @@
               <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
               <node concept="2OqwBi" id="1a7dmAoCgdM" role="37wK5m">
                 <node concept="37vLTw" id="1a7dmAoCgdN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3ZFBIUSxE1q" resolve="root" />
+                  <ref role="3cqZAo" node="3ZFBIUSxE1q" resolve="action" />
                 </node>
                 <node concept="3TrcHB" id="1a7dmAoCgdO" role="2OqNvi">
                   <ref role="3TsBF5" to="tp4k:hyuzpDp" resolve="caption" />
@@ -1780,14 +1780,14 @@
     <property role="3GE5qa" value="concept-editor" />
     <property role="TrG5h" value="ConceptEditorExtentionKeymap" />
     <node concept="Zd509" id="3cFKtE1Drnw" role="Zd508">
-      <ref role="1bYAoF" node="3cFKtE1Cf2$" resolve="AddOrDetach_PunctuationLeft" />
+      <ref role="1bYAoF" node="3cFKtE1Cf2$" resolve="TogglePunctuationLeft" />
       <node concept="pLAjd" id="3cFKtE1Drny" role="Zd501">
         <property role="pLAjc" value="ctrl" />
         <property role="pLAjf" value="VK_COMMA" />
       </node>
     </node>
     <node concept="Zd509" id="3cFKtE1DIbg" role="Zd508">
-      <ref role="1bYAoF" node="3cFKtE1DGWl" resolve="AddOrDetach_PunctuationRight" />
+      <ref role="1bYAoF" node="3cFKtE1DGWl" resolve="TogglePunctuationRight" />
       <node concept="pLAjd" id="3cFKtE1DIbh" role="Zd501">
         <property role="pLAjc" value="ctrl" />
         <property role="pLAjf" value="VK_PERIOD" />
@@ -2452,7 +2452,7 @@
     </node>
     <node concept="ftmFs" id="6TyyN3PvYk1" role="ftER_">
       <node concept="tCFHf" id="4sFh477HNkI" role="ftvYc">
-        <ref role="tCJdB" node="4v0AOi9dRBk" resolve="ShowIf" />
+        <ref role="tCJdB" node="4v0AOi9dRBk" resolve="ToggleShowIf" />
       </node>
       <node concept="tCFHf" id="7ERSpurbhG8" role="ftvYc">
         <ref role="tCJdB" node="7ERSpuraekW" resolve="RemoveActionMap" />
@@ -2592,7 +2592,7 @@
         </node>
       </node>
       <node concept="tCFHf" id="3esO25c2X9n" role="ftvYc">
-        <ref role="tCJdB" node="3esO25c2Lh3" resolve="ToggleUnterlined" />
+        <ref role="tCJdB" node="3esO25c2Lh3" resolve="ToggleUnderlined" />
       </node>
       <node concept="tCFHf" id="7UhbSS3YXA3" role="ftvYc">
         <ref role="tCJdB" node="7UhbSS3YJYV" resolve="ExtractStyle" />
@@ -2601,10 +2601,10 @@
         <ref role="tCJdB" node="7AKLO0Dd_lc" resolve="RemoveStyle" />
       </node>
       <node concept="tCFHf" id="3cFKtE1Drnp" role="ftvYc">
-        <ref role="tCJdB" node="3cFKtE1Cf2$" resolve="AddOrDetach_PunctuationLeft" />
+        <ref role="tCJdB" node="3cFKtE1Cf2$" resolve="TogglePunctuationLeft" />
       </node>
       <node concept="tCFHf" id="3cFKtE1DIb5" role="ftvYc">
-        <ref role="tCJdB" node="3cFKtE1DGWl" resolve="AddOrDetach_PunctuationRight" />
+        <ref role="tCJdB" node="3cFKtE1DGWl" resolve="TogglePunctuationRight" />
       </node>
       <node concept="tCFHf" id="1Jivxq$6mna" role="ftvYc">
         <ref role="tCJdB" node="1Jivxq$682L" resolve="ToggleUsesFolding" />

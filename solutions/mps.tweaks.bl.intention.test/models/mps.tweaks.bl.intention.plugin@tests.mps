@@ -7,15 +7,12 @@
     <use id="a8c824c4-b1c9-472d-82b8-ebeddaa94086" name="mps.tweaks.lang.test" version="0" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="09179ab6-0d51-459a-bd50-002af25c461a" name="mps.tweaks.bl.collections" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
   </languages>
   <imports>
     <import index="2c1f" ref="r:22128320-2537-4149-9e36-3faa7bd5f8b0(mps.tweaks.bl.intention.plugin)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -2056,7 +2053,7 @@
   </node>
   <node concept="1UG$t2" id="1VqqEparUtZ">
     <node concept="1iFQzN" id="1VqqEparUu0" role="1UHrxR">
-      <ref role="1iFR8X" to="2c1f:1VqqEpar5Ws" resolve="LogNode" />
+      <ref role="1iFR8X" to="2c1f:1VqqEpar5Ws" resolve="LogNodesPresentation" />
     </node>
     <node concept="1qefOq" id="1VqqEparUu1" role="25YQCW">
       <node concept="3clFbS" id="1VqqEparUu2" role="1qenE9">
@@ -2124,7 +2121,7 @@
                 <node concept="1eOMI4" id="5Y$H7J3kB2W" role="3uHU7w">
                   <node concept="2OqwBi" id="5Y$H7J3kB2S" role="1eOMHV">
                     <node concept="2qgKlT" id="5Y$H7J3kB2T" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIMiw" />
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                     </node>
                     <node concept="37vLTw" id="5Y$H7J3kB2U" role="2Oq$k0">
                       <ref role="3cqZAo" node="5Y$H7J3k$$A" resolve="node" />
@@ -2648,7 +2645,7 @@
       </node>
     </node>
     <node concept="1iFQzN" id="2sSdtoLurau" role="2NNXa4">
-      <ref role="1iFR8X" to="2c1f:6ZITWSgTH0p" resolve="ToIfInstanceOfStatement" />
+      <ref role="1iFR8X" to="2c1f:6ZITWSgTH0p" resolve="InstanceOfExpression_To_IfInstanceOfStatement" />
     </node>
   </node>
   <node concept="2NNVjS" id="2sSdtoLw7Bd">
@@ -2806,7 +2803,7 @@
       </node>
     </node>
     <node concept="1iFQzN" id="2sSdtoLw7BF" role="2NNXa4">
-      <ref role="1iFR8X" to="2c1f:6ZITWSgUjzH" resolve="ToIfStatement" />
+      <ref role="1iFR8X" to="2c1f:6ZITWSgUjzH" resolve="IfInstanceOfStatement_To_InstanceOfExpression" />
     </node>
   </node>
 </model>

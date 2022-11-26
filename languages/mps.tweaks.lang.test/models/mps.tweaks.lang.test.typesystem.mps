@@ -304,7 +304,7 @@
             <node concept="2OqwBi" id="2IvnPUIqcGC" role="2Oq$k0">
               <node concept="2OqwBi" id="5aRyplrTXhz" role="2Oq$k0">
                 <node concept="1YBJjd" id="5aRyplrTWMr" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5HbhpAQtYgz" resolve="test" />
+                  <ref role="1YBMHb" node="5HbhpAQtYgz" resolve="node" />
                 </node>
                 <node concept="3TrEf2" id="2IvnPUIqcw1" role="2OqNvi">
                   <ref role="3Tt5mk" to="zcx7:2IvnPUIp3ly" resolve="testNodeBefore" />
@@ -321,7 +321,7 @@
               <node concept="2OqwBi" id="2IvnPUIqddw" role="2Oq$k0">
                 <node concept="2OqwBi" id="5aRyplrTQvI" role="2Oq$k0">
                   <node concept="1YBJjd" id="5aRyplrT$ir" role="2Oq$k0">
-                    <ref role="1YBMHb" node="5HbhpAQtYgz" resolve="test" />
+                    <ref role="1YBMHb" node="5HbhpAQtYgz" resolve="node" />
                   </node>
                   <node concept="3TrEf2" id="2IvnPUIqcXT" role="2OqNvi">
                     <ref role="3Tt5mk" to="zcx7:2IvnPUIp3ly" resolve="testNodeBefore" />
@@ -513,8 +513,8 @@
         <node concept="3clFbS" id="5CtXlv$Hlx$" role="3clFbx">
           <node concept="a7r0C" id="5CtXlv$HplT" role="3cqZAp">
             <node concept="2YIFZM" id="5CtXlv$HvjG" role="a7wSD">
-              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" />
-              <ref role="1Pybhc" to="wyt6:~String" />
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <node concept="Xl_RD" id="5CtXlv$HvjH" role="37wK5m">
                 <property role="Xl_RC" value="This action overrides the action of %s" />
               </node>

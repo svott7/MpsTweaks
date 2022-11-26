@@ -1094,10 +1094,10 @@
       <ref role="3uigEE" to="jkny:~CustomStatusBarWidget" resolve="CustomStatusBarWidget" />
     </node>
     <node concept="3uibUv" id="2OGOfww95Mu" role="EKbjA">
-      <ref role="3uigEE" to="jkny:~StatusBarWidget$TextPresentation" resolve="TextPresentation" />
+      <ref role="3uigEE" to="jkny:~StatusBarWidget$TextPresentation" resolve="StatusBarWidget.TextPresentation" />
     </node>
     <node concept="3uibUv" id="2OGOfwwcS57" role="EKbjA">
-      <ref role="3uigEE" to="jkny:~StatusBarWidget$WidgetPresentation" resolve="WidgetPresentation" />
+      <ref role="3uigEE" to="jkny:~StatusBarWidget$WidgetPresentation" resolve="StatusBarWidget.WidgetPresentation" />
     </node>
     <node concept="2tJIrI" id="2OGOfww97g4" role="jymVt" />
     <node concept="312cEg" id="2OGOfwwaLB1" role="jymVt">
@@ -1360,7 +1360,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="2AHcQZ" id="2OGOfww95PK" role="2AJF6D">
-        <ref role="2AI5Lk" to="zn9m:~NlsContexts$Label" resolve="Label" />
+        <ref role="2AI5Lk" to="zn9m:~NlsContexts$Label" resolve="NlsContexts.Label" />
       </node>
       <node concept="3uibUv" id="2OGOfww95PL" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
@@ -1408,7 +1408,7 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
       <node concept="2AHcQZ" id="2OGOfww95Qf" role="2AJF6D">
-        <ref role="2AI5Lk" to="zn9m:~NlsContexts$Tooltip" resolve="Tooltip" />
+        <ref role="2AI5Lk" to="zn9m:~NlsContexts$Tooltip" resolve="NlsContexts.Tooltip" />
       </node>
       <node concept="3uibUv" id="2OGOfww95Qg" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
@@ -1655,8 +1655,8 @@
             <property role="TrG5h" value="link" />
             <node concept="17QB3L" id="2or0i1pOWnI" role="1tU5fm" />
             <node concept="2YIFZM" id="2or0i1pOWUk" role="33vP2m">
-              <ref role="37wK5l" node="6Qju3tFj0Z5" />
-              <ref role="1Pybhc" node="6Qju3tFgB3Y" />
+              <ref role="37wK5l" node="6Qju3tFj0Z5" resolve="link" />
+              <ref role="1Pybhc" node="6Qju3tFgB3Y" resolve="JavaDocSupport" />
               <node concept="2OqwBi" id="2or0i1pOWUl" role="37wK5m">
                 <node concept="2WthIp" id="2or0i1pOWUm" role="2Oq$k0" />
                 <node concept="3gHZIF" id="2or0i1pOWUn" role="2OqNvi">
@@ -1745,7 +1745,7 @@
             <node concept="liA8E" id="eiqQfa6kK4" role="2OqNvi">
               <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon)" resolve="setIcon" />
               <node concept="10M0yZ" id="eiqQfa6l3H" role="37wK5m">
-                <ref role="1PxDUh" to="z2i8:~AllIcons$Gutter" resolve="Gutter" />
+                <ref role="1PxDUh" to="z2i8:~AllIcons$Gutter" resolve="AllIcons.Gutter" />
                 <ref role="3cqZAo" to="z2i8:~AllIcons$Gutter.JavadocRead" resolve="JavadocRead" />
               </node>
             </node>
@@ -1787,8 +1787,8 @@
           </node>
           <node concept="3fqX7Q" id="6Qju3tFjiL4" role="3clFbw">
             <node concept="2YIFZM" id="6Qju3tFjiL6" role="3fr31v">
-              <ref role="37wK5l" node="6Qju3tFjbfJ" />
-              <ref role="1Pybhc" node="6Qju3tFgB3Y" />
+              <ref role="37wK5l" node="6Qju3tFjbfJ" resolve="hasJdkDoc" />
+              <ref role="1Pybhc" node="6Qju3tFgB3Y" resolve="JavaDocSupport" />
               <node concept="2OqwBi" id="6Qju3tFjiL7" role="37wK5m">
                 <node concept="2WthIp" id="6Qju3tFjiL8" role="2Oq$k0" />
                 <node concept="3gHZIF" id="6Qju3tFjiL9" role="2OqNvi">
@@ -1820,7 +1820,7 @@
             <node concept="liA8E" id="26PAZwsYNe$" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Desktop.isSupported(java.awt.Desktop$Action)" resolve="isSupported" />
               <node concept="Rm8GO" id="26PAZwsYNe_" role="37wK5m">
-                <ref role="1Px2BO" to="z60i:~Desktop$Action" resolve="Action" />
+                <ref role="1Px2BO" to="z60i:~Desktop$Action" resolve="Desktop.Action" />
                 <ref role="Rm8GQ" to="z60i:~Desktop$Action.BROWSE" resolve="BROWSE" />
               </node>
             </node>
@@ -2076,8 +2076,8 @@
             </node>
             <node concept="3cpWs6" id="eiqQfabjBm" role="3cqZAp">
               <node concept="2YIFZM" id="2or0i1pKmc1" role="3cqZAk">
-                <ref role="1Pybhc" node="2or0i1pJQd1" />
-                <ref role="37wK5l" node="2or0i1pJZAj" />
+                <ref role="1Pybhc" node="2or0i1pJQd1" resolve="OracleJdkDoc" />
+                <ref role="37wK5l" node="2or0i1pJZAj" resolve="getWebpage" />
                 <node concept="1rXfSq" id="2or0i1pKVyh" role="37wK5m">
                   <ref role="37wK5l" node="2or0i1pKTMA" resolve="classifierPackage" />
                   <node concept="37vLTw" id="2or0i1pKVUw" role="37wK5m">
@@ -2171,8 +2171,8 @@
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="3cpWs6" id="eiqQfabm$j" role="8Wnug">
                 <node concept="2YIFZM" id="eiqQfabm$k" role="3cqZAk">
-                  <ref role="1Pybhc" node="2or0i1pJQd1" />
-                  <ref role="37wK5l" node="2or0i1pJZAj" />
+                  <ref role="1Pybhc" node="2or0i1pJQd1" resolve="OracleJdkDoc" />
+                  <ref role="37wK5l" node="2or0i1pJZAj" resolve="getWebpage" />
                   <node concept="1rXfSq" id="eiqQfabm$l" role="37wK5m">
                     <ref role="37wK5l" node="2or0i1pKTMA" resolve="classifierPackage" />
                     <node concept="37vLTw" id="eiqQfabm$m" role="37wK5m">
@@ -2291,8 +2291,8 @@
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="3cpWs6" id="eiqQfabo13" role="8Wnug">
                 <node concept="2YIFZM" id="eiqQfabo14" role="3cqZAk">
-                  <ref role="37wK5l" node="2or0i1pJZAj" />
-                  <ref role="1Pybhc" node="2or0i1pJQd1" />
+                  <ref role="37wK5l" node="2or0i1pJZAj" resolve="getWebpage" />
+                  <ref role="1Pybhc" node="2or0i1pJQd1" resolve="OracleJdkDoc" />
                   <node concept="1rXfSq" id="eiqQfabo15" role="37wK5m">
                     <ref role="37wK5l" node="2or0i1pKTMA" resolve="classifierPackage" />
                     <node concept="37vLTw" id="eiqQfabo16" role="37wK5m">
@@ -2386,8 +2386,8 @@
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="3cpWs6" id="eiqQfadAEb" role="8Wnug">
                 <node concept="2YIFZM" id="eiqQfae4NI" role="3cqZAk">
-                  <ref role="1Pybhc" node="2or0i1pJQd1" />
-                  <ref role="37wK5l" node="eiqQfactOK" />
+                  <ref role="1Pybhc" node="2or0i1pJQd1" resolve="OracleJdkDoc" />
+                  <ref role="37wK5l" node="eiqQfactOK" resolve="getWebpageConstructor" />
                   <node concept="1rXfSq" id="eiqQfae4NJ" role="37wK5m">
                     <ref role="37wK5l" node="2or0i1pKTMA" resolve="classifierPackage" />
                     <node concept="37vLTw" id="eiqQfae4NK" role="37wK5m">
@@ -2484,8 +2484,8 @@
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="3cpWs6" id="eiqQfabCWL" role="8Wnug">
                 <node concept="2YIFZM" id="eiqQfabCWM" role="3cqZAk">
-                  <ref role="1Pybhc" node="2or0i1pJQd1" />
-                  <ref role="37wK5l" node="2or0i1pJZAj" />
+                  <ref role="1Pybhc" node="2or0i1pJQd1" resolve="OracleJdkDoc" />
+                  <ref role="37wK5l" node="2or0i1pJZAj" resolve="getWebpage" />
                   <node concept="1rXfSq" id="eiqQfabCWN" role="37wK5m">
                     <ref role="37wK5l" node="2or0i1pKTMA" resolve="classifierPackage" />
                     <node concept="37vLTw" id="eiqQfabCWO" role="37wK5m">
@@ -2571,8 +2571,8 @@
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="3cpWs6" id="eiqQfachbd" role="8Wnug">
                 <node concept="2YIFZM" id="eiqQfacxbx" role="3cqZAk">
-                  <ref role="37wK5l" node="eiqQfactOK" />
-                  <ref role="1Pybhc" node="2or0i1pJQd1" />
+                  <ref role="37wK5l" node="eiqQfactOK" resolve="getWebpageConstructor" />
+                  <ref role="1Pybhc" node="2or0i1pJQd1" resolve="OracleJdkDoc" />
                   <node concept="1rXfSq" id="eiqQfacxby" role="37wK5m">
                     <ref role="37wK5l" node="2or0i1pKTMA" resolve="classifierPackage" />
                     <node concept="37vLTw" id="eiqQfacxbz" role="37wK5m">
@@ -3346,13 +3346,13 @@
         <ref role="2vPdvl" node="2taBP0bOroK" resolve="Action" />
       </node>
       <node concept="2vPdvi" id="2taBP0bPOwq" role="2vPdvg">
-        <ref role="2vPdvl" node="2taBP0bP7zh" />
+        <ref role="2vPdvl" node="2taBP0bP7zh" resolve="Action Group" />
       </node>
       <node concept="2vPdvi" id="2taBP0bRHro" role="2vPdvg">
-        <ref role="2vPdvl" node="2taBP0bQrmr" />
+        <ref role="2vPdvl" node="2taBP0bQrmr" resolve="Keymap Changes" />
       </node>
       <node concept="2vPdvi" id="2taBP0bZepj" role="2vPdvg">
-        <ref role="2vPdvl" node="2taBP0bSOg5" />
+        <ref role="2vPdvl" node="2taBP0bSOg5" resolve="Action Tests" />
       </node>
     </node>
     <node concept="1D6cnc" id="2taBP0bS10Y" role="1D6cnr">
