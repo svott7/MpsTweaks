@@ -5,19 +5,11 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="ac12167b-cd9f-41ab-a7b5-a48087a2f0cf" name="mps.tweaks.doc" version="0" />
-    <use id="19cfafaa-983c-43a8-9a55-3949e89e08b1" name="mps.tweaks.editor.expressionwrapping" version="0" />
-    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
   </languages>
   <imports>
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
@@ -28,37 +20,6 @@
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
-    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
-    <import index="gspm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui.popup(MPS.IDEA/)" />
-    <import index="rvbb" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.projectPane(MPS.Workbench/)" />
-    <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" />
-    <import index="7e8u" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.tree(MPS.Platform/)" />
-    <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
-    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
-    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="ll2t" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.configurationStore(MPS.IDEA/)" />
-    <import index="mz8t" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.xmlb(MPS.IDEA/)" />
-    <import index="rvhr" ref="r:0a87eb62-6d3c-44eb-a613-00cbe6c4ae6d(mps.tweaks.smodel.plugin)" />
-    <import index="57ty" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.messages(MPS.Platform/)" />
-    <import index="k21q" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.projectView.impl(MPS.IDEA/)" />
-    <import index="bnjk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.projectView(MPS.IDEA/)" />
-    <import index="20hi" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.projectWizard(MPS.IDEA/)" />
-    <import index="xwjc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.projectWizard.generators(MPS.IDEA/)" />
-    <import index="txxb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.projectView.actions(MPS.IDEA/)" />
-    <import index="6l9d" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.projectView.impl.nodes(MPS.IDEA/)" />
-    <import index="hnlw" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.structureView.impl(MPS.IDEA/)" />
-    <import index="et5u" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.messages(MPS.Core/)" />
-    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="gxwn" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.google.common.primitives(MPS.IDEA/)" />
-    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -127,6 +88,9 @@
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1732176556423009631" name="jetbrains.mps.baseLanguage.structure.MultiLineComment" flags="ng" index="2lOVwT">
+        <child id="1732176556423038857" name="lines" index="2lOMFJ" />
+      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
@@ -316,8 +280,8 @@
     </language>
   </registry>
   <node concept="sE7Ow" id="6TyyN3PyLLP">
-    <property role="TrG5h" value="DeletePreviousSubString" />
-    <property role="2uzpH1" value="Delete Previous Substring" />
+    <property role="TrG5h" value="DeleteToSubwordStart" />
+    <property role="2uzpH1" value="Delete to Subword Start" />
     <property role="3GE5qa" value="" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="6TyyN3PySGB" role="1NuT2Z">
@@ -333,6 +297,34 @@
     </node>
     <node concept="tnohg" id="6TyyN3PyLLQ" role="tncku">
       <node concept="3clFbS" id="6TyyN3PyLLR" role="2VODD2">
+        <node concept="3SKdUt" id="7W8$nBNn_MJ" role="3cqZAp">
+          <node concept="1PaTwC" id="7W8$nBNn_SJ" role="1aUNEU">
+            <node concept="3oM_SD" id="7W8$nBNn_Tm" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
+            </node>
+          </node>
+        </node>
+        <node concept="2lOVwT" id="7W8$nBNnArF" role="3cqZAp">
+          <node concept="1PaTwC" id="7W8$nBNnArG" role="2lOMFJ">
+            <node concept="3oM_SD" id="7W8$nBNnAzZ" role="1PaTwD">
+              <property role="3oM_SC" value="fdssdfs" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="7W8$nBNnA$a" role="2lOMFJ">
+            <node concept="3oM_SD" id="7W8$nBNnA$9" role="1PaTwD">
+              <property role="3oM_SC" value="sdfsdf" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="7W8$nBNnA$s" role="2lOMFJ">
+            <node concept="3oM_SD" id="7W8$nBNnA$r" role="1PaTwD">
+              <property role="3oM_SC" value="sdfsdf" />
+            </node>
+            <node concept="3oM_SD" id="7W8$nBNnAA3" role="1PaTwD">
+              <property role="3oM_SC" value="dfsdf" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7W8$nBNnp3V" role="3cqZAp" />
         <node concept="3cpWs8" id="60r304KPAE6" role="3cqZAp">
           <node concept="3KEzu6" id="60r304KPAE3" role="3cpWs9">
             <property role="TrG5h" value="algo" />
@@ -440,24 +432,17 @@
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="StringEditingKeyMap" />
     <node concept="Zd509" id="6TyyN3PAbY1" role="Zd508">
-      <ref role="1bYAoF" node="6TyyN3PyLLP" resolve="DeletePreviousSubString" />
+      <ref role="1bYAoF" node="6TyyN3PyLLP" resolve="DeleteToSubwordStart" />
       <node concept="pLAjd" id="6TyyN3PAbY3" role="Zd501">
         <property role="pLAjc" value="ctrl" />
         <property role="pLAjf" value="VK_BACK_SPACE" />
       </node>
     </node>
-    <node concept="Zd509" id="2s6uFk0NQQx" role="Zd508">
-      <ref role="1bYAoF" node="2s6uFk0NdR4" resolve="DeleteNextSubString" />
-      <node concept="pLAjd" id="2s6uFk0NQQy" role="Zd501">
-        <property role="pLAjc" value="ctrl+shift" />
-        <property role="pLAjf" value="VK_DELETE" />
-      </node>
-    </node>
   </node>
   <node concept="2DaZZR" id="3ZFBIUSvim_" />
   <node concept="sE7Ow" id="2s6uFk0NdR4">
-    <property role="TrG5h" value="DeleteNextSubString" />
-    <property role="2uzpH1" value="Delete Next Substring" />
+    <property role="TrG5h" value="DeleteToSubwordEnd" />
+    <property role="2uzpH1" value="Delete to Subword End" />
     <property role="3GE5qa" value="" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="2s6uFk0NdR5" role="1NuT2Z">
@@ -577,7 +562,7 @@
     </node>
   </node>
   <node concept="312cEu" id="60r304KOiuE">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="impl" />
     <property role="TrG5h" value="TextAndCursorPositionWrapper" />
     <node concept="2tJIrI" id="60r304KOZH6" role="jymVt" />
     <node concept="2RhdJD" id="60r304KRtRe" role="jymVt">
@@ -898,7 +883,7 @@
     <node concept="3Tm1VV" id="60r304KOiuF" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="60r304KPL3C">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="impl" />
     <property role="TrG5h" value="StringManipulation" />
     <node concept="2tJIrI" id="60r304KPL40" role="jymVt" />
     <node concept="2YIFZL" id="60r304KPNCY" role="jymVt">
@@ -1945,7 +1930,7 @@
     <node concept="3Tm1VV" id="60r304KPL3D" role="1B3o_S" />
   </node>
   <node concept="2fD8I5" id="60r304KQidf">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="impl" />
     <property role="TrG5h" value="TextAndCursorPosition" />
     <node concept="2lGYhJ" id="60r304KQidH" role="2pHZQ9">
       <property role="TrG5h" value="text" />
@@ -1959,6 +1944,7 @@
   </node>
   <node concept="312cEu" id="4n_AWUPKt9R">
     <property role="TrG5h" value="Chars" />
+    <property role="3GE5qa" value="impl" />
     <node concept="2YIFZL" id="4n_AWUPKy8X" role="jymVt">
       <property role="TrG5h" value="isCapitalLetter" />
       <node concept="3Tm1VV" id="4n_AWUPKy8Y" role="1B3o_S" />
@@ -2118,6 +2104,7 @@
   </node>
   <node concept="Qs71p" id="4n_AWUPKPQY">
     <property role="TrG5h" value="CharType" />
+    <property role="3GE5qa" value="impl" />
     <node concept="QsSxf" id="4n_AWUPKPSc" role="Qtgdg">
       <property role="TrG5h" value="capitalLetter" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />

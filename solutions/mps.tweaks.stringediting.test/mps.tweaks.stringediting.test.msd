@@ -24,9 +24,6 @@
     <language slang="l:a8c824c4-b1c9-472d-82b8-ebeddaa94086:mps.tweaks.lang.test" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="2e2cd1f8-3954-4f13-89cd-44fe9de53d0b(mps.tweaks.stringediting)" version="0" />
     <module reference="295dbf5d-7048-4b6c-873f-24308b82810b(mps.tweaks.stringediting.test)" version="0" />
   </dependencyVersions>

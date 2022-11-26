@@ -20,6 +20,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.editor/mps.tweaks.editor.msd" folder="editor" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.ide/mps.tweaks.ide.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.smodel/mps.tweaks.smodel.msd" folder="plugin-editing-smodel" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.stringediting.build/mps.tweaks.stringediting.build.msd" folder="plugin-editing-string" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.stringediting.test/mps.tweaks.stringediting.test.msd" folder="plugin-editing-string" />
       <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.stringediting/mps.tweaks.stringediting.msd" folder="plugin-editing-string" />
     </projectModules>
