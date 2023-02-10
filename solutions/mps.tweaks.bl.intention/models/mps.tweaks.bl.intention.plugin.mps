@@ -375,7 +375,6 @@
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
@@ -7410,13 +7409,26 @@
     <node concept="2OiAzN" id="26PAZwszrap" role="ftER_">
       <node concept="2OiTZ2" id="26PAZwszrar" role="2Oj6PV">
         <node concept="3clFbS" id="26PAZwszrat" role="2VODD2">
-          <node concept="1X3_iC" id="26PAZws$3QU" role="lGtFl">
-            <property role="3V$3am" value="statement" />
-            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="2xdQw9" id="26PAZwsxqsW" role="8Wnug">
-              <property role="2xdLsb" value="gZ5frni/trace" />
-              <node concept="Xl_RD" id="26PAZwsxqsX" role="9lYJi">
-                <property role="Xl_RC" value="trace::ExtensionMethodsIntentions::update" />
+          <node concept="3cpWs8" id="6qmOVDGYQK0" role="3cqZAp">
+            <node concept="3KEzu6" id="6qmOVDGYRjh" role="3cpWs9">
+              <property role="TrG5h" value="project" />
+              <node concept="2OqwBi" id="6qmOVDGYRji" role="33vP2m">
+                <node concept="tl45R" id="6qmOVDGYRjj" role="2Oq$k0" />
+                <node concept="liA8E" id="6qmOVDGYRjk" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+                </node>
+              </node>
+              <node concept="PeGgZ" id="6qmOVDGYRjl" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="6qmOVDGYXEI" role="3cqZAp">
+            <node concept="3clFbS" id="6qmOVDGYXEK" role="3clFbx">
+              <node concept="3cpWs6" id="6qmOVDGZ0lH" role="3cqZAp" />
+            </node>
+            <node concept="3clFbC" id="6qmOVDGYZ6x" role="3clFbw">
+              <node concept="10Nm6u" id="6qmOVDGYZLA" role="3uHU7w" />
+              <node concept="37vLTw" id="6qmOVDGYYeA" role="3uHU7B">
+                <ref role="3cqZAo" node="6qmOVDGYRjh" resolve="project" />
               </node>
             </node>
           </node>
@@ -7446,11 +7458,8 @@
             <node concept="2YIFZM" id="26PAZwsvR9L" role="L3pyr">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProjectOrFail(com.intellij.openapi.project.Project)" resolve="fromIdeaProjectOrFail" />
-              <node concept="2OqwBi" id="26PAZwsvOvP" role="37wK5m">
-                <node concept="tl45R" id="26PAZwsvOvQ" role="2Oq$k0" />
-                <node concept="liA8E" id="26PAZwsvOvR" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                </node>
+              <node concept="37vLTw" id="6qmOVDGYQK5" role="37wK5m">
+                <ref role="3cqZAo" node="6qmOVDGYRjh" resolve="project" />
               </node>
             </node>
           </node>
