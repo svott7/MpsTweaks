@@ -164,7 +164,7 @@
       </node>
       <node concept="3_J27D" id="12Zz9ivFCfK" role="m$_w8">
         <node concept="3Mxwew" id="4yHCkwUXrwx" role="3MwsjC">
-          <property role="3MwjfP" value="1.05" />
+          <property role="3MwjfP" value="1.06" />
         </node>
       </node>
       <node concept="m$f5U" id="12Zz9ivFCfM" role="m$_yh">
@@ -1216,9 +1216,9 @@
         </node>
       </node>
       <node concept="1E1JtA" id="3esO25c1z9U" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="mps.tweaks.ide" />
         <property role="3LESm3" value="1937f4da-4a44-4842-806c-b4a4810ea0f5" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="3esO25c1z9X" role="3LF7KH">
           <node concept="2Ry0Ak" id="3esO25c1zg7" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
@@ -1258,6 +1258,21 @@
             </node>
             <node concept="3qWCbU" id="3esO25c1zhD" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6qmOVDH02H7" role="3bR31x">
+          <node concept="3LXTmp" id="6qmOVDH02H8" role="3rtmxm">
+            <node concept="55IIr" id="6qmOVDH02H9" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6qmOVDH02Ha" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6qmOVDH02Hb" role="2Ry0An">
+                  <property role="2Ry0Am" value="mps.tweaks.ide" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6qmOVDH02Hd" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
             </node>
           </node>
         </node>
