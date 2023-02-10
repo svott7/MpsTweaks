@@ -8,6 +8,7 @@
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
@@ -17,6 +18,8 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="al1t" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.diagnostic(MPS.IDEA/)" />
+    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -67,6 +70,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -77,6 +83,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
@@ -92,6 +101,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -112,6 +124,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <property id="4467513934994662257" name="forceMultiLine" index="TyiWK" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -121,9 +134,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
-      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -135,13 +146,13 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -154,15 +165,12 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
-    </language>
-    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
-      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
-        <child id="1199569906740" name="parameter" index="1bW2Oz" />
-        <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
@@ -220,7 +228,7 @@
         <node concept="3clFbF" id="E4OT9YSxpf" role="3cqZAp">
           <node concept="2YIFZM" id="E4OT9YSxv2" role="3clFbG">
             <ref role="37wK5l" node="4rZy0P5uQQv" resolve="clear" />
-            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessagesTab" />
+            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessageTabs" />
             <node concept="2OqwBi" id="E4OT9YSxxh" role="37wK5m">
               <node concept="2WthIp" id="E4OT9YSxxk" role="2Oq$k0" />
               <node concept="1DTwFV" id="E4OT9YSxxm" role="2OqNvi">
@@ -233,7 +241,7 @@
     </node>
   </node>
   <node concept="312cEu" id="4rZy0P5uHPO">
-    <property role="TrG5h" value="MpsDefaultMessagesTab" />
+    <property role="TrG5h" value="MpsDefaultMessageTabs" />
     <property role="3GE5qa" value="default-message-tab" />
     <node concept="2tJIrI" id="E4OT9YSrfu" role="jymVt" />
     <node concept="Wx3nA" id="E4OT9YSuaN" role="jymVt">
@@ -247,7 +255,7 @@
       <node concept="z59LJ" id="6QM7aN93D_Y" role="lGtFl">
         <node concept="TZ5HA" id="6QM7aN93D_Z" role="TZ5H$">
           <node concept="1dT_AC" id="6QM7aN93DA0" role="1dT_Ay">
-            <property role="1dT_AB" value="Hack: DEFAULT_LIST is defined in a private static field of MessagesViewTool " />
+            <property role="1dT_AB" value="Workaround: DEFAULT_LIST is defined in a private static field of MessagesViewTool " />
           </node>
         </node>
       </node>
@@ -262,12 +270,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4rZy0P5uRZ9" role="1B3o_S" />
-      <node concept="3uibUv" id="E4OT9ZkvI4" role="3clF45">
-        <ref role="3uigEE" to="33ny:~Optional" resolve="Optional" />
-        <node concept="3uibUv" id="E4OT9ZkvI5" role="11_B2D">
-          <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
-        </node>
-      </node>
       <node concept="3clFbS" id="4rZy0P5uRZb" role="3clF47">
         <node concept="3cpWs8" id="4rZy0P5uSGK" role="3cqZAp">
           <node concept="3KEzu6" id="4rZy0P5uSGL" role="3cpWs9">
@@ -283,11 +285,17 @@
           </node>
         </node>
         <node concept="3clFbJ" id="4rZy0P5uSGP" role="3cqZAp">
+          <property role="TyiWK" value="true" />
           <node concept="3clFbS" id="4rZy0P5uSGQ" role="3clFbx">
-            <node concept="3cpWs6" id="4rZy0P5uSGR" role="3cqZAp">
-              <node concept="2YIFZM" id="E4OT9ZkvHY" role="3cqZAk">
-                <ref role="37wK5l" to="33ny:~Optional.empty()" resolve="empty" />
-                <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
+            <node concept="YS8fn" id="72dkbnn3nqn" role="3cqZAp">
+              <node concept="2ShNRf" id="72dkbnn3nDe" role="YScLw">
+                <node concept="1pGfFk" id="72dkbnn3zko" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                  <node concept="Xl_RD" id="72dkbnn3z_W" role="37wK5m">
+                    <property role="Xl_RC" value="MessagesViewTool is not available" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -316,11 +324,27 @@
           </node>
         </node>
         <node concept="3clFbJ" id="E4OT9YS8X8" role="3cqZAp">
+          <property role="TyiWK" value="true" />
           <node concept="3clFbS" id="E4OT9YS8X9" role="3clFbx">
-            <node concept="3cpWs6" id="E4OT9YSgSp" role="3cqZAp">
-              <node concept="2YIFZM" id="E4OT9ZkvHZ" role="3cqZAk">
-                <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
-                <ref role="37wK5l" to="33ny:~Optional.empty()" resolve="empty" />
+            <node concept="YS8fn" id="72dkbnn3_ts" role="3cqZAp">
+              <node concept="2ShNRf" id="72dkbnn3_tt" role="YScLw">
+                <node concept="1pGfFk" id="72dkbnn3_tu" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                  <node concept="2YIFZM" id="72dkbnn3G6b" role="37wK5m">
+                    <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <node concept="Xl_RD" id="72dkbnn3G6c" role="37wK5m">
+                      <property role="Xl_RC" value="Message list '%s' is not an instance of %s" />
+                    </node>
+                    <node concept="37vLTw" id="72dkbnn3JcM" role="37wK5m">
+                      <ref role="3cqZAo" node="E4OT9YSuaN" resolve="DEFAULT_LIST" />
+                    </node>
+                    <node concept="3VsKOn" id="72dkbnn3KHh" role="37wK5m">
+                      <ref role="3VsUkX" to="57ty:~MessageList" resolve="MessageList" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -336,19 +360,18 @@
           </node>
         </node>
         <node concept="3clFbF" id="E4OT9YSjgk" role="3cqZAp">
-          <node concept="2YIFZM" id="E4OT9ZkvI0" role="3clFbG">
-            <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
-            <ref role="37wK5l" to="33ny:~Optional.of(java.lang.Object)" resolve="of" />
-            <node concept="10QFUN" id="E4OT9ZkvI1" role="37wK5m">
-              <node concept="37vLTw" id="E4OT9ZkvI2" role="10QFUP">
-                <ref role="3cqZAo" node="E4OT9YS8X2" resolve="messageList" />
-              </node>
-              <node concept="3uibUv" id="E4OT9ZkvI3" role="10QFUM">
-                <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
-              </node>
+          <node concept="10QFUN" id="72dkbnn3LWu" role="3clFbG">
+            <node concept="37vLTw" id="72dkbnn3LWt" role="10QFUP">
+              <ref role="3cqZAo" node="E4OT9YS8X2" resolve="messageList" />
+            </node>
+            <node concept="3uibUv" id="72dkbnn3Mp2" role="10QFUM">
+              <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3uibUv" id="E4OT9ZkvI5" role="3clF45">
+        <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
       </node>
     </node>
     <node concept="2tJIrI" id="4rZy0P5uRPo" role="jymVt" />
@@ -365,30 +388,10 @@
                 <ref role="3cqZAo" node="4rZy0P5uKC7" resolve="mpsProject" />
               </node>
             </node>
-            <node concept="liA8E" id="E4OT9Zk$5$" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Optional.ifPresent(java.util.function.Consumer)" resolve="ifPresent" />
-              <node concept="1bVj0M" id="E4OT9Zk$g0" role="37wK5m">
-                <node concept="3clFbS" id="E4OT9Zk$g1" role="1bW5cS">
-                  <node concept="3clFbF" id="E4OT9Zk_$8" role="3cqZAp">
-                    <node concept="2OqwBi" id="E4OT9Zk_VH" role="3clFbG">
-                      <node concept="37vLTw" id="E4OT9Zk_$7" role="2Oq$k0">
-                        <ref role="3cqZAo" node="E4OT9Zk$F8" resolve="it" />
-                      </node>
-                      <node concept="liA8E" id="E4OT9ZkAR$" role="2OqNvi">
-                        <ref role="37wK5l" to="57ty:~MessageList.setActivateOnMessage(boolean)" resolve="setActivateOnMessage" />
-                        <node concept="37vLTw" id="E4OT9ZkBjs" role="37wK5m">
-                          <ref role="3cqZAo" node="E4OT9YSn1R" resolve="isActive" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTG" id="E4OT9Zk$F8" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="3uibUv" id="E4OT9Zk$F7" role="1tU5fm">
-                    <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
-                  </node>
-                </node>
+            <node concept="liA8E" id="E4OT9ZkAR$" role="2OqNvi">
+              <ref role="37wK5l" to="57ty:~MessageList.setActivateOnMessage(boolean)" resolve="setActivateOnMessage" />
+              <node concept="37vLTw" id="E4OT9ZkBjs" role="37wK5m">
+                <ref role="3cqZAo" node="E4OT9YSn1R" resolve="isActive" />
               </node>
             </node>
           </node>
@@ -473,34 +476,14 @@
                 <ref role="3cqZAo" node="4rZy0P5uR38" resolve="mpsProject" />
               </node>
             </node>
-            <node concept="liA8E" id="E4OT9ZkEiI" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Optional.ifPresent(java.util.function.Consumer)" resolve="ifPresent" />
-              <node concept="1bVj0M" id="E4OT9ZkEuP" role="37wK5m">
-                <node concept="3clFbS" id="E4OT9ZkEuQ" role="1bW5cS">
-                  <node concept="3clFbF" id="E4OT9ZkFAk" role="3cqZAp">
-                    <node concept="2OqwBi" id="E4OT9ZkFTW" role="3clFbG">
-                      <node concept="37vLTw" id="E4OT9ZkFAj" role="2Oq$k0">
-                        <ref role="3cqZAo" node="E4OT9ZkF4c" resolve="it" />
-                      </node>
-                      <node concept="liA8E" id="E4OT9YSpTn" role="2OqNvi">
-                        <ref role="37wK5l" to="57ty:~MessageList.clear()" resolve="clear" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTG" id="E4OT9ZkF4c" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="3uibUv" id="E4OT9ZkF4b" role="1tU5fm">
-                    <ref role="3uigEE" to="57ty:~MessageList" resolve="MessageList" />
-                  </node>
-                </node>
-              </node>
+            <node concept="liA8E" id="72dkbnn3Nc6" role="2OqNvi">
+              <ref role="37wK5l" to="57ty:~MessageList.clear()" resolve="clear" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="3Tm1VV" id="4rZy0P5uHPP" role="1B3o_S" />
+    <node concept="3Tm1VV" id="72dkbnn3JYI" role="1B3o_S" />
   </node>
   <node concept="sE7Ow" id="4rZy0P5aydJ">
     <property role="2uzpH1" value="Set MPS Default Message Tab Inactive" />
