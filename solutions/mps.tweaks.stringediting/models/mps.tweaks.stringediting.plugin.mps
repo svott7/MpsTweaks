@@ -438,6 +438,13 @@
         <property role="pLAjf" value="VK_BACK_SPACE" />
       </node>
     </node>
+    <node concept="Zd509" id="3q7rbu$VaES" role="Zd508">
+      <ref role="1bYAoF" node="2s6uFk0NdR4" resolve="DeleteToSubwordEnd" />
+      <node concept="pLAjd" id="3q7rbu$VaEU" role="Zd501">
+        <property role="pLAjc" value="ctrl+shift" />
+        <property role="pLAjf" value="VK_BACK_SPACE" />
+      </node>
+    </node>
   </node>
   <node concept="2DaZZR" id="3ZFBIUSvim_" />
   <node concept="sE7Ow" id="2s6uFk0NdR4">

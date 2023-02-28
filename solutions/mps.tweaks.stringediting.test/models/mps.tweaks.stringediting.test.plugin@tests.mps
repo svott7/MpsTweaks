@@ -5,6 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="a8c824c4-b1c9-472d-82b8-ebeddaa94086" name="mps.tweaks.lang.test" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="z6vy" ref="r:18cd50cd-8b90-44d4-b06a-9054f46d92d3(mps.tweaks.stringediting.plugin)" />
@@ -355,7 +356,7 @@
         </node>
       </node>
       <node concept="2NNXa5" id="4n_AWUPNMyx" role="2$A2Gp">
-        <property role="2$A2Gn" value="Delete Single Capital Letter And Previous Word" />
+        <property role="2$A2Gn" value="Delete Single Capital And Previous Word" />
         <node concept="1qefOq" id="4n_AWUPNMyy" role="25YQCW">
           <node concept="Xl_RD" id="4n_AWUPNMyz" role="1qenE9">
             <property role="Xl_RC" value="testABCWorld" />
@@ -1097,6 +1098,43 @@
     </node>
     <node concept="1iFQzN" id="2OGOfwwfjeY" role="2NNXa4">
       <ref role="1iFR8X" to="z6vy:2s6uFk0NdR4" resolve="DeleteToSubwordEnd" />
+    </node>
+  </node>
+  <node concept="2NNVjS" id="3q7rbu$Vqvs">
+    <property role="2$A2Gn" value="DeleteToSubwordStart" />
+    <node concept="2$A1kt" id="3q7rbu$VqyL" role="2$A2Gr">
+      <property role="2$A2Gn" value="jetbrains.msp.lang.test" />
+      <node concept="2NNXa5" id="3q7rbu$VqFK" role="2$A2Gp">
+        <property role="2$A2Gn" value="Word" />
+        <node concept="1qefOq" id="3q7rbu$VqHY" role="25YQCW">
+          <node concept="1PaTwC" id="3q7rbu$VqHX" role="1qenE9">
+            <node concept="3oM_SD" id="3q7rbu$VqJT" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
+              <node concept="LIFWc" id="3q7rbu$VGoX" role="lGtFl">
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="4" />
+                <property role="p6zMs" value="4" />
+                <property role="LIFWd" value="property_value" />
+              </node>
+            </node>
+            <node concept="3oM_SD" id="3q7rbu$VqMv" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
+            </node>
+          </node>
+        </node>
+        <node concept="1qefOq" id="3q7rbu$VGuo" role="25YQFr">
+          <node concept="1PaTwC" id="3q7rbu$VGup" role="1qenE9">
+            <node concept="3oM_SD" id="3q7rbu$VGuq" role="1PaTwD" />
+            <node concept="3oM_SD" id="3q7rbu$VGus" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1iFQzN" id="3q7rbu$Vqxr" role="2NNXa4">
+      <ref role="1iFR8X" to="z6vy:6TyyN3PyLLP" resolve="DeleteToSubwordStart" />
     </node>
   </node>
 </model>
