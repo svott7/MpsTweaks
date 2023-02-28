@@ -16,6 +16,7 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
+    <use id="7feb29f4-8218-46cb-a62b-2f322ebaa2e9" name="mps.tweaks.action" version="0" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -566,6 +567,11 @@
       <concept id="6337838849795011010" name="mps.tweaks.editor.expressionwrapping.structure.WrapMe" flags="ng" index="2ihNso" />
       <concept id="980695035447477007" name="mps.tweaks.editor.expressionwrapping.structure.DontWrapMe" flags="ng" index="1piyfZ" />
     </language>
+    <language id="7feb29f4-8218-46cb-a62b-2f322ebaa2e9" name="mps.tweaks.action">
+      <concept id="7847279363845091970" name="mps.tweaks.action.structure.GroupLink" flags="ng" index="1rQ_63">
+        <reference id="7847279363845091980" name="group" index="1rQ_6d" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -630,9 +636,6 @@
       <node concept="tCFHf" id="52Y6DbuM245" role="ftvYc">
         <ref role="tCJdB" node="52Y6DbuM0as" resolve="RemoveParameter" />
       </node>
-      <node concept="tCFHf" id="52Y6DbuOPHg" role="ftvYc">
-        <ref role="tCJdB" node="52Y6DbuOLu1" resolve="RemoveLValue" />
-      </node>
       <node concept="tCFHf" id="1BivCbO94Sm" role="ftvYc">
         <ref role="tCJdB" node="1BivCbO91QM" resolve="ExtractCondition" />
       </node>
@@ -643,7 +646,7 @@
         <ref role="tCJdB" node="6NB8K4QSv4m" resolve="TernaryExpressionToIfStatement" />
       </node>
       <node concept="tCFHf" id="6NB8K4R8Uwa" role="ftvYc">
-        <ref role="tCJdB" node="6NB8K4R6FVj" resolve="IfStatementToTernaryOperatro" />
+        <ref role="tCJdB" node="6NB8K4R6FVj" resolve="IfStatementToTernaryOperation" />
       </node>
       <node concept="2a7GMi" id="1BivCbOdDlK" role="ftvYc" />
       <node concept="tCFHf" id="1BivCbOdDmM" role="ftvYc">
@@ -764,7 +767,7 @@
       </node>
       <node concept="2a7GMi" id="V$bWE3q0vT" role="ftvYc" />
       <node concept="tCFHf" id="V$bWE3q0xH" role="ftvYc">
-        <ref role="tCJdB" node="V$bWE3pxn1" resolve="ToggleForceMultiline" />
+        <ref role="tCJdB" node="V$bWE3pxn1" resolve="ToggleForceMultilineClosureLiteral" />
       </node>
       <node concept="tCFHf" id="V$bWE3wtxh" role="ftvYc">
         <ref role="tCJdB" node="V$bWE3woLx" resolve="ToggleForceMultilineIfStatement" />
@@ -5770,6 +5773,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1rQ_63" id="6NB8K4RfwPp" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
     </node>
   </node>
   <node concept="sE7Ow" id="7ERSpuqRg7M">

@@ -50,6 +50,7 @@
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />
+    <language slang="l:7feb29f4-8218-46cb-a62b-2f322ebaa2e9:mps.tweaks.action" version="0" />
     <language slang="l:ac12167b-cd9f-41ab-a7b5-a48087a2f0cf:mps.tweaks.doc" version="0" />
     <language slang="l:19cfafaa-983c-43a8-9a55-3949e89e08b1:mps.tweaks.editor.expressionwrapping" version="0" />
   </languageVersions>
