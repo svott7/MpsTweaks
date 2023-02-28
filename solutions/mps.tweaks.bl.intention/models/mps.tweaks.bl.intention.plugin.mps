@@ -726,16 +726,6 @@
       <node concept="tCFHf" id="KFQkIYskPl" role="ftvYc">
         <ref role="tCJdB" node="KFQkIYrzyl" resolve="ChangeReturnType" />
       </node>
-      <node concept="2a7GMi" id="1a7dmAozVFw" role="ftvYc" />
-      <node concept="tCFHf" id="1a7dmAozVGu" role="ftvYc">
-        <ref role="tCJdB" node="1a7dmAozVjs" resolve="WrapWithLocalMethodCall" />
-      </node>
-      <node concept="tCFHf" id="1a7dmAozVHu" role="ftvYc">
-        <ref role="tCJdB" node="1a7dmAozVgV" resolve="WrapWithStaticMethodCall" />
-      </node>
-      <node concept="tCFHf" id="1a7dmAoBi6$" role="ftvYc">
-        <ref role="tCJdB" node="1a7dmAoADbD" resolve="UnwrapFirstMethodParameter" />
-      </node>
       <node concept="2a7GMi" id="5HbhpAQbviR" role="ftvYc" />
       <node concept="tCFHf" id="5HbhpAQbvkv" role="ftvYc">
         <ref role="tCJdB" node="2cHAKBFSPIQ" resolve="ForEachMethod_To_ForEachLoop_StreamAPI" />
@@ -751,26 +741,6 @@
       </node>
       <node concept="tCFHf" id="2sSdtoLur79" role="ftvYc">
         <ref role="tCJdB" node="6ZITWSgTH0p" resolve="InstanceOfExpression_To_IfInstanceOfStatement" />
-      </node>
-      <node concept="2a7GMi" id="8TBVw9igzx" role="ftvYc" />
-      <node concept="tCFHf" id="8TBVw9ig$T" role="ftvYc">
-        <ref role="tCJdB" node="8TBVw9h19y" resolve="AddNotNullAnnotation" />
-      </node>
-      <node concept="tCFHf" id="1$fIVvQhqLY" role="ftvYc">
-        <ref role="tCJdB" node="1$fIVvQdQA$" resolve="AddNullableAnnotation" />
-      </node>
-      <node concept="tCFHf" id="KFQkIYzjSb" role="ftvYc">
-        <ref role="tCJdB" node="KFQkIYyhDA" resolve="MakePrivate" />
-      </node>
-      <node concept="tCFHf" id="KFQkIYDGCQ" role="ftvYc">
-        <ref role="tCJdB" node="KFQkIYC1Zm" resolve="MakePublic" />
-      </node>
-      <node concept="2a7GMi" id="V$bWE3q0vT" role="ftvYc" />
-      <node concept="tCFHf" id="V$bWE3q0xH" role="ftvYc">
-        <ref role="tCJdB" node="V$bWE3pxn1" resolve="ToggleForceMultilineClosureLiteral" />
-      </node>
-      <node concept="tCFHf" id="V$bWE3wtxh" role="ftvYc">
-        <ref role="tCJdB" node="V$bWE3woLx" resolve="ToggleForceMultilineIfStatement" />
       </node>
     </node>
   </node>
@@ -6544,6 +6514,9 @@
         </node>
       </node>
     </node>
+    <node concept="1rQ_63" id="6NB8K4RmqjJ" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
+    </node>
   </node>
   <node concept="sE7Ow" id="1a7dmAozVjs">
     <property role="3GE5qa" value="refactoring.method" />
@@ -6663,6 +6636,9 @@
         </node>
       </node>
     </node>
+    <node concept="1rQ_63" id="6NB8K4Rmqdb" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
+    </node>
   </node>
   <node concept="sE7Ow" id="1a7dmAoADbD">
     <property role="3GE5qa" value="refactoring.method" />
@@ -6738,6 +6714,9 @@
       <property role="TrG5h" value="editorContext" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="1a7dmAoADce" role="1oa70y" />
+    </node>
+    <node concept="1rQ_63" id="6NB8K4RmqsL" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
     </node>
   </node>
   <node concept="sE7Ow" id="1BivCbO91QM">
@@ -8670,7 +8649,7 @@
   </node>
   <node concept="sE7Ow" id="E4OT9ZaYOz">
     <property role="3GE5qa" value="refactoring" />
-    <property role="2uzpH1" value="To Constant Name" />
+    <property role="2uzpH1" value="make Constant Name" />
     <property role="TrG5h" value="ToConstantName" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="2S4$dB" id="E4OT9ZaYO$" role="1NuT2Z">
@@ -8742,14 +8721,16 @@
     <node concept="2ScWuX" id="E4OT9ZaYP5" role="tmbBb">
       <node concept="3clFbS" id="E4OT9ZaYP6" role="2VODD2">
         <node concept="3clFbF" id="E4OT9ZaYPn" role="3cqZAp">
-          <node concept="2OqwBi" id="E4OT9ZaYPo" role="3clFbG">
-            <node concept="2OqwBi" id="E4OT9ZddRg" role="2Oq$k0">
-              <node concept="2WthIp" id="E4OT9ZddRh" role="2Oq$k0" />
-              <node concept="2XshWL" id="E4OT9ZddRi" role="2OqNvi">
+          <node concept="2EnYce" id="6NB8K4RnqIl" role="3clFbG">
+            <node concept="2OqwBi" id="6NB8K4RnoKN" role="2Oq$k0">
+              <node concept="2WthIp" id="6NB8K4RnomK" role="2Oq$k0" />
+              <node concept="2XshWL" id="6NB8K4Rnpec" role="2OqNvi">
                 <ref role="2WH_rO" node="E4OT9ZaYPr" resolve="variableDeclaration" />
               </node>
             </node>
-            <node concept="3x8VRR" id="E4OT9ZaYPq" role="2OqNvi" />
+            <node concept="3TrcHB" id="6NB8K4Rnq9L" role="2OqNvi">
+              <ref role="3TsBF5" to="tpee:h7TUv0c" resolve="isFinal" />
+            </node>
           </node>
         </node>
       </node>
@@ -10631,6 +10612,9 @@
         </node>
       </node>
     </node>
+    <node concept="1rQ_63" id="6NB8K4Rmoh1" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
+    </node>
   </node>
   <node concept="sE7Ow" id="KFQkIYC1Zm">
     <property role="3GE5qa" value="refactoring" />
@@ -10734,6 +10718,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1rQ_63" id="6NB8K4Rmo5y" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
     </node>
   </node>
   <node concept="sE7Ow" id="KFQkIYrzyl">
@@ -11116,6 +11103,9 @@
         </node>
       </node>
     </node>
+    <node concept="1rQ_63" id="6NB8K4RmpzX" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
+    </node>
   </node>
   <node concept="sE7Ow" id="1$fIVvQdQA$">
     <property role="3GE5qa" value="refactoring.annotation" />
@@ -11250,6 +11240,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1rQ_63" id="6NB8K4RmoU4" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
     </node>
   </node>
   <node concept="sE7Ow" id="7w9c3sqigMM">
@@ -13219,6 +13212,9 @@
         </node>
       </node>
     </node>
+    <node concept="1rQ_63" id="6NB8K4RmmEa" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
+    </node>
   </node>
   <node concept="sE7Ow" id="V$bWE3woLx">
     <property role="3GE5qa" value="refactoring" />
@@ -13389,6 +13385,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1rQ_63" id="6NB8K4Rmnkn" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
     </node>
   </node>
   <node concept="sE7Ow" id="6NB8K4QSv4m">
