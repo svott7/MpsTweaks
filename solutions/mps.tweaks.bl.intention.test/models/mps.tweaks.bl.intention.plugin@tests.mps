@@ -3390,5 +3390,103 @@
       </node>
     </node>
   </node>
+  <node concept="2NNVjS" id="6NB8K4RkhPq">
+    <property role="2$A2Gn" value="ExtractInitializer" />
+    <node concept="2$A1kt" id="6NB8K4RkhPr" role="2$A2Gr">
+      <node concept="2NNXa5" id="6NB8K4RkhPv" role="2$A2Gp">
+        <node concept="1qefOq" id="6NB8K4RkhQ1" role="25YQCX">
+          <node concept="3clFbS" id="6NB8K4RkhRX" role="1qenE9">
+            <node concept="3cpWs8" id="6NB8K4Rki1f" role="3cqZAp">
+              <node concept="3cpWsn" id="6NB8K4Rki1i" role="3cpWs9">
+                <property role="TrG5h" value="x" />
+                <node concept="17QB3L" id="6NB8K4Rkjda" role="1tU5fm" />
+                <node concept="2YIFZM" id="6NB8K4Rkj0C" role="33vP2m">
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                  <node concept="Xl_RD" id="6NB8K4Rkj67" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="LIFWc" id="6NB8K4Rkjf1" role="lGtFl">
+                    <property role="LIFWa" value="0" />
+                    <property role="LIFWd" value="Collection_a4wjjz_a" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1qefOq" id="6NB8K4Rkjf_" role="25YQFs">
+          <node concept="3clFbS" id="6NB8K4RkjfA" role="1qenE9">
+            <node concept="3clFbF" id="6NB8K4RljA_" role="3cqZAp">
+              <node concept="2YIFZM" id="6NB8K4RljAA" role="3clFbG">
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                <node concept="Xl_RD" id="6NB8K4RljAB" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1iFQzN" id="6NB8K4RkhPt" role="2YGy88">
+        <ref role="1iFR8X" to="2c1f:52Y6DbuOLu1" resolve="ExtractVariableDeclarationInitializer" />
+      </node>
+    </node>
+    <node concept="2$A1kt" id="6NB8K4RljBU" role="2$A2Gr">
+      <node concept="2NNXa5" id="6NB8K4RlkBo" role="2$A2Gp">
+        <node concept="1qefOq" id="6NB8K4RlkCz" role="25YQCX">
+          <node concept="3clFbS" id="6NB8K4RlkCy" role="1qenE9">
+            <node concept="3cpWs8" id="6NB8K4RlkIB" role="3cqZAp">
+              <node concept="3cpWsn" id="6NB8K4RlkIE" role="3cpWs9">
+                <property role="TrG5h" value="x" />
+                <node concept="17QB3L" id="6NB8K4RlkIA" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6NB8K4RlkLq" role="3cqZAp">
+              <node concept="37vLTI" id="6NB8K4Rll00" role="3clFbG">
+                <node concept="37vLTw" id="6NB8K4RlkLo" role="37vLTJ">
+                  <ref role="3cqZAo" node="6NB8K4RlkIE" resolve="x" />
+                </node>
+                <node concept="2YIFZM" id="6NB8K4Rll2Q" role="37vLTx">
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                  <node concept="Xl_RD" id="6NB8K4Rll2R" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="LIFWc" id="6NB8K4Rll2S" role="lGtFl">
+                    <property role="LIFWa" value="0" />
+                    <property role="LIFWd" value="Collection_a4wjjz_a" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1qefOq" id="6NB8K4RmkW_" role="25YQFs">
+          <node concept="3clFbS" id="6NB8K4RmkWA" role="1qenE9">
+            <node concept="3cpWs8" id="6NB8K4RmkWB" role="3cqZAp">
+              <node concept="3cpWsn" id="6NB8K4RmkWC" role="3cpWs9">
+                <property role="TrG5h" value="x" />
+                <node concept="17QB3L" id="6NB8K4RmkWD" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6NB8K4RmkWE" role="3cqZAp">
+              <node concept="2YIFZM" id="6NB8K4RmkWH" role="3clFbG">
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <node concept="Xl_RD" id="6NB8K4RmkWI" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1iFQzN" id="6NB8K4RljCi" role="2YGy88">
+        <ref role="1iFR8X" to="2c1f:6NB8K4RljD0" resolve="ExtractVariableAssignmentInitializer" />
+      </node>
+    </node>
+  </node>
 </model>
 
