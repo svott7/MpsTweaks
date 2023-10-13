@@ -2,7 +2,7 @@
 <model ref="r:b9e639b1-883f-4ce1-b235-8912db68e982(mps.tweaks.ide.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
@@ -26,6 +26,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
       </concept>
@@ -36,7 +37,7 @@
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
       </concept>
-      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ng" index="1bYyw_">
+      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ngI" index="1bYyw_">
         <reference id="6193305307616734326" name="action" index="1bYAoF" />
       </concept>
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
@@ -45,7 +46,7 @@
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
-      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
@@ -99,7 +100,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -139,7 +140,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -155,7 +156,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
@@ -183,7 +184,7 @@
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
@@ -192,7 +193,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -215,6 +216,7 @@
     <property role="2uzpH1" value="Clear MPS Default Message Tab" />
     <property role="TrG5h" value="ClearMPSDefaultMessageTab" />
     <property role="3GE5qa" value="default-message-tab" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="4rZy0P5ux9I" role="1NuT2Z">
       <property role="TrG5h" value="mpsProject" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -486,12 +488,13 @@
     <property role="2uzpH1" value="Set MPS Default Message Tab Inactive" />
     <property role="TrG5h" value="SetMPSDefaultMessageTabInactive" />
     <property role="3GE5qa" value="default-message-tab" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="4rZy0P5aydK" role="tncku">
       <node concept="3clFbS" id="4rZy0P5aydL" role="2VODD2">
         <node concept="3clFbF" id="4rZy0P5uJmp" role="3cqZAp">
           <node concept="2YIFZM" id="6QM7aN93pVE" role="3clFbG">
             <ref role="37wK5l" node="7yImMjplvj9" resolve="setInactive" />
-            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessagesTab" />
+            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessageTabs" />
             <node concept="2OqwBi" id="6QM7aN93pVF" role="37wK5m">
               <node concept="2WthIp" id="6QM7aN93pVG" role="2Oq$k0" />
               <node concept="1DTwFV" id="6QM7aN93pVH" role="2OqNvi">
@@ -512,12 +515,13 @@
     <property role="2uzpH1" value="Set MPS Default Message Tab Active" />
     <property role="TrG5h" value="SetMPSDefaultMessageTabActive" />
     <property role="3GE5qa" value="default-message-tab" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="6QM7aN93n4E" role="tncku">
       <node concept="3clFbS" id="6QM7aN93n4F" role="2VODD2">
         <node concept="3clFbF" id="6QM7aN93n4G" role="3cqZAp">
           <node concept="2YIFZM" id="6QM7aN93qC3" role="3clFbG">
             <ref role="37wK5l" node="7yImMjpluZm" resolve="setActive" />
-            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessagesTab" />
+            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessageTabs" />
             <node concept="2OqwBi" id="6QM7aN93qC4" role="37wK5m">
               <node concept="2WthIp" id="6QM7aN93qC5" role="2Oq$k0" />
               <node concept="1DTwFV" id="6QM7aN93qC6" role="2OqNvi">
@@ -541,7 +545,7 @@
       <node concept="3clFbS" id="7yImMjplhew" role="2VODD2">
         <node concept="3clFbF" id="7yImMjplheR" role="3cqZAp">
           <node concept="2YIFZM" id="7yImMjplheT" role="3clFbG">
-            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessagesTab" />
+            <ref role="1Pybhc" node="4rZy0P5uHPO" resolve="MpsDefaultMessageTabs" />
             <ref role="37wK5l" node="7yImMjpluZm" resolve="setActive" />
             <node concept="1KvdUw" id="7yImMjplzq$" role="37wK5m" />
           </node>
@@ -552,6 +556,7 @@
   <node concept="sE7Ow" id="5CtXlv$BM99">
     <property role="2uzpH1" value="Open Fatal Errors Dialog" />
     <property role="TrG5h" value="OpenFatalErrorsDialog" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="5CtXlv$BM9a" role="tncku">
       <node concept="3clFbS" id="5CtXlv$BM9b" role="2VODD2">
         <node concept="3SKdUt" id="5CtXlv$CkCN" role="3cqZAp">

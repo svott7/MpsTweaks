@@ -2,7 +2,7 @@
 <model ref="r:aadd4149-c0a3-46b0-b7c2-d0179f24c679(mps.tweaks.stringediting.test.plugin@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="a8c824c4-b1c9-472d-82b8-ebeddaa94086" name="mps.tweaks.lang.test" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -48,7 +48,7 @@
         <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
         <child id="7954072934282285396" name="description" index="2r4PD$" />
       </concept>
-      <concept id="6578428207197624605" name="mps.tweaks.lang.test.structure.OptionalTestName" flags="ng" index="3H9XM4">
+      <concept id="6578428207197624605" name="mps.tweaks.lang.test.structure.OptionalTestName" flags="ngI" index="3H9XM4">
         <property id="7904411824423581627" name="optionalTestName" index="2$A2Gn" />
       </concept>
     </language>
@@ -56,7 +56,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

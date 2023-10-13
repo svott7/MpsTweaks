@@ -99,7 +99,7 @@
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -126,7 +126,7 @@
     <property role="TrG5h" value="main" />
     <property role="3$yP7D" value="true" />
     <node concept="1puMqW" id="6NB8K4RfCjP" role="1puA0r">
-      <ref role="1puQsG" node="6NB8K4RfCjQ" resolve="script" />
+      <ref role="1puQsG" node="6NB8K4RfCjQ" resolve="reduce" />
     </node>
   </node>
   <node concept="1pmfR0" id="6NB8K4RfCjQ">
@@ -214,7 +214,7 @@
             <node concept="1Q6Npb" id="6NB8K4RfCk$" role="2Oq$k0" />
             <node concept="2SmgA7" id="6NB8K4RfCwF" role="2OqNvi">
               <node concept="chp4Y" id="6NB8K4RfDw0" role="1dBWTz">
-                <ref role="cht4Q" to="fov5:6NB8K4Rfna2" resolve="AttachToGroup" />
+                <ref role="cht4Q" to="fov5:6NB8K4Rfna2" resolve="GroupDeclarationLink" />
               </node>
             </node>
           </node>

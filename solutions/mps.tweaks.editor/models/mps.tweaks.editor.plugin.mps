@@ -2,7 +2,7 @@
 <model ref="r:3088199b-4c72-4aee-b3d1-7fd6e4236023(mps.tweaks.editor.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
@@ -31,6 +31,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1227008813498" name="constructionParameter" index="2JrayB" />
@@ -61,7 +62,7 @@
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
-      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
@@ -135,7 +136,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -150,7 +151,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
@@ -160,6 +161,7 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -168,12 +170,12 @@
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999117680" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldAccessOperation" flags="nn" index="2BZ7hE" />
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -208,7 +210,6 @@
         <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
@@ -224,6 +225,7 @@
   <node concept="sE7Ow" id="1B8loX25DHZ">
     <property role="TrG5h" value="SetMpsTweaksEditorHint" />
     <property role="2uzpH1" value="Set MPS Tweaks Editor Hints" />
+    <property role="1rBW0U" value="true" />
     <node concept="2JriF1" id="6Qju3tFdimQ" role="2JrayB">
       <property role="TrG5h" value="hints" />
       <node concept="3Tm6S6" id="6Qju3tFdimR" role="1B3o_S" />
@@ -701,6 +703,7 @@
   <node concept="sE7Ow" id="52Y6DbuHyqh">
     <property role="TrG5h" value="UnsetMpsTweaksEditorHint" />
     <property role="2uzpH1" value="Unset MPS Tweaks Editor Hints" />
+    <property role="1rBW0U" value="true" />
     <node concept="2JriF1" id="6Qju3tFd_08" role="2JrayB">
       <property role="TrG5h" value="hints" />
       <node concept="3Tm6S6" id="6Qju3tFd_09" role="1B3o_S" />
@@ -851,7 +854,7 @@
                     <node concept="2OqwBi" id="6Qju3tF8jkZ" role="3clFbG">
                       <node concept="2OqwBi" id="6Qju3tF8jl0" role="2Oq$k0">
                         <node concept="37vLTw" id="6Qju3tF8jl1" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6Qju3tF8jl4" resolve="it" />
+                          <ref role="3cqZAo" node="3b2V9Up0d0X" />
                         </node>
                         <node concept="liA8E" id="6Qju3tF8jl2" role="2OqNvi">
                           <ref role="37wK5l" to="k3nr:~MPSFileNodeEditor.getNodeEditor()" resolve="getNodeEditor" />
@@ -863,9 +866,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="6Qju3tF8jl4" role="1bW2Oz">
+                <node concept="gl6BB" id="3b2V9Up0d0X" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="6Qju3tF8jl5" role="1tU5fm" />
+                  <node concept="2jxLKc" id="3b2V9Up0d0Y" role="1tU5fm" />
                 </node>
               </node>
             </node>
@@ -892,7 +895,7 @@
                   <node concept="3clFbF" id="6Qju3tF7VfQ" role="3cqZAp">
                     <node concept="2OqwBi" id="6Qju3tF7VnV" role="3clFbG">
                       <node concept="37vLTw" id="6Qju3tF7VfP" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6Qju3tF7UV_" resolve="it" />
+                        <ref role="3cqZAo" node="3b2V9Up0d0Z" />
                       </node>
                       <node concept="liA8E" id="6Qju3tF7W97" role="2OqNvi">
                         <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
@@ -900,9 +903,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="6Qju3tF7UV_" role="1bW2Oz">
+                <node concept="gl6BB" id="3b2V9Up0d0Z" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="6Qju3tF7UVA" role="1tU5fm" />
+                  <node concept="2jxLKc" id="3b2V9Up0d10" role="1tU5fm" />
                 </node>
               </node>
             </node>
