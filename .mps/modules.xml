@@ -7,7 +7,6 @@
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.doc/mps.tweaks.doc.mpl" folder="lang-doc" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.commonhints/mps.tweaks.editor.commonhints.mpl" folder="editor" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.console/mps.tweaks.editor.console.mpl" folder="editor" />
-      <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.expressionwrapping/mps.tweaks.editor.expressionwrapping.mpl" folder="editor" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.lang.editor/mps.tweaks.editor.lang.editor.mpl" folder="editor" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.lang.smodel/mps.tweaks.editor.lang.smodel.mpl" folder="editor" />
       <modulePath path="$PROJECT_DIR$/languages/mps.tweaks.editor.lang.test/mps.tweaks.editor.lang.test.mpl" folder="editor" />
