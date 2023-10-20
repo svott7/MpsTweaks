@@ -8,6 +8,9 @@
     <use id="515552c7-fcc0-4ab4-9789-2f3c49344e85" name="jetbrains.mps.baseLanguage.varVariable" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" name="jetbrains.mps.lang.checkedName" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
@@ -16,6 +19,16 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="al1t" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.diagnostic(MPS.IDEA/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
+    <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -26,11 +39,15 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
+        <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
+        <child id="1205851242421" name="methodDeclaration" index="32lrUH" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
+      <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
       <concept id="1562714432501166198" name="jetbrains.mps.lang.plugin.structure.SimpleShortcutChange" flags="lg" index="Zd509">
         <child id="1562714432501166206" name="keystroke" index="Zd501" />
       </concept>
@@ -64,6 +81,12 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -163,6 +186,7 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
@@ -187,6 +211,8 @@
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
+      <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
+      <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -715,6 +741,97 @@
       <node concept="pLAjd" id="5CtXlv$CiD4" role="Zd501">
         <property role="pLAjc" value="ctrl+alt" />
         <property role="pLAjf" value="VK_E" />
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="1XcSpu4kDsQ">
+    <property role="1rBW0U" value="true" />
+    <property role="2uzpH1" value="Open README.md" />
+    <property role="TrG5h" value="OpenReadme" />
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <node concept="2XrIbr" id="1XcSpu4m4Ey" role="32lrUH">
+      <property role="TrG5h" value="findReadme" />
+      <node concept="3uibUv" id="1XcSpu4m4Y1" role="3clF45">
+        <ref role="3uigEE" to="jlff:~VirtualFile" resolve="VirtualFile" />
+      </node>
+      <node concept="3clFbS" id="1XcSpu4m4E$" role="3clF47">
+        <node concept="3clFbF" id="1XcSpu4m507" role="3cqZAp">
+          <node concept="2OqwBi" id="1XcSpu4mq_A" role="3clFbG">
+            <node concept="2OqwBi" id="1XcSpu4mqba" role="2Oq$k0">
+              <node concept="2WthIp" id="1XcSpu4mqbd" role="2Oq$k0" />
+              <node concept="1DTwFV" id="1XcSpu4mqbf" role="2OqNvi">
+                <ref role="2WH_rO" node="1XcSpu4mpa_" resolve="file" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1XcSpu4m50j" role="2OqNvi">
+              <ref role="37wK5l" to="jlff:~VirtualFile.findChild(java.lang.String)" resolve="findChild" />
+              <node concept="Xl_RD" id="1XcSpu4m50k" role="37wK5m">
+                <property role="Xl_RC" value="README.md" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1XcSpu4me2P" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" />
+      </node>
+      <node concept="3Tm6S6" id="1XcSpu4mec3" role="1B3o_S" />
+    </node>
+    <node concept="1DS2jV" id="1XcSpu4kDJJ" role="1NuT2Z">
+      <property role="TrG5h" value="ideaProject" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="1XcSpu4kDJK" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="1XcSpu4mpa_" role="1NuT2Z">
+      <property role="TrG5h" value="projectFileDirectory" />
+      <ref role="1DUlNI" to="qkt:~PlatformCoreDataKeys.PROJECT_FILE_DIRECTORY" resolve="PROJECT_FILE_DIRECTORY" />
+      <node concept="1oajcY" id="1XcSpu4mpaA" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="1XcSpu4kDsR" role="tncku">
+      <node concept="3clFbS" id="1XcSpu4kDsS" role="2VODD2">
+        <node concept="3clFbF" id="1XcSpu4lcuT" role="3cqZAp">
+          <node concept="2OqwBi" id="1XcSpu4lCmr" role="3clFbG">
+            <node concept="2ShNRf" id="1XcSpu4lcuP" role="2Oq$k0">
+              <node concept="1pGfFk" id="1XcSpu4ll6Q" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="iwsx:~OpenFileDescriptor.&lt;init&gt;(com.intellij.openapi.project.Project,com.intellij.openapi.vfs.VirtualFile)" resolve="OpenFileDescriptor" />
+                <node concept="2OqwBi" id="1XcSpu4ll7O" role="37wK5m">
+                  <node concept="2WthIp" id="1XcSpu4ll7R" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="1XcSpu4ll7T" role="2OqNvi">
+                    <ref role="2WH_rO" node="1XcSpu4kDJJ" resolve="ideaProject" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1XcSpu4m5pt" role="37wK5m">
+                  <node concept="2WthIp" id="1XcSpu4m5pw" role="2Oq$k0" />
+                  <node concept="2XshWL" id="1XcSpu4m5py" role="2OqNvi">
+                    <ref role="2WH_rO" node="1XcSpu4m4Ey" resolve="readme" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="1XcSpu4lDEH" role="2OqNvi">
+              <ref role="37wK5l" to="iwsx:~OpenFileDescriptor.navigate(boolean)" resolve="navigate" />
+              <node concept="3clFbT" id="1XcSpu4L$49" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ScWuX" id="1XcSpu4kDtC" role="tmbBb">
+      <node concept="3clFbS" id="1XcSpu4kDtD" role="2VODD2">
+        <node concept="3clFbF" id="1XcSpu4m6al" role="3cqZAp">
+          <node concept="2EnYce" id="1XcSpu4mi26" role="3clFbG">
+            <node concept="2OqwBi" id="1XcSpu4m6af" role="2Oq$k0">
+              <node concept="2WthIp" id="1XcSpu4m6ai" role="2Oq$k0" />
+              <node concept="2XshWL" id="1XcSpu4m6ak" role="2OqNvi">
+                <ref role="2WH_rO" node="1XcSpu4m4Ey" resolve="readme" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1XcSpu4m7sJ" role="2OqNvi">
+              <ref role="37wK5l" to="jlff:~VirtualFile.exists()" resolve="exists" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
