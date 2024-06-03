@@ -26,6 +26,7 @@
     <dependency reexport="false">fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</dependency>
+    <dependency reexport="false">8a27c213-ebe8-4250-a47c-07dfcedbc313(mps.tweaks.editor)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -80,6 +81,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
+    <module reference="8a27c213-ebe8-4250-a47c-07dfcedbc313(mps.tweaks.editor)" version="0" />
     <module reference="118cc110-c028-453e-80ca-3cbea99fd892(mps.tweaks.editor.commonhints)" version="0" />
     <module reference="b78bcdd6-ca57-438f-9f0e-7601614aabbd(mps.tweaks.editor.lang.smodel)" version="0" />
   </dependencyVersions>
