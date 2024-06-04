@@ -742,19 +742,6 @@
       <node concept="tCFHf" id="2sSdtoLur79" role="ftvYc">
         <ref role="tCJdB" node="6ZITWSgTH0p" resolve="InstanceOfExpression_To_IfInstanceOfStatement" />
       </node>
-      <node concept="2a7GMi" id="3Ii11Vj6ir$" role="ftvYc" />
-      <node concept="tCFHf" id="3Ii11Vj6ita" role="ftvYc">
-        <ref role="tCJdB" node="3Ii11Vj6agY" resolve="Fix" />
-      </node>
-      <node concept="tCFHf" id="3Ii11VjcacS" role="ftvYc">
-        <ref role="tCJdB" node="3Ii11Vjc7ru" resolve="TransformToThisNodeExpression" />
-      </node>
-      <node concept="tCFHf" id="3Ii11Vjdyey" role="ftvYc">
-        <ref role="tCJdB" node="3Ii11VjdpUR" resolve="TransformToConceptFunctionParameter_node" />
-      </node>
-      <node concept="tCFHf" id="3Ii11VjyXvH" role="ftvYc">
-        <ref role="tCJdB" node="3Ii11Vjxs8W" resolve="TransformToActionParameter" />
-      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="3ZFBIUStWFl">
@@ -14009,8 +13996,10 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3Ii11VjO22q" role="3cqZAp" />
       </node>
+    </node>
+    <node concept="1rQ_63" id="3Ii11VjTE$w" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
     </node>
   </node>
   <node concept="sE7Ow" id="3Ii11Vjc7ru">
@@ -14083,6 +14072,9 @@
         </node>
       </node>
     </node>
+    <node concept="1rQ_63" id="3Ii11VjTrpS" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
+    </node>
   </node>
   <node concept="sE7Ow" id="3Ii11VjdpUR">
     <property role="3GE5qa" value="refactoring" />
@@ -14130,7 +14122,7 @@
                 <node concept="2Xjw5R" id="3Ii11VjdwRN" role="2OqNvi">
                   <node concept="1xMEDy" id="3Ii11VjdwRP" role="1xVPHs">
                     <node concept="chp4Y" id="3Ii11VjdwWt" role="ri$Ld">
-                      <ref role="cht4Q" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+                      <ref role="cht4Q" to="tpc2:gCpkWun" resolve="QueryFunction_NodeCondition" />
                     </node>
                   </node>
                 </node>
@@ -14153,6 +14145,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1rQ_63" id="3Ii11VjTCrz" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
     </node>
   </node>
   <node concept="sE7Ow" id="3Ii11Vjxs8W">
@@ -14334,6 +14329,9 @@
       <property role="TrG5h" value="editorContext" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="3Ii11VjGq0P" role="1oa70y" />
+    </node>
+    <node concept="1rQ_63" id="3Ii11VjTsb0" role="lGtFl">
+      <ref role="1rQ_6d" node="Ad1GYpm9SC" resolve="MpsTweaksBLActionsAsIntentionGroup" />
     </node>
   </node>
   <node concept="312cEu" id="3Ii11VjB2hR">
