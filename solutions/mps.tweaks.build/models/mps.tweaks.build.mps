@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <import index="mo18" ref="r:42d04941-551b-420d-9485-a5f496e15594(jetbrains.mps.ide.build.tests)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -168,7 +169,7 @@
       </node>
       <node concept="3_J27D" id="12Zz9ivFCfK" role="m$_w8">
         <node concept="3Mxwew" id="4yHCkwUXrwx" role="3MwsjC">
-          <property role="3MwjfP" value="1.06" />
+          <property role="3MwjfP" value="1.07" />
         </node>
       </node>
       <node concept="m$f5U" id="12Zz9ivFCfM" role="m$_yh">
@@ -185,6 +186,12 @@
       </node>
       <node concept="m$_yC" id="26PAZwsZoDc" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
+      <node concept="m$_yC" id="4aJau$M7hjr" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:1JaUSFUm4G_" resolve="jetbrains.mps.editor.contextActions" />
+      </node>
+      <node concept="m$_yC" id="4aJau$M7hmc" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
       <node concept="3_J27D" id="12Zz9ivFCfO" role="m_cZH">
         <node concept="3Mxwew" id="12Zz9ivFCfP" role="3MwsjC">
@@ -711,6 +718,16 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4aJau$M7hjP" role="3bR37C">
+          <node concept="3bR9La" id="4aJau$M7hjQ" role="1SiIV1">
+            <ref role="3bR37D" node="42BB1zC9zrj" resolve="mps.tweaks.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4aJau$M7hjR" role="3bR37C">
+          <node concept="3bR9La" id="4aJau$M7hjS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="42BB1zC9zVH" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -997,6 +1014,11 @@
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4aJau$M7hk5" role="3bR37C">
+          <node concept="3bR9La" id="4aJau$M7hk6" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:l1L199LeP5" resolve="jetbrains.mps.ide.refactoring" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2NY6dYJtPgs" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1154,6 +1176,16 @@
         <node concept="1SiIV0" id="4yHCkwUXcER" role="3bR37C">
           <node concept="3bR9La" id="4yHCkwUXcES" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4aJau$M7hkf" role="3bR37C">
+          <node concept="3bR9La" id="4aJau$M7hkg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8K" resolve="jetbrains.mps.lang.plugin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4aJau$M7hkh" role="3bR37C">
+          <node concept="3bR9La" id="4aJau$M7hki" role="1SiIV1">
+            <ref role="3bR37D" node="42BB1zC9zGX" resolve="mps.tweaks.editor.lang.editor" />
           </node>
         </node>
       </node>
